@@ -421,12 +421,7 @@ for(var i=0;i<Top_minu.length;i++){
  		
  
   Ok.onclick=function(){
-  	var cookie = document.cookie;
-		var arrCookie = cookie.split(";");
-		for (var i =0;i<arrCookie.length;i++) {
-				arrCookie[i]=arrCookie[i].split("=");
-		}  //[[username,zs][password,123456]]  arrCookie[0][1]
-	  	if(LockValue.value==arrCookie[1][1]||LockValue.value==123456 ){
+	  	if(LockValue.value==123456 ){
 	  		Lock.style.display="none";
 	  		LockValue.value="";
 	  		LockValue.style.color="";
@@ -450,14 +445,9 @@ for(var i=0;i<Top_minu.length;i++){
  	var Dl=document.getElementById("jinru");
  	var Ji=document.getElementById("ji");
  	Dl.onclick=function(){
- 		var cookie = document.cookie;
-		var arrCookie = cookie.split(";");
-		for (var i =0;i<arrCookie.length;i++) {
-				arrCookie[i]=arrCookie[i].split("=");
-		}  //[[username,zs][password,123456]]  arrCookie[0][1]
-		//alert(arrCookie[1][1]);
-		if(Dlname.value==arrCookie[0][1]||Dlname.value==123456){
-			if(Dlmima.value==arrCookie[1][1]||Dlmima.value==123456){
+ 		
+		if(Dlname.value==123456){
+			if(Dlmima.value==123456){
 				Containter.style.display="block";
 				Denglu.style.display="none";
 				Xiang.style.display="none";
@@ -473,13 +463,8 @@ for(var i=0;i<Top_minu.length;i++){
 	 Start.ondblclick=function(){
 	 	Denglu.style.display="block";
 	 	if(Ji.checked==true){
-	 		var cookie = document.cookie;
-			var arrCookie = cookie.split(";");
-			for (var i =0;i<arrCookie.length;i++) {
-				arrCookie[i]=arrCookie[i].split("=");
-			}
-	 		Dlname.value=arrCookie[0][1];
-	 		Dlmima.value=arrCookie[1][1]
+	 		Dlname.value=123456;
+	 		Dlmima.value=123456
 	 	}else{
 	 		Dlname.value="";
 	 		Dlmima.value="";
