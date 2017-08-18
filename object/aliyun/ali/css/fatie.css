@@ -1,0 +1,260 @@
+/*
+ * 全局样式
+*/
+*{
+margin:0; 
+padding:0;	
+}
+.containter{
+	width: 1345px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	font: "微软雅黑","楷体";
+	height: auto;
+	position: relative;
+	/*background: #fcfcfc;*/
+	background: #f1f2f6;
+}
+a{
+	text-decoration: none;
+}
+input,textarea:focus {outline: none;}
+
+ul li{
+	float: left;
+}
+/*div{
+	border: 1px solid deepskyblue; 
+}*/
+/***********main***********/
+.logo{
+	width: 100%;
+	height: 40px;
+	background: #373d41;
+	color: white;
+	font-size: 12px;
+}
+.logo .left{
+	float: left;
+	margin-left: 45px;
+	line-height: 40px;
+}
+.logo img{
+	height: 15px;
+}
+.logo .right{
+	float: right;
+	margin-right: 30px;
+}
+.logo .right ul li{
+	height: 40px;
+	line-height: 40px;
+	margin-right: 27px;
+}
+
+iframe{
+	margin-top: -15px;
+}
+
+
+
+
+.shequ_logo div{
+	float: left;
+}
+.shequ_logo{
+	padding-left: 45px;
+	height: 84px;
+	width: 100%;
+	background: white;
+}
+.shequ_logo #logo img{
+	height: 83px;
+}
+.shequ_logo #minu{
+	margin-left: 100px;
+	height: 84px;
+	line-height: 84px;
+}
+.shequ_logo #minu ul li , .shequ_logo #denglu ul li{
+	/*float: left;*/
+	margin-right: 30px;
+	font-size: 12px;
+	color: #333333;
+}
+.shequ_logo #minu ul li a,.shequ_logo #denglu ul li a{
+	text-decoration: none;
+	color: #5c5c5c;
+}
+.shequ_logo #minu ul li a:hover{
+	color: #00c1de;
+}
+.shequ_logo #denglu ul li a:hover{
+	color: #00c1de;
+}
+.shequ_logo #sousuo{
+	margin-top: 24px;
+	width: 250px;
+	height: 32px;
+	margin-left: 25px;
+	
+}
+.shequ_logo #sousuo input{
+	width: 240px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #cccccc;
+	padding-left: 5px;
+	
+}
+.shequ_logo #sousuoimg{
+	margin-top: 24px;
+	border: 1px solid #cccccc;
+	height: 30px;
+	margin-left: -4px;
+	cursor: pointer;
+}
+.shequ_logo #sousuoimg img{
+	height: 30px;
+	*margin-left: 25px;
+}
+.shequ_logo #denglu{
+	height: 84px;
+	line-height: 84px;
+	margin-left: 30px;
+	font-size: 16px;
+}
+.center .center-right{
+	/*float: right;
+	width: 287px;
+	margin-right: 75px;*/
+	float: left;
+	width: 400px;
+	height: 515px;
+	background: white;
+	/*padding-left: 13px;*/
+
+	margin-left: 25px;
+	padding: 10px;
+	padding-left: 14px;	
+	padding-top: 15px;
+}
+
+
+.center{
+	margin-top: 10px;
+	width: 100%;
+	margin-left: 45px;
+	height: 560px;
+}
+.center .center-left{
+	width: 750px;
+	float: left;
+	background: white;
+	padding: 20px;
+}
+
+.center-right h5{
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.faweibo{
+	width: 730px;
+	height: 500px;
+	border: 1px solid #e4e4e4;
+	margin-left: 8px;
+}
+.faweibo input{
+	width: 695px;
+	padding-left: 5px;
+	height: 50px;
+	margin-left: 13px;
+	margin-top: 10px;
+	font-size: 18px;
+	border: 0;
+	border-bottom: 1px dashed #e4e4e4;
+}
+.bowen{
+	width: 682px;
+	height: 365px;
+	border: 1px solid #e4e4e4;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 5px;
+	line-height: 25px;
+	color: #33333;
+}
+
+#send{
+	height: 40px;
+	width: 90px;
+	background: #00c1de;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	margin-top: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.shequ_bottom{
+	height: 172px;
+	width: 1349px;
+	background: white;
+}
+.shequ_bottom .shequ_bottom_muin{
+	height: 110px;
+	line-height: 110px;
+	width: 900px;
+	margin: 0 auto;
+	
+}
+.shequ_bottom .shequ_bottom_muin ul li{
+	float: left;
+	margin: 0 auto;
+	margin-right: 10px;
+	color: #7c7c7c;
+	font-size: 12px;
+	
+}
+.shequ_bottom .shequ_bottom_muin ul li a{
+	color: #7c7c7c;
+}
+.shequ_bottom .shequ_bottom_muin ul li a:hover{
+	color: #00c1de;
+}
+.shequ_bottom .shequ_bottom_muintwo{
+	height: 14px;
+	line-height: 14px;
+	width: 700px;
+	margin: 0 auto;
+	
+}
+.shequ_bottom .shequ_bottom_muintwo ul li{
+	float: left;
+	margin: 0 auto;
+	margin-right: 10px;
+	color: #7c7c7c;
+	font-size: 12px;
+	
+}
+.shequ_bottom .shequ_bottom_muintwo ul li a{
+	color: #7c7c7c;
+}
+.shequ_bottom .shequ_bottom_muintwo ul li a:hover{
+	color: #00c1de;
+}

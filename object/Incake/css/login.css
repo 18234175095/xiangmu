@@ -1,0 +1,182 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+ul, ol {
+    padding-left: 0;
+}
+.container-wrapper { width: 1160px; margin: 0 auto; }
+.lk-centers{margin-bottom: 600px;}
+.am-u-sm-3 {
+    width: 285px;
+}
+
+.container-wrapper .login-container { width: 100%; padding: 50px 0; }
+.login-container .login-img { width: 710px; height: 390px; display: block; float: left; }
+.login-container .login-img img { width: 100%; }
+.login-container .login-form { width: 350px; height: 390px; float: right; margin-right: 38px; position: relative; color: #4f4f4f; }
+.login-container .login-form .form-header { width: 100%; height: 60px; line-height: 60px; color: #0f3677; font-size: 20px; font-weight: normal; background: url(http://img.incake.net/UpImages/pc/login/form_header_bg.png) no-repeat left center; }
+.login-container .login-form .enterprise-form-header { width: 100%; height: 60px; background: url(http://img.incake.net/UpImages/pc/login/enterprise_form_header_bg.png) no-repeat center center; }
+.login-form .form-header span { display: inline-block; margin-left: 20px; }
+.login-container .login-form .form-content { width: 100%; }
+.login-form .form-content > li { width: 100%; height: 44px; line-height: 40px; list-style: none;}
+.login-form .form-content .li-login-name,
+.login-form .form-content .li-login-pwd { width: 100%; height: 50px; outline: 1px solid #0f3677; outline-offset: -1px; position: relative; }
+.login-form .form-content .li-login-name { margin-bottom: 10px; }
+.login-form .form-content .li-login-name input,
+.login-form .form-content .li-login-pwd input { width: 300px; height: 50px; line-height: 50px; border: none; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; float: right; outline: none; }
+.login-form .form-content .li-login-name i,
+.login-form .form-content .li-login-pwd i { width: 20px; height: 26px; display: block; position: absolute; left: 15px; top: 12px; background: url(http://img.incake.net/UpImages/pc/login/icons_form_content.png) no-repeat; }
+.login-form .form-content .li-login-name .icon-login-name { background-position: 0 0; }
+.login-form .form-content .li-login-pwd .icon-login-pwd { background-position: -20px 0; }
+.login-form .form-content > li .auto-login { display: inline-block; float: left; cursor: pointer; }
+.login-form .form-content > li .auto-login i { width: 18px; height: 18px; display: inline-block; background: url(http://img.incake.net/UpImages/pc/login/icons_form_content.png) no-repeat; background-position: -40px 0; position: relative; top: 4px; left: 0; margin-right: 10px; }
+.login-form .form-content > li .auto-login i.checked { background-position: -40px -18px; }
+.login-form .form-content > li .forget-pwd { float: right; }
+.login-form .form-content > li .forget-pwd a { color: #2378cd; text-decoration: underline; }
+.login-form .form-content > li .btn-login { width: 100%; height: 100%; line-height: 44px; text-align: center; color: #fff; font-size: 18px; background: #0f3677; display: block; }
+.login-form .form-content > li .register-now { display: inline-block; }
+.login-form .form-content > li .register-now .btn-register-now { color: #2378cd; text-decoration: underline; margin-left: 10px; }
+.login-form .form-content > li .register-now .btn-register-vip { color: #2378cd; text-decoration: underline; }
+.login-container .login-form .form-footer { width: 100%; height: 70px; border-top: 1px solid #dcdcdc; position: absolute; bottom: 0; left: 0; }
+.login-form .form-footer .footer-title { height: 40px; line-height: 40px; }
+.login-form .form-footer .footer-content { width: 100%; height: 30px; }
+.form-footer .footer-content > li { width: 30px; height: 30px; float: left; margin-right: 10px; }
+.form-footer .footer-content > li.last { margin-right: 0; }
+.form-footer .footer-content > li a { width: 30px; height: 30px; display: block; background: url(http://img.incake.net/UpImages/pc/login/icons_form_content.png) no-repeat; }
+.form-footer .footer-content > li a.btn-login-alipay { background-position: -58px 0; }
+.form-footer .footer-content > li a.btn-login-weibo { background-position: -88px 0; }
+.form-footer .footer-content > li a.btn-login-qq { background-position: -118px 0; }
+
+/* ===================== 娉ㄥ唽 ======================= */
+
+.container-wrapper .register-container { width: 100%; padding: 50px 0; }
+.register-container .register-img { width: 710px; height: 448px; display: block; float: left; }
+.register-container .register-img img { width: 100%; }
+.register-container .register-form { width: 350px; height: 448px; float: right; margin-right: 38px; position: relative; color: #4f4f4f; }
+.register-container .register-form .form-header { width: 100%; height: 60px; line-height: 60px; color: #0f3677; font-size: 20px; font-weight: normal; background: url(http://img.incake.net/UpImages/pc/login/form_header_bg.png) no-repeat left center; }
+.register-form .form-header span { display: inline-block; margin-left: 20px; }
+.register-container .register-form .form-content { width: 100%; }
+.register-form .form-content > li { width: 100%; height: 44px; line-height: 44px; }
+.register-form .form-content .li-register-mobile,
+.register-form .form-content .li-register-vcode,
+.register-form .form-content .li-register-name,
+.register-form .form-content .li-register-pwd { width: 100%; height: 50px; outline: 1px solid #0f3677; outline-offset: -1px; position: relative; margin-bottom: 10px; }
+.register-form .form-content .li-register-mobile input,
+.register-form .form-content .li-register-vcode input,
+.register-form .form-content .li-register-name input,
+.register-form .form-content .li-register-pwd input { width: 300px; height: 50px; line-height: 50px; border: none; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; float: right; outline: none; }
+/*.register-form .form-content .li-register-mobile input { width: 186px; }*/
+.register-form .form-content .li-register-mobile .btn-register-vcode { width: 114px; height: 50px; float: right; display: block; background: #0f3677; color: #fff; text-align: center; line-height: 50px; }
+.register-form .form-content .li-register-mobile i,
+.register-form .form-content .li-register-vcode i,
+.register-form .form-content .li-register-name i,
+.register-form .form-content .li-register-pwd i { width: 20px; height: 26px; display: block; position: absolute; left: 15px; top: 12px; background: url(http://img.incake.net/UpImages/pc/login/icons_form_content.png) no-repeat; }
+.register-form .form-content .li-register-name .icon-register-name { background-position: 0 0; }
+.register-form .form-content .li-register-pwd .icon-register-pwd { background-position: -20px 0; }
+.register-form .form-content .li-register-mobile .icon-register-mobile { background-position: -148px 0; }
+.register-form .form-content .li-register-vcode .icon-register-vcode { background-position: -168px 0; }
+.register-form .form-content > li .btn-register { width: 100%; height: 100%; line-height: 44px; text-align: center; color: #fff; font-size: 18px; background: #0f3677; display: block; }
+.register-form .form-content > li .login-now { display: inline-block; }
+.register-form .form-content > li .login-now .btn-login-now { color: #2378cd; text-decoration: underline; margin-left: 10px; }
+
+/* mask-vcode begin */
+.mask-vcode { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: url(http://img.incake.net/UpImages/pc/mask_bg.png) repeat; z-index: 9999999; display: none; }
+.mask-vcode .vcode-container { width: 380px; height: 230px; padding: 20px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -135px; z-index: 99999999; background: #fff; }
+.mask-vcode .vcode-container .btn-vcode-close { width: 20px; height: 20px; display: block; position: absolute; right: 20px; top: 24px; cursor: pointer; background: url(http://img.incake.net/UpImages/pc/mask_btn_close.png) no-repeat; }
+.mask-vcode .vcode-container .vcode-header { width: 100%; height: 38px; line-height: 30px; color: #0f3677; border-bottom: 1px solid #0f3677; font-size: 18px; font-weight: normal; }
+.mask-vcode .vcode-container .vcode-header span { margin-left: 24px; }
+.mask-vcode .vcode-container .vcode-content { width: 100%; padding: 30px 0 14px 0; }
+.mask-vcode .vcode-container .vcode-content > li { width: 330px; margin: 0 auto; height: 36px; line-height: 36px; margin-bottom: 15px; }
+.mask-vcode .vcode-container .vcode-content .content-title { width: 56px; display: inline-block; float: left; margin-right: 10px; color: #515151; }
+.mask-vcode .vcode-container .vcode-content input { width: 262px; height: 34px; line-height: 34px; border: 1px solid #dcdcdc; outline: none; float: left; text-indent: 1em; }
+.mask-vcode .vcode-container .vcode-content .img-vcode { width: 98px; height: 34px; border: 1px solid #e6e6e6; display: block; float: left; }
+.mask-vcode .vcode-container .vcode-content .img-vcode img { width: 100%; }
+.mask-vcode .vcode-container .vcode-content li > span { width: 164px; text-align: center; float: right; color: #b4b4b4; }
+.mask-vcode .vcode-container .vcode-content li .btn-change-code { color: #2378cd; }
+
+.mask-vcode .vcode-container .vcode-footer { width: 330px; margin: 0 auto; height: 46px; }
+.mask-vcode .vcode-container .vcode-footer a { width: 160px; height: 46px; line-height: 46px; color: #fff; font-size: 16px; display: block; text-align: center; }
+.mask-vcode .vcode-container .vcode-footer .btn-vcode-ok { float: left; background: #0f3677; }
+.mask-vcode .vcode-container .vcode-footer .btn-vcode-cancel { float: right; background: #0578c4; }
+/* mask-vcode end */
+
+/* mask-voice-code begin */
+.mask-vcode-voice{ width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: url(http://img.incake.net/UpImages/pc/mask_bg.png) repeat; z-index: 9999999; display: none; }
+.mask-vcode-voice .vcode-container-voice { width: 380px; height: 230px; padding: 20px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -135px; z-index: 99999999; background: #fff; }
+.mask-vcode-voice .vcode-container-voice .btn-vcode-voice-close { width: 20px; height: 20px; display: block; position: absolute; right: 20px; top: 24px; cursor: pointer; background: url(http://img.incake.net/UpImages/pc/mask_btn_close.png) no-repeat; }
+.mask-vcode-voice .vcode-container-voice .vcode-header { width: 100%; height: 38px; line-height: 30px; color: #0f3677; border-bottom: 1px solid #0f3677; font-size: 18px; font-weight: normal; }
+.mask-vcode-voice .vcode-container-voice .vcode-header span { margin-left: 24px; }
+.mask-vcode-voice .vcode-container-voice .vcode-content { width: 100%; padding: 30px 0 14px 0; }
+.mask-vcode-voice .vcode-container-voice .vcode-content > li { width: 330px; margin: 0 auto; height: 36px; line-height: 36px; margin-bottom: 15px; }
+.mask-vcode-voice .vcode-container-voice .vcode-content .content-title { width: 56px; display: inline-block; float: left; margin-right: 10px; color: #515151; }
+.mask-vcode-voice .vcode-container-voice .vcode-content input { width: 262px; height: 34px; line-height: 34px; border: 1px solid #dcdcdc; outline: none; float: left; text-indent: 1em; }
+.mask-vcode-voice .vcode-container-voice .vcode-content .img-vcode { width: 98px; height: 34px; border: 1px solid #e6e6e6; display: block; float: left; }
+.mask-vcode-voice .vcode-container-voice .vcode-content .img-vcode img { width: 100%; }
+.mask-vcode-voice .vcode-container-voice .vcode-content li > span { width: 164px; text-align: center; float: right; color: #b4b4b4; }
+.mask-vcode-voice .vcode-container-voice .vcode-content li .btn-change-voice-code { color: #2378cd; }
+
+.mask-vcode-voice .vcode-container-voice .vcode-footer { width: 330px; margin: 0 auto; height: 46px; }
+.mask-vcode-voice .vcode-container-voice .vcode-footer a { width: 160px; height: 46px; line-height: 46px; color: #fff; font-size: 16px; display: block; text-align: center; }
+.mask-vcode-voice .vcode-container-voice .vcode-footer .btn-vcode-voice-ok { float: left; background: #0f3677; }
+.mask-vcode-voice .vcode-container-voice .vcode-footer .btn-vcode-voice-cancel { float: right; background: #0578c4; }
+/* mask-voice-code end */
+
+
+
+/* ===================== 蹇€熺櫥褰� ======================= */
+.login-container .login-form .form-nav { width: 100%; height: 39px; border-bottom: 1px solid #0f3677; }
+.login-form .form-nav > li { width: 50%; height: 35px; line-height: 34px; border-bottom: 4px solid transparent; float: left; list-style: none;}
+.login-form .form-nav > li.active { border-color: #0f3677; position: relative; }
+.login-form .form-nav > li span { display: block; width: 100%; height: 100%; text-align: center; cursor: pointer; font-size: 18px; color: #abbedc; }
+.login-form .form-nav > li.active span { color: #0f3677; }
+.login-form .form-nav > li.active i { width: 8px; height: 4px; display: block; position: absolute; bottom: 0; left: 50%; margin-left: -4px; background: url(http://img.incake.net/UpImages/pc/login/login_arrow.png) no-repeat; }
+.login-form .form-list { width: 100%; }
+.login-form .form-list > li { width: 100%; display: none; }
+.login-form .form-list > li.active { display: block; }
+.login-form .form-list > li .li-login-mobile,
+.login-form .form-list > li .li-login-vcode { width: 100%; height: 50px; outline: 1px solid #0f3677; outline-offset: -1px; position: relative; margin-bottom: 10px; }
+.login-form .form-list > li .li-login-vcode { margin-bottom: 0; }
+.login-form .form-list > li .li-login-mobile input,
+.login-form .form-list > li .li-login-vcode input { height: 50px; text-indent: 1em; line-height: 50px; border: none; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; float: left; outline: none; }
+.login-form .form-list > li .li-login-mobile input { width: 230px; }
+.login-form .form-list > li .li-login-mobile .btn-fetch-vcode { width: 118px; height: 50px; display: block; float: right; line-height: 50px; text-align: center; border: none; background: #88afcd; font-size: 16px; color: #fff; }
+.login-form .form-list > li .li-login-vcode input { width: 100%; }
+.login-form .form-list > li .tip { color: #ea545d; }
+.login-form .form-list > li .btn-quick-login { width: 100%; height: 100%; line-height: 44px; text-align: center; color: #fff; font-size: 18px; background: #0f3677; display: block; }
+
+/* mask-quick-login begin */
+.mask-quick-login { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: url(http://img.incake.net/UpImages/pc/mask_bg.png) repeat; z-index: 9999999; display: none; }
+.mask-quick-login .quick-login-container { width: 520px; height: 280px; padding: 20px; position: absolute; left: 50%; margin-left: -280px; top: 50%; margin-top: -160px; z-index: 99999999; background: #fff; }
+.mask-quick-login .quick-login-container .btn-quick-login-close { width: 20px; height: 20px; display: block; position: absolute; right: 20px; top: 24px; cursor: pointer; background: url(http://img.incake.net/UpImages/pc/mask_btn_close.png) no-repeat; }
+.mask-quick-login .quick-login-container .quick-login-header { width: 100%; height: 38px; line-height: 30px; color: #0f3677; border-bottom: 1px solid #0f3677; font-size: 18px; font-weight: normal; }
+.mask-quick-login .quick-login-container .quick-login-header span { margin-left: 24px; }
+.mask-quick-login .quick-login-container .quick-login-content { width: 100%; padding: 30px 0; }
+.mask-quick-login .quick-login-container .quick-login-content > li { width: 330px; margin: 0 auto; height: 50px; line-height: 50px; margin-bottom: 15px; }
+.mask-quick-login .quick-login-container .quick-login-content input { width: 100%; height: 48px; line-height: 48px; border: 1px solid #0f3677; outline: none; float: left; text-indent: 1em; }
+
+.mask-quick-login .quick-login-container .quick-login-footer { width: 330px; margin: 0 auto; height: 46px; }
+.mask-quick-login .quick-login-container .quick-login-footer a { width: 160px; height: 46px; line-height: 46px; color: #fff; font-size: 16px; display: block; text-align: center; }
+.mask-quick-login .quick-login-container .quick-login-footer .btn-quick-login-ok { float: left; background: #0f3677; }
+.mask-quick-login .quick-login-container .quick-login-footer .btn-quick-login-cancel { float: right; background: #0578c4; }
+/* mask-quick-login end */
+
+.hot { width: 100%; margin-bottom: 30px; }
+.hot .hot-title { width: 100%; height: 20px; line-height: 20px; margin: 200px 0; background: url(http://img.incake.net/UpImages/pc/hot/hot_title_bg.png) repeat-x left center; position: relative; top: 165px;}
+.hot .hot-title h2 { width: 300px; height: 100%; line-height: 20px; background: #fff; font-weight: normal; font-size: 20px; position: absolute; left: 50%; margin-left: -150px; top: 0; text-align: center; color: #0f3677; }
+.hot .hot-list { width: 100%; list-style: none;}
+.hot .hot-list li { width: 260px; float: left; margin-right: 40px; }
+.hot .hot-list li.last { margin-right: 0; }
+.hot .hot-list li .img { width: 260px; height: 260px; display: block; position: relative; }
+.hot .hot-list li .img img { width: 100%; }
+.hot .hot-list li .img .type { width: 100%; height: 40px; line-height: 40px; text-align: center; color: #fff; background: url(http://img.incake.net/UpImages/pc/mask_bg.png) repeat; position: absolute; left: 0; bottom: 0; z-index: 9; display: none; }
+.hot .hot-list li .img:hover .type { display: block; }
+.hot .hot-list li .img .type .taste { margin-right: 10px; }
+.hot .hot-list li .info { width: 100%; height: 98px; background: #f5f5f5; }
+.hot .hot-list li .info p { text-align: center; }
+.hot .hot-list li .info .cn { font-size: 18px; padding-top: 10px; }
+.hot .hot-list li .info .en { font-size: 14px; line-height: 24px; }
+.hot .hot-list li .info .size { color: #000; }
+.hot .hot-list li .info .size .price { font-size: 20px; }

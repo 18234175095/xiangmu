@@ -1,0 +1,232 @@
+.chat{
+	width: 590px;
+	/*width: 584px;*/
+	height: 510px;
+	background: white;
+	overflow: hidden;
+	border-radius: 3px;
+	/*display: none;*/
+	position: absolute;
+	top:40px;
+	left:40px ;
+	z-index: 20;
+	/*border: 1px solid red;*/
+	box-shadow: 0 0 0 2px rgba(25,25,25,0.2);
+	display: none;
+}
+/*.chat div{
+	border: 1px solid green;
+}*/
+.chat .top{
+	width: 100%;
+	height: 83px;
+	border-bottom: 1px solid #d8d3d8;
+}
+.chat .top .left{
+	float: left;
+	height: 83px;
+	width: 445px;
+}
+.chat .top .left .toux{
+	height: 40px;
+	margin-left: 9px;
+	margin-top: 10px;
+}
+.chat .top .left .toux_img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #f0f3f6;
+	border-radius: 3px;
+}
+.chat .top .left .toux_img img{
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+}
+.chat .top .left .nicheng{
+	float: left;
+	margin-left: 6px;
+}
+.chat .top .left .nicheng h2{
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.chat .top .left .nicheng h3{
+	font-size: 12px;
+	color: #333333;
+}
+.chat .top .left .nicheng h3 i{
+	color: #f1b500;
+	font-size: 11px;
+	margin-right: 6px;
+	margin-left: 3px;
+}
+.chat .top .left .xuanx{
+	height: 25px;
+	width: 100%;
+	margin-top: 5px;
+}
+.chat .top .left .xuanx ul li{
+	float: left;
+	margin-left: 10px;
+}
+.chat .top .right{
+	float: left;
+	margin-top: 10px;
+}
+.chat .top .right ul li i{
+	color: #afacaf;
+	cursor: pointer;
+}
+.chat .top .right ul li{
+	float: left;
+	margin-left: 16px;
+}
+.chat .top .right ul .xxx{
+	height: 20px;
+	width: 20px;
+	line-height: 18px;
+	text-align: center;
+}
+.chat .top .right .xxx:hover{
+	background: red;
+}
+.chat .inner{
+	height: 425px;
+	width: 100%;
+}
+.chat .inner .left{
+	float: left;
+	height: 425px;
+	width: 445px;
+}
+/**************消息*/
+.chat .inner .left .chats{
+	width: 100%;
+	height: 288px;
+	overflow: auto;
+	border-bottom: 1px solid #d8d3d8;	
+}
+.chat .inner .left .chats p{
+	text-align: center;
+	color: #8b8b8b;
+	margin-top: 20px;
+	font-size: 11px;
+	margin-bottom: -5px;
+	
+	
+}
+.chat .inner .left .chats .message{
+	overflow: hidden;
+	margin-right: 3px;
+	margin-left: 3px;
+	margin-bottom: 10px;	
+}
+.chat .inner .left .chats .message_inn{
+	float: right;	
+	margin-top: 20px;
+	margin-left: 20px;	
+	background: #a6d4f2;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 18px;
+	/*text-align: right;*/
+	margin-right: 10px;
+	padding: 5px;
+	color: #333333;
+	max-width: 330px;
+	overflow: hidden;
+}
+.chat .inner .left .chats .message img{
+	height: 40px;
+	width: 40px;
+	border-radius: 3px;
+	float: right;
+	margin-right: 6px;
+	margin-top: 6px;
+}
+/*消息*/
+.chat .inner .right{
+	float: left;
+	width: 139px;
+	background: paleturquoise;
+}
+.chat .inner .left .chat_input{
+	height: 140px;
+	width: 100%;
+}
+.chat .inner .left .chat_input .topminu{
+	height: 28px;
+	width: 100%;
+	line-height: 28px;
+}
+.chat .inner .left .chat_input .topminu ul li{
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.chat .inner .left .chat_input .topminu ul li i{
+	color: #8a8f93;
+	font-size: 16px;
+}
+.chat .inner .left .chat_input .input{
+	height: 70px;
+	width: 96%;
+	padding-left: 5px;
+	font-size: 14px;
+	color: #333333;
+	line-height: 20px;
+	overflow: auto;
+	word-break: break-all;
+}
+.chat .inner .left .chat_input .input input{
+	height: 60px;
+	width: 430px;
+	padding-left: 5px;
+	font-size: 14px;
+	border: 0;
+}
+.chat .inner .left .chat_input .send{
+	height: 32px;
+	
+}
+.chat .inner .left .chat_input .send p{
+	float: right;
+	background: #b14cae;
+	color: white;	
+	font-size: 12px;
+	cursor: pointer;
+	margin-top: 6px;
+}
+.chat .inner .left .chat_input .send p:active{
+	background: mediumvioletred;
+}
+.quxiao{
+	margin-right: 10px;
+	height: 24px;
+	line-height: 24px;
+	width: 70px;
+	border-radius: 3px;
+	text-align: center;
+}
+.sendinn{
+	margin-right: 10px;
+	height: 24px;
+	line-height: 24px;
+	width: 88px;
+	border-radius: 3px;
+	text-align: center;
+	
+}
+.sendinn i{
+	display: block;
+	float: right;
+	margin-top: 0px;
+	margin-right: 8px;
+	font-size: 13px;
+	margin-left: 0;
+}
+

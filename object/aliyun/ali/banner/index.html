@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�����д���Ч��jQuery����ͼ - վ���ز�</title>
+
+<link rel="stylesheet" href="css/zzsc.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+</head>
+<body><br />
+
+<div id="header">
+  <div class="wrap">
+   <div id="slide-holder">
+		<div id="slide-runner">
+			<a href="#" ><img id="slide-img-1" src="images/a1.jpg" class="slide" alt="" /></a>
+			<a href="#" ><img id="slide-img-2" src="images/a2.jpg" class="slide" alt="" /></a>
+			<a href="#" ><img id="slide-img-3" src="images/a3.jpg" class="slide" alt="" /></a>
+			<div id="slide-controls">
+			 <p id="slide-client" class="text"><strong></strong><span></span></p>
+			 <p id="slide-desc" class="text"></p>
+			 <p id="slide-nav"></p>
+			</div>
+		</div>
+   </div>
+   <script type="text/javascript">
+    if(!window.slider) {
+		var slider={};
+	}
+
+	slider.data= [
+    {
+        "id":"slide-img-1", // ��slide-runner�е�img��ǩid��Ӧ
+        "client":"",
+        "desc":"2016云栖大会·往期精彩回顾" //�����޸�����
+    },
+    {
+        "id":"slide-img-2",
+        "client":"",
+        "desc":"阿里云双十一来啦！"
+    },
+    {
+        "id":"slide-img-3",
+        "client":"",
+        "desc":"云栖聚能聊！阿里六侠聚云栖，技术话题聊不停"
+    },
+	];
+   </script>
+  </div>
+</div>
+</body>
+</html>

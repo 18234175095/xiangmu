@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/huanfu.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chat.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lock.css"/>
+		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</head>
+	<body>	
+	<div id="all">
+		<div class="QQ_start" id="start">
+			<img src="img/start.png"/>
+		</div>	
+		<div class="containter" id="containter">
+			<div class="tencent_qq" id="tencent_qq">
+				<div class="top">
+					<p class="qq"><i class="iconfont">&#xe606;</i> QQ</p>	
+					<p class="xunzhang"><i class="iconfont">&#xe6ce;</i> </p>
+					<p class="anquan"><i class="iconfont">&#xe60d;</i> </p>
+					<p class="suoxiao"><i class="iconfont">&#xe625;</i> </p>
+					<p class="guanbi" id="X"><i class="iconfont">&#xe6a7;</i></p>
+				</div>
+			<div class="user">
+				<div class="left">
+					<img src="img/user.jpg"/>
+				</div>
+				<div class="right">
+					<div class="userName">
+						<span>〝☆の愿ベ</span>	
+						<i id="zhuangtai" class="iconfont">&#xe603;</i>
+						<b>LV43</b>
+						<samp><i class="iconfont">&#xe675;</i>VIP</samp>
+					</div>
+					<div class="qianming">
+						不忘初心，方得始终。
+					</div>
+					<div class="butt">
+						<ul>
+							<li><i class="iconfont" style="color:#fdc730 ;">&#xf0096;</i></li>
+							<li><i class="iconfont" style="color:#47ecff ;">&#xe657;</i></li>
+							<li><i class="iconfont" style="color:#ffffff ;">&#xe60e;</i></li>
+							<li><i class="iconfont" style="color:#fdc730 ;font-size: 17px;">&#xe600;</i></li>
+							<li style="margin-top: 3px;"><i class="iconfont" style="color:#fdc730 ;">&#xe64b;</i></li>
+							<li style="margin-top: 1px;"><i class="iconfont" style="color:#e33835 ;font-size: 18px;">&#xe6c1;</i></li>
+							<li style="margin-top: 3px;"><i class="iconfont" style="color:#9cc413 ;font-size: 13px;">&#xe604;</i></li>
+							<li style="margin-top: 2px;"><i class="iconfont" style="color:#91aab4 ;">&#xe733;</i></li>
+							<li id="change_fu" style="margin-left: 30px;margin-right: 3px;"><i class="iconfont" style="color:#ffffff ;">&#xe7d5;</i></li>
+							<li><i class="iconfont" style="color:#ffffff ;">&#xe60f;</i></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>	
+			<div class="sousuo">
+				<input type="text" name="" id="" value="" placeholder="搜索：联系人、多人聊天、群、企业"/>
+				<i class="iconfont">&#xf002d;</i>
+				<!--状态 nav-->
+					<div class="dui" id="dui">
+						<ul>
+							<li><i class="iconfont" style="color: green;">&#xe603;</i>我在线上</li>
+							<li><i class="iconfont" style="color: gray;">&#xe617;</i>离线</li>
+							<li><i class="iconfont" style="color: blueviolet;">&#xe68a;</i>Q我吧</li>
+							<li><i class="iconfont" style="color: burlywood;">&#xe605;</i>离开</li>
+							<li><i class="iconfont" style="color: white;">&#xe662;</i>隐身</li>
+							<p></p>
+							<li id="suoding"><i class="iconfont" style="color: orange;">&#xe6b5;</i>锁定QQ</li>
+							<p></p>
+							<li><i class="iconfont"></i>我在线上</li>
+							<li><i class="iconfont"></i>离线</li>
+							<li><i class="iconfont"></i>Q我吧</li>
+							<li><i class="iconfont"></i>离开</li>
+							<p></p>
+							<li><i class="iconfont"></i>隐身</li>
+							<li><i class="iconfont"></i>锁定QQ</li>
+							<li><i class="iconfont"></i>隐身</li>
+							<li><i class="iconfont"></i>锁定QQ</li>
+						</ul>
+					</div>
+			<!--状态 nav-->
+			</div>
+			
+			<div class="inner">
+				<div class="minu" id="minu"><!--minu-->
+					<ul>
+						<li><i class="iconfont" style="color: #3f94d9;">&#xe84a;</i></li>
+						<li><i class="iconfont">&#xf0096;</i></li>
+						<li style="margin-top: 3px;"><i class="iconfont" style="font-size: 29px;">&#xe654;</i></li>
+						<li style="margin-top: 3px;"><i class="iconfont" style="font-size: 27px;">&#xe61c;</i></li>
+						<li style="margin-top: 1px;"><i class="iconfont" style="font-size: 23px;">&#xe60f;</i></li>
+						<li style="margin-top: 0px;"><i class="iconfont" style="font-size: 23px;">&#xe601;</i></li>
+					</ul>
+				</div><!--minus end-->
+				<div class="fenzu" style="display: block;"><!--fenzu-->
+					<ul>
+						<li class="minus"><i class="iconfont">&#xe602;</i> 我的设备 2/2</li>							
+							<div class="fenzu_inn"><!--我的设备-->
+								<ul>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/phone.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>我的Android手机</h2>
+										<h3>上次登录：2016-10-08</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/find.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>发现新设备</h2>
+										<h3>玩转智能新设备，发现新生活</h3>
+										</div> 
+									</li>
+								</ul>
+							</div><!--我的设备 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 我的家人 4/4</li>
+						<div class="fenzu_inn"><!--我的家人-->
+								<ul>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_1.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>二萌<span> (籣于那段情)</span></h2>
+										<h3>青春仿佛倒置的沙漏，反反复复经受创磕。永远都是这些话……</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_2.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>乐乐<span> (初相识)</span></h2>
+										<h3>/水到方能渠成</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_3.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>贝贝<span> (天使的眼泪)</span></h2>
+										<h3>生活的理想，就是为了理想的生活。</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_4.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>薇薇<span> (眉间缘)</span></h2>
+										<h3>世界上最遥远的距离，是你转身后，我眼泪坠落的轨迹。</h3>
+										</div> 
+									</li>
+								</ul>
+							</div><!--我的家人 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 我的好友  4/4</li>
+						<div class="fenzu_inn"><!--我的好友-->
+								<ul>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_5.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>行行<span> (籣于那段情)</span></h2>
+										<h3>青春仿佛倒置的沙漏，反反复复经受创磕。永远都是这些话……</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_6.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>小明<span> (初相识)</span></h2>
+										<h3>/水到方能渠成</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_7.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>菲菲<span> (天使的眼泪)</span></h2>
+										<h3>生活的理想，就是为了理想的生活。</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_8.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>小伟<span> (眉间缘)</span></h2>
+										<h3>世界上最遥远的距离，是你转身后，我眼泪坠落的轨迹。</h3>
+										</div> 
+									</li>
+								</ul>
+							</div><!--我的家人 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 我的朋友 5/5</li>
+							<div class="fenzu_inn"><!--我的家人-->
+								<ul>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_9.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>北北<span> (籣于那段情)</span></h2>
+										<h3>青春仿佛倒置的沙漏，反反复复经受创磕。永远都是这些话……</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_10.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>晶晶<span> (初相识)</span></h2>
+										<h3>/水到方能渠成</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_11.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>欢欢<span> (天使的眼泪)</span></h2>
+										<h3>生活的理想，就是为了理想的生活。</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_1.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>莹莹<span> (眉间缘)</span></h2>
+										<h3>世界上最遥远的距离，是你转身后，我眼泪坠落的轨迹。</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_2.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>妮妮<span> (小呆)</span></h2>
+										<h3>世界上最遥远的距离，是你转身后，我眼泪坠落的轨迹。</h3>
+										</div> 
+									</li>
+								</ul>
+							</div><!--我的家人 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 高中同学 4/4</li>
+							<div class="fenzu_inn"><!--我的家人-->
+								<ul>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_3.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>行行<span> (籣于那段情)</span></h2>
+										<h3>青春仿佛倒置的沙漏，反反复复经受创磕。永远都是这些话……</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_4.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>乐乐<span> (初相识)</span></h2>
+										<h3>/水到方能渠成</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_5.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>贝贝<span> (天使的眼泪)</span></h2>
+										<h3>生活的理想，就是为了理想的生活。</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_6.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>薇薇<span> (眉间缘)</span></h2>
+										<h3>世界上最遥远的距离，是你转身后，我眼泪坠落的轨迹。</h3>
+										</div> 
+									</li>
+								</ul>
+							</div><!--我的家人 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 大学同学 4/4</li>
+						<div class="fenzu_inn"><!--我的家人-->
+								<ul>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_7.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>行行<span> (籣于那段情)</span></h2>
+										<h3>青春仿佛倒置的沙漏，反反复复经受创磕。永远都是这些话……</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_8.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>乐乐<span> (初相识)</span></h2>
+										<h3>/水到方能渠成</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_9.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>贝贝<span> (天使的眼泪)</span></h2>
+										<h3>生活的理想，就是为了理想的生活。</h3>
+										</div> 
+									</li>
+									<li>
+										<div class="left">
+											<img src="img/touxiang/touxiang_10.jpg"/>
+										</div> 
+										<div class="right">
+										<h2>薇薇<span> (眉间缘)</span></h2>
+										<h3>世界上最遥远的距离，是你转身后，我眼泪坠落的轨迹。</h3>
+										</div> 
+									</li>
+								</ul>
+							</div><!--我的家人 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 公众号 0/0</li>
+							<div class="fenzu_inn"><!--公众号-->
+								
+							</div><!--公众号 end-->
+						<li class="minus"><i class="iconfont">&#xe602;</i> 黑名单 0/0</li>
+							<div class="fenzu_inn"><!--黑名单-->
+							</div><!--黑名单 end-->	
+							
+					</ul>
+				</div><!--fenzu end-->
+				
+				<div class="fenzu"><!--fenzu2-->
+					2
+				</div>	
+				<div class="fenzu"><!--fenzu3-->
+					3
+				</div>	
+				<div class="fenzu"><!--fenzu4-->
+					4
+				</div>	
+				<div class="fenzu"><!--fenzu5-->
+					5
+				</div>	
+				<div class="fenzu"><!--fenzu6-->
+					6
+				</div>	
+				
+				
+				<!--buttom-->
+				<div class="buttom">
+					<div class="top">
+						<ul>
+							<li><img src="img/buttom/button_03.jpg"/></li>
+							<li><img src="img/buttom/button_05.jpg"/></li>
+							<li><img src="img/buttom/button_07.jpg"/></li>
+							<li><img src="img/buttom/button_09.jpg"/></li>
+							<li><img src="img/buttom/button_11.jpg"/></li>
+							<li><img src="img/buttom/button_13.jpg"/></li>
+							<li style="float: right;margin-right: 18px;"><i class="iconfont" style="color: #8bb2cd;font-size: 20px;">&#xe650;</i></li>
+						</ul>
+					</div>
+					<div class="but">
+						<ul>
+							<li><i class="iconfont" style="color: #4396e4">&#xe662;</i></li>
+							<li><i class="iconfont">&#xe779;</i></li>
+							<li><i class="iconfont">&#xe63c;</i></li>
+							<li><i class="iconfont">&#xe649;</i></li>
+							<li><i class="iconfont">&#xe630;</i></li>
+							<li><i class="iconfont">&#xf002d;</i>查找</li>
+							<li style="float: right; margin-right: 10px;"><p><img src="img/buttom/yingyong_03.jpg"/></p>应用宝</li>	
+						</ul>
+					</div>
+				</div>
+				<!--buttom-->
+			</div>
+			
+		</div>
+		
+		
+<!--——————————————————————————————————————————————————————————————————————————————————————————————-->		
+		<!--换肤-->
+			<div class="huanfu" id="huanfu">
+				<div class="top">
+					<div class="le">
+						<i class="iconfont">&#xe606;</i> 更改外观
+					</div>
+					<div class="right" id="xx">
+						<i class="iconfont">&#xe6a7;</i>
+					</div>
+				</div>
+				<div class="minu">
+					<ul>
+						<li style="color: #278cde;"><i class="iconfont" style="color: #278cde;">&#xe7d5;</i>皮肤设置</li>
+						<li><i class="iconfont">&#xe6ee;</i>场景秀</li> 
+						<li><i class="iconfont">&#xe60f;</i>多彩气泡</li>
+						<li><i class="iconfont">&#xe650;</i>界面管理</li>
+						<li style="float: right;margin-right: 20px;"><i class="iconfont">&#xe779;</i></li>
+					</ul>
+				</div>
+				<div class="imgs" id="imgs">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td><img src="img/pifu/bj_1.jpg"/></td>
+							<td><img src="img/pifu/bj_2.jpg"/></td>
+							<td><img src="img/pifu/bj_3.jpg"/></td>
+							<td><img src="img/pifu/bj_4.jpg"/></td>
+							<td><img src="img/pifu/bj_5.jpg"/></td>
+							<td><img src="img/pifu/bj_6.jpg"/></td>
+						</tr>
+						<tr>
+							<td><img src="img/pifu/bj_7.jpg"/></td>
+							<td><img src="img/pifu/bj_8.jpg"/></td>
+							<td><img src="img/pifu/bj_9.jpg"/></td>
+							<td><img src="img/pifu/bj_10.jpg"/></td>
+							<td><img src="img/pifu/bj_11.jpg"/></td>
+							<td><img src="img/pifu/bj_12.jpg"/></td>
+						</tr>
+						<tr>
+							<td><img src="img/pifu/bj_13.jpg"/></td>
+							<td><img src="img/pifu/bj_14.jpg"/></td>
+							<td><img src="img/pifu/bj_15.jpg"/></td>
+							<td><img src="img/pifu/bj_16.jpg"/></td>
+							<td><img src="img/pifu/bj_17.jpg"/></td>
+							<td><img src="img/pifu/bj_18.jpg"/></td>
+						</tr>
+						
+					</table>
+				</div>
+				<div class="color" id="color">
+					<ul>
+						<!--<li style="background: #169ada;"></li>-->
+					</ul>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li>7天皮肤套装</li>
+						<li><i class="iconfont">&#xe733;</i>自定义</li>
+						<li>更多皮肤</li>
+						<li style="float: right; margin-right: 10px;border: 0;"><i class="iconfont" style="color: #278cde;">&#xe650;</i> </li>
+					</ul>
+				</div>
+			</div>			
+		<!--换肤 end-->
+<!--——————————————————————————————————————————————————————————————————————————————————————————————-->	
+		<!--聊天-->
+			<div class="chat">
+				<div class="top">
+					<div class="left">
+						<div class="toux">
+							<div class="toux_img">
+								<img class="touxiang" src="img/user.jpg"/>
+							</div>
+							<div class="nicheng">
+								<h2  class="name">张 帅</h2>
+								<h3><i class="iconfont">&#xf0096;</i><span  class="qianming">不忘初心，方得始终。</span> </h3>
+							</div>
+						</div>
+						<div class="xuanx">
+							<ul>
+								<li><img src="img/min/chuangkou_03.png"/></li>
+								<li><img src="img/min/chuangkou_05.png"/></li>
+								<li><img src="img/min/chuangkou_07.png"/></li>
+								<li><img src="img/min/chuangkou_09.png"/></li>
+								<li><img src="img/min/chuangkou_11.png"/></li>
+								<li><img src="img/min/chuangkou_13.png"/></li>
+								<li><img src="img/min/chuangkou_15.png"/></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<ul>
+							<li><i class="iconfont">&#xe613;</i> </li>
+							<li><i class="iconfont">&#xe625;</i> </li>
+							<li><i class="iconfont">&#xe650;</i> </li>
+							<li class="xxx" style="margin-top: -1px;"><i class="iconfont" style="font-size: 13px;">&#xe6a7;</i> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="inner">
+					<div class="left">
+						
+						
+						<div class="chats"><!--消息-->
+							 
+							<!--<div class="message">
+								<p></p>
+								<img src="img/touxiang/touxiang_1.jpg"/>
+								<div class="message_inn"></div>
+							</div>-->
+							
+						</div><!--消息 end-->
+						
+						
+						<div class="chat_input">
+							<div class="topminu">
+								<ul>
+									<li><i class="iconfont">&#xe6b1;</i> </li>
+									<li><i class="iconfont">&#xe68a;</i> </li>
+									<li><i class="iconfont" style="font-size: 18px;">&#xe743;</i> </li>
+									<li><i class="iconfont" style="font-size: 17px;">&#xe677;</i> </li>
+									<li style="margin-top: -2px;"><i class="iconfont" style="font-size: 13px;">&#xe70a;</i> </li>
+									<li style="margin-top: -2px;"><i class="iconfont">&#xe63d;</i> </li>
+									<li style="margin-top: -1px;"><i class="iconfont" style="font-size: 15px;">&#xe6ee;</i> </li>
+									<li style="margin-top: -1px;"><i class="iconfont" style="font-size: 14px;">&#xe745;</i> </li>
+									<li style="margin-top: -1px;"><i class="iconfont" style="font-size: 15px;">&#xe6e8;</i> </li>
+									<li style="margin-top: 0px;float: right;font-size: 12px;">
+										<i class="iconfont" style="font-size: 15px;display: block;float: left;margin-top: -1px;margin-right: 3px;">&#xe605;</i>
+										消息记录
+										<i class="iconfont" style="font-size: 15px;display: block;float: right;margin-top: 2px;margin-right: 3px;">&#xe613;</i> 
+									</li>
+								</ul>
+							</div>
+							<div class="input" contenteditable="true" >
+								<!--<input type="text" name="chats_input" id="chats_input" value="" />-->
+							</div>
+							<div class="send">							
+								<p class="sendinn"><span>发送(S) |</span><i class="iconfont">&#xe613;</i></p>
+								<p class="quxiao">关闭(C)</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="right">
+						<img src="img/chat.png"/>
+					</div>
+				</div>
+			</div>
+		<!--聊天 end-->
+
+		<!--QQ锁定-->
+			<div class="lock" id="lock">
+				<div class="top">
+					<ul>
+						<li style="margin-left: 8px;">QQ</li>
+						<li style="float: right;margin-right: 7px;margin-top: -2px;"><i class="iconfont" style="font-size: 13px;color: white;">&#xe6a7;</i></li>
+						<li style="float: right;margin-right: 18px;margin-top: -2px;"><i class="iconfont" style="font-size: 13px;color: white;">&#xe625;</i></li>
+					</ul>
+				</div>
+				<div class="usertoux">
+					<img src="img/user.jpg"/>
+					<p>〝☆の愿ベ (firefly_0121@qq.com)</p>
+				</div>
+				<div class="qq_lock">
+					<img id="suoimg" src="img/lock.jpg"/>
+					<h2>QQ正在锁定中</h2>
+					<h3>您可以按Ctrl+Alt+L键解锁</h3>
+				</div>
+				<div class="ruhe">
+					<a href="#"><span>如何使用QQ锁？</span></a>
+				</div>
+				<div class="jiesuo" id="jiesuo">
+					<p>解锁密码：</p>
+					<div class="loc">
+						<input type="password" name="lockpass" id="lockpass" value="" placeholder="请输入独立密码或QQ密码" />
+					</div>
+					<div class="butt">
+						<h4 id="ok">确定</h4>
+						<h4 id="qx">取消</h4>
+					</div>
+				</div>
+			</div>
+		<!--QQ锁定 end-->
+		
+		<!--登录界面-->
+			<div class="denglu" id="denglu">
+				<div class="dengshang" id="dengshang">
+					<!--<img src="img/denglu.png" />-->
+					<ul>
+						<li><i class="iconfont" style="font-size: 12px;">&#xe613;</i></li>
+						<li><i class="iconfont" style="font-size: 12px;">&#xe625;</i></li>
+						<li id="closeDenglu"><i class="iconfont" style="font-size: 12px;">&#xe6a7;</i></li>
+					</ul>
+				</div>
+				<div class="dengxia">
+					<img style="height: 80px;border-radius: 2px;" src="img/user.jpg" />
+					<i class="iconfont" id="tihuan">&#xe662;</i>
+						
+					
+					<div class="dakuang">
+						<input id="dlname" type="text" value="123456" placeholder="123456"/><img src="img/xiajian.png" class="xiajian"/>
+						<input id="dlmima" type="password" value="123456" placeholder="123456"/><img src="img/shubiao.png" class="shubiao"/>
+					</div>
+					<input type="checkbox" class="ji" id="ji"/><label>记住密码</label>
+					<input type="checkbox" class="dong"/><label>自动登录</label>
+					<a href="zhuce.html"><p class="jizhu">立即注册</p></a>
+					<p class="zhaohui">找回密码</p>
+					<div class="dengdeng">
+						<span class="iconfont">&#xe84a;</span>
+						<input type="button" value="登录" id="jinru"/>
+						<img src="img/1476173257.png" style="width: 20px;margin-top: 20px;margin-left: 70px;"/>
+						
+					</div>
+				</div>
+				
+			</div>
+				<div class="xiang" id="xiang">
+					<ul>
+						<li><i class="iconfont" style="color: green;">&#xe603;</i>我在线上</li>
+						<p></p>
+						<li><i class="iconfont" style="color: gray;">&#xe617;</i>离线</li>
+						<li><i class="iconfont" style="color: blueviolet;">&#xe68a;</i>Q我吧</li>
+						<li><i class="iconfont" style="color: burlywood;">&#xe605;</i>离开</li>
+						<li><i class="iconfont" style="color: white;">&#xe662;</i>隐身</li>
+					</ul>
+				</div>
+		<!--登录界面 end-->
+		
+		</div>
+	</div>		
+	</body>
+</html>

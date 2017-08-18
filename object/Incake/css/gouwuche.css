@@ -1,0 +1,299 @@
+.shopping-step p{
+	height: 92px;
+	line-height: 92px;
+	color: #dcdcdc;
+}
+.shopping-step p i {
+    height: 42px;
+    background: url(http://img.incake.net/UpImages/pc/shopping-cart/cart_icons_bg.png) no-repeat;
+    position: relative;
+    top: 14px;
+    display: inline-block;
+}
+.shopping-step p.active .icon-cart {
+    background-position: 0 -42px;
+}
+.shopping-step p .icon-cart {
+    width: 88px;
+}
+.shopping-step p .icon-order-info {
+    width: 82px;
+    background-position: -92px 0;
+}
+.shopping-step p .icon-submit-ok {
+    width: 80px;
+    background-position: -178px 0;
+}
+.shopping-step p span{
+	margin-left: 20px;
+	font-size: 18px;
+}
+.shopping-step .active {
+    color: #82aac8;
+}
+
+
+.selected-title{
+	margin-left: 15px;
+}
+.selected-title h2{
+	height: 38px;
+	line-height: 38px;
+	padding-left: 30px;
+	background: url(http://img.incake.net/UpImages/pc/shopping-cart/section_title_bg.png) no-repeat left center;
+	font-size: 18px;
+	color: #0f3677;
+	font-weight: normal;
+}
+.selected-main .main_header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #ebebeb;
+	color: #000;
+}
+.selected-main .main_header span:nth-child(1){
+	padding: 0 160px;
+}
+.selected-main .main_header span:nth-child(2){
+	padding: 0 86px;
+}
+.selected-main .main_header span:nth-child(3){
+	padding: 0 48px;
+}
+.selected-main .main_header span:nth-child(4){
+	padding: 0 92px;
+}
+.selected-main .main_header span:nth-child(5){
+	padding: 0 60px;
+}
+.selected-main .main_header span:nth-child(6){
+	padding-left:30px;
+}
+.selected-main .main_con{
+	width: 100%;
+	height: 140px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.selected-main .main_con ul{
+	height: 100%;
+}
+.selected-main .main_con ul li{
+	float: left;
+	height: 100%;
+}
+
+/*商品*/
+	.selected-main .main_con ul .b-product{
+		width: 330px;
+	}
+	.selected-main .main_con ul .b-product img{
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		float: left;
+		margin-top: 20px;
+		margin-left: -25px;
+	}
+	.selected-main .main_con ul .b-product .text{
+		width: 200px;
+		height: 100%;
+		float: right;
+		margin-right: 10px;
+		display: table;
+	}
+	.selected-main .main_con ul .b-product .text p{
+	    display: table-cell;
+	    line-height: 24px;
+	    vertical-align: middle;
+	    color: #4f4f4f;
+	}
+	.selected-main .main_con ul .b-product .text p span{
+		display: inline-block;
+		width: 100%;
+	}
+	.selected-main .main_con ul .b-product .text p span:first-child{
+		font-size: 14px;
+	}
+	.selected-main .main_con ul .b-product .text p span:last-child-child{
+		font-size: 12px;
+	}
+	
+	/*属性*/
+	.selected-main .main_con ul .b-attr{
+		width: 200px;
+	}
+	.selected-main .main_con ul .b-attr .text {
+	    width: 100%;
+	    height: 100%;
+	    display: table;
+	}
+	.selected-main .main_con ul .b-attr .text p{
+		display: table-cell;
+		vertical-align: middle;
+		line-height: 26px;
+		text-align: center;
+	}
+	.selected-main .main_con ul .b-attr .text p span{
+		width: 100%;
+		display: inline-block;
+	}
+	.selected-main .main_con ul .b-attr .text p span:first-child{
+		color: #4f4f4f;
+	}
+	.selected-main .main_con ul .b-attr .text p span:last-child{
+		color: #b4b4b4;
+	}
+/*单价*/
+	.selected-main .main_con ul .b-price{
+		width: 124px;
+	}
+	.selected-main .main_con ul .b-price .text{
+		width: 100%;
+		height: 100%;
+		display: table;
+	}
+	.selected-main .main_con ul .b-price .text p{
+		display: table-cell;
+		vertical-align: middle;
+		line-height: 26px;
+		text-align: center;
+		color: #4f4f4f;
+	}
+/*数量*/
+	.selected-main .main_con ul .b-num{
+		width: 212px;
+		position: relative;
+	}
+	.selected-main .main_con ul .b-num .num {
+	    width: 150px;
+	    height: 30px;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    margin: -15px 0 0 -75px;
+	}
+	/*        数量加减*/
+	.selected-main .main_con ul .b-num .num a {
+	    width: 30px;
+	    height: 30px;
+	    float: left;
+	    display: block;
+	    background: url(http://img.incake.net/UpImages/pc/detail/detail_icons.png) no-repeat;
+	}
+	.selected-main .main_con ul .b-num .num .btn-minus{
+	    background-position: -220px 0;
+	}
+	.selected-main .main_con ul .b-num .num input{
+	    width: 68px;
+	    height: 32px;
+	    line-height: 32px;
+	    text-align: center;
+	    background: transparent;
+	    border: 1px solid #dcdcdc;
+	    margin: 0 10px 0;
+	    outline: none;
+	    font-size: 16px;
+	    float: left;
+		display: inline-block;
+	}
+	.selected-main .main_con ul .b-num .num .btn-plus.active {
+	    background-position: -250px -30px;
+	}
+/*小计*/
+	.selected-main .main_con ul .b-total {
+	    width: 148px;
+	}
+	.selected-main .main_con ul .b-total .text {
+	    width: 100%;
+	    height: 100%;
+	    display: table;
+	}
+	.selected-main .main_con ul .b-total .text p{
+	    display: table-cell;
+	    vertical-align: middle;
+	    line-height: 26px;
+	    text-align: center;
+	    color: #4f4f4f;
+	}
+/*操作*/
+	.selected-main .main_con ul .b-operator {
+	    width: 100px;
+	    position: relative;
+	}
+	.selected-main .main_con ul .b-operator .btn-delete {
+	    width: 20px;
+	    height: 20px;
+	    display: block;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    margin: -10px 0 0 -10px;
+	    background: url(http://img.incake.net/UpImages/pc/mask_btn_close.png) no-repeat;
+	}
+
+.selected-money .money {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.selected-money .money .total-price,.total-num{
+    display: inline-block;
+    float: right;
+}
+
+/*总计*/
+.cart-total{
+    background: #faf5f0;
+}
+.cart-total p{
+	width: 100%;
+	display: block;
+	float: right;
+	font-size: 18px;
+	color: #4f4f4f;
+	height: 100%;
+	line-height: 70px;
+	text-align: right;
+	margin-bottom: 0;
+}
+.cart-total p span{
+	color: #c81528;
+	display: inline-block;
+	margin-right: 30px;
+}
+.cart-total p span i{
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+}
+/*button*/
+.cart-btns {
+    height: 50px;
+    margin: 20px 0 85px;
+}
+.cart-btns button{
+	width: 210px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+/*精美配件*/
+.row_hot{
+	margin: 20px 80px ;
+}
+.hot p{
+	color: #0F3677;
+	font-size: 24px;
+	text-align: center;
+}
+.text-center{
+	height: auto;
+}
+#more .more_div p{
+	font-size: 18px;
+}
+#more .more_div p:first-child{
+	line-height: 50px;
+	margin-bottom: 0;
+}

@@ -1,0 +1,308 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.all{
+	width: 100%;
+	height: 60px;
+	background: #373D41;
+	
+}
+.containera{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+}
+.containera1{
+	width: 100%;
+	margin: 0 auto;
+}
+.container1 li{
+	list-style: none;
+}
+
+/*top*/
+.top{
+	padding-bottom: 60px;
+	width: 1220px;
+	margin:  0 auto;
+}
+.top li{
+	float: left;
+	overflow: hidden;
+	line-height: 60px;
+	color: white;
+	font-size: 14px;
+}
+.top1_1{
+	width: 100px;
+	margin-top: 18px;
+	position: absolute;
+}
+.content1{
+	position: absolute;
+}
+.top1_2{
+	width: 100px;
+	position: absolute;
+	/*margin-left: -100px;*/
+	margin-top: 18px;
+	z-index: 1;
+}
+.top2{
+	margin-left: 200px;
+}
+.top2 li{
+	height: 56px;
+	margin-right: 35px;
+}
+.top2 li:hover{
+	color: #3CAEF6;
+	border-bottom: 2px solid #3CAEF6;
+	transition: color 1s;
+}
+.top3{
+	float: right;
+}
+.top3 li{
+	margin-left: 35px;
+}
+.top3_1:hover{
+	color: #3CAEF6;
+}
+.top3_3{
+	background: #3CAEF6;
+	padding:  0 35px;
+}
+.a{
+	width: 1220px;
+	margin: 0 auto;
+}
+.a li{
+	list-style: none;
+}
+
+/*content*/
+
+.content{
+	width: 100%;
+	height: 380px;
+	background: url(../img/TB1_be7NXXXXXaNapXXXXXXXXXX-2880-760.png) no-repeat top center;
+	background-size:100% 100% ;
+}
+.content2{
+	width: 1220px;
+	height: 380px;
+	margin: 0 auto;
+	color: white;
+}
+.content1 h2{
+	font-size: 38px;
+	font-weight: 100;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+.content1 p{
+	font-size: 14px;
+	margin-bottom: 30px;
+	
+}
+.content1 a{
+	font-size: 14px;
+	border: 1px solid white;
+	padding: 10px 50px;
+	width:1000px;
+	height: 100%;
+	
+}
+
+
+/*dsjcpjfw*/
+.dsjcpjfw h5{
+	text-align: center;
+	font-size: 26px;
+	color: #333333;
+	font-weight:100;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+.info img{
+	width: 30px;
+}
+.dsjcpjfw1_1 li{
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	margin-right: 30px;
+	font-size: 12px;
+	color: #373D41;
+}
+.dsjcpjfw1_1{
+	margin-left: 220px;
+	margin-top: 20px;
+}
+.line{
+	margin-top: 20PX;
+	width: 610px;
+	border: 1px solid #9B9B9B;
+	z-index: 9;
+}
+.text{
+	font-size: 14px;
+	border: 1px solid #9B9B9B;
+	width: 100px;
+	padding: 3px 5px;
+	position: absolute;
+	margin-top: -15px;
+	margin-left: 260px;
+	background: white;
+	z-index: 10;
+	text-align: center;
+	color: #9E9E9E;
+}
+
+.imga{
+	width: 15px;
+	margin-left: 300px;
+	margin-top: 10px;
+}
+.dsjcpjfw1_4 li{
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	margin-right: 30px;
+	font-size: 12px;
+}
+.dsjcpjfw1_4{
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.dsjcpjfw{
+	margin-left: 40px;
+	z-index: 10;
+	/*position: absolute;
+	margin-top: -500px;*/
+}
+.img1{
+	position: absolute;
+	z-index: -1;
+	margin-left: 14px;
+	margin-top: 110px;
+	width: 670px;
+	 height: 430px; 
+}
+.kuang{
+	border: 1px solid #00C0DD;
+	height: 530px;
+	width: 460px;
+	position: absolute;
+	margin-left: 700px;
+	margin-top: -520px;
+}
+.item{
+	margin-top: 30px;
+	display: inline-block;
+	margin-bottom: 30px;
+	
+}
+.hd h6{
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.hd{
+	background: #4CD3E7;
+	color: white;
+}
+.hd span{
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.hd p{
+	padding-left: 30px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+}
+.item{
+	padding-left: 30px;
+	padding-right: 30px;
+    color: #6E6E6E;
+    
+}
+.item img{
+	border: 1px solid white;
+	height: 30px;
+}
+.tit{
+	font-size: 14px;
+	color: #373D41;
+	
+}
+.intro{
+	font-size: 12px;
+	color: #666666;
+}
+.detail{
+	background: #00C0DD;
+	font-size: 14px;
+	padding: 3px 15px;
+}
+.buy{
+	border: 1px solid #00C0DD;
+	padding: 3px 15px;
+}
+.product-item{
+	padding: 30px;
+}
+.hd1 h6{
+	margin-bottom: 20px;
+}
+.hd1 p{
+	margin-bottom: 20px;
+	
+}
+.price span{
+	font-size: 18px;
+	color: #FE9600;
+}
+.product-item dl dd{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.product-item dt{
+	margin-top: 30px;
+}
+.contextr{
+	text-align: center;
+	color: white;
+	margin-top: 50px;
+}
+.context-title{
+	padding-top:50px;
+	margin-bottom: 30px;
+}
+.context-button{
+	padding: 5px 25px;
+	border: 1px solid white;
+}
+.context-button:hover{
+	background: white;
+	color: #00C0DD;
+	box-shadow: 0 0 10px #FE9600 ;
+	
+}
+
+
+
+#db{
+	width: 1280px;
+	height: 400px;
+	background: #F5F6F6;
+}
+#pei span{
+	display: inline-block;
+	width: 210px;
+	height: 100px;
+	margin-left: 60px;
+	margin-top: 30px;
+}

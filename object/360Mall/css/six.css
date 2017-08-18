@@ -1,0 +1,184 @@
+
+.inner{
+padding-bottom: 50px;
+background: #ededed;
+}
+
+.inner .zan{
+	margin-left: 55px;
+	height: 47px;
+	margin-bottom: 2px;
+}
+.inner .zan div{
+	float: left;
+}
+.inner .zan #zhi{
+	font-size: 28px;
+	height: 47px;
+	line-height: 47px;
+	color: #333333;
+}
+.inner .zan #qi{
+	font-size: 12px;	
+	height: 29px;
+	line-height: 29px;
+	width: 67px;
+	text-align: center;
+	margin-top: 8px;
+	border: 1px solid #4f4f4f;
+	color: #333333;
+	margin-left: 14px;
+}
+.inner .zan #qi span{
+	color: #ed3714;
+}
+#hong{
+	width: 150px;
+	height: 48px;
+	margin-top: -1px;
+	background: #ed3714;
+	float: right;
+	margin-right: 55px;
+}
+#hong img{
+	height: 30px;
+	margin-top: 8px;
+	margin-left: 40px;
+	float: left;
+	
+}
+
+
+
+#hong p{
+	padding-left: 10px;
+	height: 48px;
+	line-height: 48px;
+	color: white;
+}
+.inner .img{	
+	border: 0;
+margin-bottom: 2px;
+}
+.inner .img img{
+	border: 0;	
+	margin-top: -3px;
+}
+
+.xiaqi{
+	
+	width: 100%;	
+	font-size: 22px;
+	margin-top: 15px;
+	color: #333333;
+}
+#xiaqi_next{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 10px;
+	color: #929292;
+	margin-bottom: 20px;
+}
+#xiaqi_img ,.picture {
+	padding-left: 55px;
+}
+
+.picture .picture_max{
+	height: 468px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.picture .picture_max img{
+	cursor: pointer;
+}
+.picture .picture_max .picture_min{
+	float: left;
+	width: 400px;
+	height: 468px;
+	margin-right: 14px;
+	position: relative;
+	z-index: 10;
+	background: white;
+	
+	/*-webkit-transition:all 1s ease;
+	-moz-transition: all 1s ease;	*/
+	transition-duration:1s;
+}
+
+.picture .picture_max .picture_min:hover{	
+	margin: -8px 22px -8px -8px;	
+	
+	box-shadow: 10px 10px 10px #b4b4b4; /*左边阴影*/    
+   -moz-box-shadow: -10px 10px 10px #b4b4b4;   /*底边阴影*/ 
+}
+
+
+
+.picture .picture_max .picture_min .picture_min_top{
+	width: 58px;
+	height: 45px;
+	top: 10px;
+	left: 330px;
+	
+	position: absolute;
+	z-index: 20;
+	
+}
+.picture .picture_max .picture_min .picture_min_top h3{
+	width: 58px;
+	height: 25px;
+	line-height: 25px;
+	background: #9c9a9b;
+	text-align: center;
+	font-size: 12px;
+	color: #333333;
+}
+.picture .picture_max .picture_min .picture_min_top h4{
+	font-size: 12px;
+	color: white;
+	margin-top: 5px;
+	text-align: center;
+}
+.picture .picture_max .picture_min .picture_min_bottom{
+	width: 110px;
+	height: 35px;
+	position: absolute;
+	z-index: 20;
+	top: 360px;
+	left: 12px;
+}
+.picture .picture_max .picture_min .picture_min_bottom h3{
+	font-size: 12px;
+	color: white;
+	margin-bottom: 8px;	
+}
+.picture .picture_max .picture_min .picture_min_bottom h4{
+	font-size: 12px;
+	color: white;
+}
+.picture .picture_max .picture_min .iogo{
+	height: 62px;
+	background: white;
+}
+.picture .picture_max .picture_min .iogo div{
+	float: left;
+}
+.picture .picture_max .picture_min .iogo .iogo_left{
+	margin-top: 10px;
+}
+.picture .picture_max .picture_min .iogo .iogo_right{
+	float: right;
+	margin-right: 10px;
+	margin-top: 23px;
+}
+.picture .picture_max .picture_min .iogo .iogo_right img{
+	float: left;
+	height: 15px;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+.picture .picture_max .picture_min .iogo .iogo_right span{
+	font-size: 11px;
+	color: #747474;
+}

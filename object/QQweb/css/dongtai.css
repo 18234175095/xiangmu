@@ -1,0 +1,90 @@
+#dt-img{
+	height: 100%;
+	/*width: 100%;*/
+	margin-left: -450px;
+}
+#mess{
+	width: 100%;
+}
+.inner{
+	overflow: auto;
+	height: 100%;
+}
+.message{
+	
+	border: 1px solid #eeeeee;
+	
+	cursor: pointer;
+	display: none;
+	height: 155px;
+	}
+@media only screen and (min-width:1120px ) {
+	.message{
+		width: 980px;
+		margin-left: 191px;
+	}
+	.message h2{
+		width: 780px;
+		margin-left: 110px;
+	}
+	
+}
+@media only screen and (min-width: 0px) and (max-width: 1119px) {
+	.message{
+		width: 800px;
+		margin-left: 30px;
+	}
+	.message h2{
+		width: 780px;
+		margin-left: 10px;
+	}
+	.section .minu .left{
+	margin-left: 20px;
+	}
+	/*.section .minu .right{
+	display: none;
+	}*/
+	#dt-img{
+	height: 100%;
+	/*width: 100%;*/
+	margin-left: -1100px;
+}
+	
+}
+
+
+.message p{
+	margin-top: 24px;
+	font-size: 10px;
+	color: #7288bd;
+}
+.message p .left{
+	margin-left: 30px;
+}
+.message p .right{
+	float: right;
+	margin-right: 30px;
+}
+.message h1{
+	font-size: 18px;
+	text-align: center;
+	font-weight: 1000px;
+	color: #343434;
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+.message h2{
+	font-size: 12px;
+	line-height: 20px;
+	color: #737373;
+	
+	margin-bottom: 28px;
+	text-indent: 2em;
+}
+.message:hover{
+	transition-duration:0.8s;
+	background: #F5F5F5;
+}
+.message:hover h1{
+	color: dodgerblue;
+}

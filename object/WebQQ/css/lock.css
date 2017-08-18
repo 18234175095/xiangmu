@@ -1,0 +1,125 @@
+.lock{
+	width: 313px;
+	height: 590px;
+	overflow: hidden;	
+	border-radius: 3px;
+	/*background-image: url(../img/back.jpg);*/
+	background: white;
+	/*background-size: 100% 141px;*/
+	/*background-repeat: no-repeat;*/
+	position: absolute;
+	right: 100px;
+	top: 20px;
+	z-index: 1000;	
+	border: 0 0 0 2px rgba(25,25,25,0.2);
+	display: none;
+}
+/*.lock div{
+	
+	border: 1px solid red;
+}*/
+.lock .top{
+	
+	height: 24px;
+	line-height: 24px;
+	width: 100%;
+	background: #f2edeb;
+}
+.lock .top ul li{
+	float: left;
+}
+.lock .usertoux{
+	margin-top: 33px;
+	height: 130px;
+	width: 100%;
+	text-align: center;
+	/*margin-top: 1px;*/
+	position: relative;
+}
+.lock .usertoux img{
+	height: 96px;
+	width: 96px;
+	border: 1px solid white;
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px #b0b9c4;
+}
+.lock .usertoux p{
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.lock .qq_lock{
+	height: 180px;
+	width: 100%;
+	text-align: center;	
+}
+.lock .qq_lock img{
+	width: 90px;
+	margin-top: 10px;
+}
+.lock .qq_lock img:hover{
+	box-shadow: 0 0 0 2px rgba(25,25,25,0.2);
+}
+.lock .qq_lock h2{
+	margin-top: 15px;
+	font-size: 12px;
+}
+.lock .qq_lock h3{
+	margin-top: 25px;
+	font-size: 12px;
+	color: #808080;
+}
+.lock .ruhe{
+	margin-top: 190px;
+}
+.lock .ruhe a{
+	margin-left: 30px;
+	font-size: 12px;
+	color: #001c30;
+}
+/**/
+.lock .jiesuo{
+	position: absolute;
+	width: 100%;
+	height: 130px;
+	top: 200px;
+	left: 0;
+	background: white;
+	padding-top: 10px;
+	display: none;
+}
+.lock .jiesuo p{
+	margin-left: 55px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.lock .jiesuo #lockpass{
+	height: 23px;
+	width: 200px;
+	margin-left: 55px;
+	padding-left: 5px;
+}
+.lock .loc {
+	margin-bottom: 40px;
+}
+.lock .butt h4{
+	width: 76px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	border-radius: 3px;
+	border: 1px solid #a7a7a7;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	background: #f4f4f4;
+}
+.lock .butt #ok{
+	
+	margin-left: 70px;
+	margin-right: 16px;
+}
+.lock .butt h4:hover{
+	border-color: #4fadd8;
+	background:#b4d5da ;
+}

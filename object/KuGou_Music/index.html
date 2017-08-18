@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>KuGou</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="KuGou_fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.9.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="KuGou_fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</head>
+	<body>
+		<audio id="audio1" src="musics/萧煌奇 - 末班车.mp3" ></audio>
+		<div class="containter"> 
+			<audio id="hello_kugou" src="hello/hellokugou.mp3" controls="autoplay" style="position: absolute;top: -100px;"></audio>
+			<img id="ico" src="img/kugou_logo.png"/>
+			<button class="btn btn-primary" id="fullscreen"><i class="icon iconfont icon-quanping1"></i> </button>
+			<button class="btn btn-danger" id="exitFullscreen"><i class="icon iconfont icon-tuichuquanping"></i> </button>
+			<div class="kugou default">
+				<header class="header" id="header">
+					<div class="header-inner">
+						<i class="logo icon iconfont icon-k"></i>
+						<img class="user-img" src="img/kugou_logo.png"/>
+						<div class="sign">
+							<span>登陆</span>|<span>注册</span>
+						</div>
+					</div>
+					<div class="header-inner max" style="margin-left: 309px;">
+						<ul class="middle">
+							<li><i class="icon iconfont icon-iconfontdown-copy-copy"  data-toggle="tooltip" data-placement="bottom" title="返回"></i> </li>
+							<li><i class="icon iconfont icon-update" style="font-size: 17px; font-weight: 600;"  data-toggle="tooltip" data-placement="bottom" title="刷新"></i> </li>
+							<li>
+								<div class="input-group search">
+									<input type="text" class="form-control" value="陈百强 偏偏喜欢你">
+									<span class=" icon iconfont icon-sousuo_sousuo"  data-toggle="tooltip" data-placement="bottom" title="搜索"> </span>
+								</div>
+							</li>
+							<li><i class="icon iconfont icon-luyin"  data-toggle="tooltip" data-placement="bottom" title="听歌识曲"></i> </li>
+						</ul>
+					</div>
+					<div class="header-inner" style="right: 0;">
+						<ul class="middle">
+							<li class="max"><i class="icon iconfont icon-caidan "  style="font-size: 13px;"  data-toggle="tooltip" data-placement="bottom" title="工具"></i> </li>
+							<li class="max"><i class="icon iconfont icon-youxiji " style="font-size: 16px;"  data-toggle="tooltip" data-placement="bottom" title="酷狗游戏平台"></i> </li>
+							<li class="max"><i class="icon iconfont icon-duanxin " style="font-size: 17px;"  data-toggle="tooltip" data-placement="bottom" title="消息通知"></i> </li>
+							<li class="max"><i class="icon iconfont icon-clothes-copy " style="font-size: 17px;"  data-toggle="tooltip" data-placement="bottom" title="更换皮肤"></i> </li>
+							<li class="max"><i class="icon iconfont icon-shezhi "  style="font-size: 16px;"  data-toggle="tooltip" data-placement="bottom" title="主菜单"></i> </li>
+							<li class="max"><i class="icon iconfont icon-anjianfengexian " style="font-size: 17px; padding-top: 2px;"></i> </li>
+							<li class="max"><i class="icon iconfont icon-yaokongqi open-control" style="font-size: 15px;" data-toggle="tooltip" data-placement="bottom" title="打开遥控器"></i> </li>
+							<li class="max"><i class="icon iconfont icon-exit " id="go_min"  style="font-size: 15px;padding-top: 2px;" data-toggle="tooltip" data-placement="bottom" title="隐藏音乐库"></i> </li>
+							<li class="min"><i class="icon iconfont icon-tuichu2" id="go_max"  style="font-size: 17px;padding-top: 0px;" data-toggle="tooltip" data-placement="bottom" title="显示音乐库"></i> </li>
+							<li><i class="icon iconfont icon-suoxiao" style="padding-top: 1px;" data-toggle="tooltip" data-placement="bottom" title="最小化"></i> </li>
+							<li><i class="icon iconfont icon-guanbi1" id="close" data-toggle="tooltip" data-placement="bottom" title="关闭"></i> </li>
+						</ul>
+					</div>
+				</header>
+				<article class="article">
+					<!--left-action-->
+					<section class="left">
+						<nav>
+							<ul class="list-inline top-nav" style="margin-left: 2px;">
+							  	<li class="active">
+							  		<i class="icon iconfont icon-yinle" style="font-size: 19px;" data-toggle="tooltip" data-placement="bottom" title="本地列表"></i>
+							  		<div class="sanjiao"></div>
+							  	</li>
+							  	<li>
+							  		<i class="icon iconfont icon-yun" style="font-weight: 600;font-size: 20px;" data-toggle="tooltip" data-placement="bottom" title="网络收藏"></i>
+							  		<div class="sanjiao"></div>
+							  	</li>
+							  	<li>
+							  		<i class="icon iconfont icon-xiangsidiantai" style="font-size: 18px;margin-top: 2px;" data-toggle="tooltip" data-placement="bottom" title="音乐电台"></i>
+							  		<div class="sanjiao"></div>
+							  	</li>
+							  	<li>
+							  		<i class="icon iconfont icon-icon031" style="font-size: 20px; margin-top: -2px;" data-toggle="tooltip" data-placement="bottom" title="手机管理"></i>
+							  		<div class="sanjiao"></div>
+							  	</li>
+							  	<li>
+							  		<i class="icon iconfont icon-xiazai" style="font-weight: 600;font-size: 18px;" data-toggle="tooltip" data-placement="bottom" title="本地音乐"></i>
+							  		<div class="sanjiao"></div>
+							  	</li>
+							</ul>
+							
+						</nav>
+						<div class="Music_List">
+							<ul>
+								<li class="M_listtitle">
+									<i class="sign-left icon iconfont icon-zuo1"></i> 
+									<i class="sign-down iconfont icon-jian-copy"></i> 
+									<strong>默认列表</strong>
+									<span>
+										<i class="icon iconfont icon-shengji"></i> 
+										<i class="icon iconfont icon-fenxiang"></i> 
+										<i class="icon iconfont icon-comiiscaidan"></i> 
+									</span>
+								</li>
+								<li class="M_listinner">
+									<ul><!--标签页 竖排-->
+									  	<li class="active">萧煌奇 - 末班车.mp3</li>
+									 	<li>李荣浩 - 李白.mp3</li>
+									 	<li>林俊杰 - 爱笑的眼睛.mp3</li>
+									 	<li>林俊杰 - 江南.mp3</li>
+									 	<li>林俊杰 - 可惜没如果.mp3</li>
+									 	<li>林俊杰 - 她说.mp3</li>
+									 	<li>林俊杰 - 我还想她.mp3</li>
+									 	<li>林俊杰 - 西界.mp3</li>
+									 	<li>林俊杰 - 修炼爱情.mp3</li>
+									 	<li>林俊杰 - 一千年以后.mp3</li>
+									 	<li>林俊杰 - 一眼万年.mp3</li>
+									 	<li>林俊杰 - 一千年以后.mp3</li>
+									 	<li>林俊杰 - 只对你有感觉.mp3</li>
+									</ul>
+								</li>
+								<li class="M_listtitle">
+									<i class="sign-left icon iconfont icon-zuo1"></i> 
+									<i class="sign-down iconfont icon-jian-copy"></i> 
+									<strong>最近播放</strong>
+									<span>
+										<i class="icon iconfont icon-shengji"></i> 
+										<i class="icon iconfont icon-fenxiang"></i> 
+										<i class="icon iconfont icon-comiiscaidan"></i> 
+									</span>
+								</li>
+								<li class="M_listinner">
+									<ul><!--标签页 竖排-->
+									  	<li class="active">萧煌奇 - 末班车.mp3</li>
+									 	<li>李荣浩 - 李白.mp3</li>
+									 	<li>林俊杰 - 爱笑的眼睛.mp3</li>
+									 	<li>林俊杰 - 江南.mp3</li>
+									 	<li>林俊杰 - 可惜没如果.mp3</li>
+									 	<li>林俊杰 - 她说.mp3</li>
+									 	<li>林俊杰 - 我还想她.mp3</li>
+									 	<li>林俊杰 - 西界.mp3</li>
+									 	<li>林俊杰 - 修炼爱情.mp3</li>
+									 	<li>林俊杰 - 一千年以后.mp3</li>
+									 	<li>林俊杰 - 一眼万年.mp3</li>
+									 	<li>林俊杰 - 一千年以后.mp3</li>
+									 	<li>林俊杰 - 只对你有感觉.mp3</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!--left-end-->
+					
+					<!--right-action-->
+					<section class="right">
+						<nav></nav>
+						<div style="text-align: center;">
+							<img src="img/kugobjw.PNG"/>
+						</div>
+					</section>
+					<!--right-end-->
+				</article>
+				<footer class="footer">
+					<div class="footer—menu play—control max">
+						<i class="icon iconfont icon-tushujiemianshangyiqu40 Kg-previous" data-toggle="tooltip" data-placement="bottom" title="上一首" style="font-size: 34px;margin-right: 21px;"></i>
+						<i class="icon iconfont icon-bofang2 kg-play" data-toggle="tooltip" data-placement="bottom" title="播放" style="font-size: 42px;margin-right: 21px;margin-top: 3px;"></i>
+						<i class="icon iconfont icon-weibiaoti1 kg-stop" data-toggle="tooltip" data-placement="bottom" title="暂停" style="font-size: 42px;margin-right: 21px;margin-top: 2px;"></i>
+						<i class="icon iconfont icon-tushujiemianxiayiqu40 Kg-next" data-toggle="tooltip" data-placement="bottom" title="下一首" style="font-size: 34px;"></i>
+					</div>
+					<div class="footer—menu jindu">
+						<div class="jindu—top">
+							<span class="pinzhi max">高品</span>
+							<span class="Music_name" style="width: 200px;height: 41px;line-height: 41px;">萧煌奇 - 末班车</span>
+							<span class="Music_time">01:00/03:00 </span>
+						</div>
+						<div class="con-btm min" style="padding-left: 0;margin-top: 0;">
+							<div class="con-left">
+								<i class="icon iconfont icon-bofangqishangyiqu Kg-previous" data-toggle="tooltip" data-placement="bottom" title="上一曲"></i>
+								<i class="icon iconfont icon-bofang1 kg-play" data-toggle="tooltip" data-placement="bottom" title="播放"></i>
+								<i class="icon iconfont icon-bofang kg-stop" data-toggle="tooltip" data-placement="bottom" title="暂停" style="font-size: 20px; margin:0 14px 0 -2px;"></i>
+								<i class="icon iconfont icon-bofangqixiayiqu Kg-next" data-toggle="tooltip" data-placement="bottom" title="下一曲"></i>
+							</div>
+							<div class="con-right">
+								<i class="icon iconfont icon-hert" style="font-size: 14px; margin-top: -2px;" data-toggle="tooltip" data-placement="bottom" title="我喜欢"></i>
+								<i class="icon iconfont icon-xiazai" style="font-size: 14px; margin-top: -2px;" data-toggle="tooltip" data-placement="bottom" title="下载"></i>
+								<i class="icon iconfont icon-gengduo" style="font-size: 13px; margin-top: 0px;" data-toggle="tooltip" data-placement="bottom" title="更多"></i>
+								<i class="icon iconfont icon-suiji-copy-copy" style="font-size: 17px;margin-top: 1px;" data-toggle="tooltip" data-placement="bottom" title="随机播放"></i>
+								<i class="icon iconfont icon-iconfonthuodonggonggao" style="font-size: 14px;" data-toggle="tooltip" data-placement="bottom" title="静音"></i>
+								<i class="" style=" font-style:normal;font-size: 12px;margin-top: -1px;margin-right: 0 !important;" data-toggle="tooltip" data-placement="bottom" title="打开桌面歌词">词</i>
+							</div>
+						</div>
+						<div class="progress_bar">
+							<div class="pro-bar" data-toggle="tooltip" data-placement="bottom" title="调整歌曲进度">
+								<span class="progress-bar-inner" style="background-color: #ed687c; width: 70%;"></span>
+							</div>
+						</div>
+					</div>
+					<div class="footer—menu save-like max">
+						<i class="icon iconfont icon-hert"></i>
+						<i class="icon iconfont icon-xiazai"></i>
+						<i class="icon iconfont icon-gengduo"></i>
+						<i class="icon iconfont icon-suiji-copy-copy"></i>
+						<i class="icon iconfont icon-iconfonthuodonggonggao"></i>
+						<i class="yinxiao"><b class="dian"></b><span>音效</span></i>
+						<i class="">词</i>
+						<i class="">弹</i>
+						<i class="icon iconfont icon-liebiao" style="margin-right: 0;font-size: 20px;"><span style="font-size: 14px;">211</span></i>
+					</div>
+				</footer>
+			</div>
+			
+			<!--遥控器-->
+			<div class="control" id="control">
+				<div class="con-top">
+					<div class="Music_name">萧煌奇 - 末班车</div>
+					<div class="top-miu">
+						<i class="icon iconfont icon-unie647" data-toggle="tooltip" data-placement="bottom" title="折叠遥控器" style="margin-top: -1px;font-size: 3px;"></i>
+						<i class="icon iconfont icon-shezhi" data-toggle="tooltip" data-placement="bottom" title="设置"></i>
+						<i class="icon iconfont icon-guanbi1" id="close_control" data-toggle="tooltip" data-placement="bottom" title="关闭"></i>
+					</div>
+				</div>
+				<div class="con-btm">
+					<div class="con-left">
+						<i class="icon iconfont icon-bofangqishangyiqu Kg-previous" data-toggle="tooltip" data-placement="bottom" title="上一曲"></i>
+						<i class="icon iconfont icon-bofang1 kg-play" data-toggle="tooltip" data-placement="bottom" title="播放"></i>
+						<i class="icon iconfont icon-bofang kg-stop" data-toggle="tooltip" data-placement="bottom" title="暂停" style="font-size: 20px; margin:0 14px 0 -2px;"></i>
+						<i class="icon iconfont icon-bofangqixiayiqu Kg-next" data-toggle="tooltip" data-placement="bottom" title="下一曲"></i>
+					</div>
+					<div class="con-right">
+						<i class="icon iconfont icon-laba" data-toggle="tooltip" data-placement="bottom" title="音量" style="font-size: 15px;"></i>
+						<i class="icon iconfont icon-hert" data-toggle="tooltip" data-placement="bottom" title="我喜欢"></i>
+						<i class="" style=" font-style:normal" data-toggle="tooltip" data-placement="bottom" title="打开桌面歌词">词</i>
+						<i class="icon iconfont icon-zhuomian" data-toggle="tooltip" data-placement="bottom" title="打开主面板"></i>
+						<i class="icon iconfont icon-fenlei" data-toggle="tooltip" data-placement="bottom" title="播放列表"></i>
+					</div>
+				</div>
+			</div>
+			<!--遥控器-->
+		</div>
+		
+		
+		
+		
+		<!--弹出框-->
+		<div class="alert-box" data-id="alert-box">
+		    <div class="alert">
+		    	<i class="icon iconfont icon-guanbi1" id="closeAlert"></i>
+		    	<p class="close-tip">您确定要退出音乐？</p>
+		    	<button class="btn btn-danger btn-sm close_kg" style="margin-right: 80px;">退出</button>
+		    	<button class="btn btn-primary btn-sm Zoom_ln">缩小</button>
+		    </div>
+		</div>
+		<!--</div>-->
+	</body>
+</html>

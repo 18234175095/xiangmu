@@ -1,0 +1,191 @@
+
+/*div{
+	border: 1px solid red;
+}*/
+.logod{
+	height: 92px;
+	background: white; 
+}
+.centerd{
+	height: 650px;
+}
+.dlxinxi{
+	position: relative;	
+	z-index: 0;
+}
+.dlxinxi img{
+	position: absolute;
+	z-index: 20;
+}
+#xinxi{
+	top: 50px;
+	left: 920px;
+	width: 345px;
+	/*height: 438px;*/
+	z-index: 500;
+	position: absolute;
+	background: #f0f8ff;
+	padding-left: 25px;
+}
+#xinxi #zh{
+	font-size: 20px;
+	margin-top: 49px;
+	margin-bottom: 30px;
+	font-weight: 550;
+}
+#tishi{
+	font-size: 12px;
+	color: red;
+	margin-bottom: 5px;
+	height: 14px;
+}
+
+#name{
+	
+	margin-bottom: 20px;
+}
+.dlxinxi #name input,.dlxinxi #pass input{
+	margin-left: 50px;
+	height: 40px;
+	width: 240px;
+	border: 0;
+	font-size: 14px;
+	background: no-repeat;
+	*margin-top: 15px;
+}
+
+#name,#pass{
+	
+	height: 48px;
+	line-height: 48px;
+	background: white;
+	width: 290px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+}
+#name img,#pass img{
+	height: 23px;
+	margin-top: 11px;
+	margin-left: 10px;		
+}
+.find{
+	margin-top: 28px;
+}
+.find span{
+	color: #7a7e80;
+	font-size: 12px;
+	
+}
+
+.find a{
+	color: #7a7e80;
+	font-size: 12px;
+	text-decoration: none;
+}
+#submit{
+	width: 295px;
+	height: 40px;
+	margin-top: 25px;
+	background: #22ac69;
+	border: 0;
+	border-radius: 5px;
+	color: white;	
+}
+#submit:active{
+	background: green;
+}
+#yanzheng{
+	
+	margin-top: 20px;
+}
+#yanzheng input{
+	padding-left: 10px;
+	height: 48px;
+	line-height: 48px;
+	width: 140px;
+	font-size: 14px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	background: no-repeat;
+	
+}
+#yanzheng img{
+	height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.other{
+	margin-top: 32px;
+	font-size: 12px;
+	color: #333333;
+	width: 100%;
+	/*border: 1px solid #00BFFF;*/
+	height: 100px;
+	float: left;
+}
+.other img{
+	height: 30px;
+	float: left;
+	
+}
+table tr td{
+	width: 35px;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+
+.bottomd{
+	
+	width: 100%;
+	height: 135px;
+	padding-left: 120px;
+}
+.bottomd div{
+	margin-top: 30px;
+	margin-right: 60px;
+	float:left;
+	width: 240px;
+	height: 60px;
+	border: 1px solid #c3c3c3;
+	cursor:pointer;
+}
+.bottomd div img{
+	float: left;
+	margin-top: 15px;
+	margin-left: 30px;
+	margin-right: 17px;
+}
+.bottomd div p{
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: #666666;
+}
+.bottomd div b{
+	font-size: 16px;
+	color: #a1a1a1;
+}
+				
+#fout p{
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	color: #999999;
+	text-align: center;
+	margin-bottom: 15px;
+	cursor:pointer;
+}				

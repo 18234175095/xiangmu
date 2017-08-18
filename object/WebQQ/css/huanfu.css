@@ -1,0 +1,132 @@
+.huanfu{
+	
+	float: left;
+	width: 752px;
+	height: 540px;	
+	background: white;
+	overflow: hidden;
+	border-radius: 3px;
+	display: none;	
+	position: absolute;
+	top:60px;
+	left:80px ;
+	z-index: 5;
+	box-shadow: 0 0 0 2px rgba(25,25,25,0.2);
+}
+/*.huanfu div{
+	border:  1px solid turquoise;
+}*/
+.huanfu .top{
+	height: 30px;
+	width: 100%;
+	background: #069dd5;
+}
+.huanfu .top div{
+	float: left;
+}
+.huanfu .top .le{
+	height: 30px;
+	line-height: 30px;
+	font-size:12px ;
+	color: white;
+	margin-left: 8px;
+}
+.huanfu .top .right{
+	color: white;
+	height: 17px;
+	line-height: 11px;
+	width: 17px;
+	float: right;
+	margin-right: 22px;
+	text-align: center;
+	margin-top: 7px;
+	cursor: pointer;
+}
+.huanfu .top .right i{
+	font-size: 11px;
+}
+.huanfu .top .right:hover{
+	background: red;
+}
+.huanfu .minu{
+	width: 100%;
+	height:44px ;
+	background: #edeeee;
+	border-bottom: 1px solid #d7d7d7;
+}
+.huanfu .minu ul li{
+	height:44px ;
+	line-height: 44px;
+	float: left;
+	font-size: 12px;
+	color: #333333;
+	margin-left: 28px;
+	cursor: pointer;
+}
+.huanfu .minu ul li:hover{
+	color: #278cde;;
+}
+.huanfu .minu ul li:hover i{
+	color: #278cde;;
+}
+.huanfu .minu ul li i{
+	font-size: 14px;
+	color: #878787;
+	margin-right: 3px;
+}
+.huanfu .imgs{
+	margin-top: 6px;
+	width: 100%;
+	height: 372px;
+}
+.huanfu .imgs table{
+	margin-left: 7px;
+}
+.huanfu .imgs table tr td{
+	height: 121px;
+	width: 121px;
+	
+	border-right: 2px solid white;
+	border-bottom: 1px solid white;
+}
+.huanfu .imgs table tr td img{
+	height: 121px;
+	width: 121px;
+}
+.huanfu .imgs table tr td img:hover{
+	opacity: 0.6;
+	transition-duration:.8s;
+}
+.huanfu .color{
+	margin-top: 1px;
+	padding-left: 6px;
+	height: 40px;
+	width: 746px;
+	overflow: hidden;
+}
+.huanfu .color ul li{
+	float: left;
+	height: 39px;
+	width: 39px;
+	border: 1px solid white;
+}
+.huanfu .bottom ul{
+	margin-top: 8px;
+	margin-left: 7px;
+}
+.huanfu .bottom ul li{
+	float: left;
+	padding:6px 10px;
+	border: 1px solid #b3b3b3;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #333333;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.huanfu .bottom ul li:hover{
+	background: #9bb7d6;
+}
+.huanfu .bottom ul li i{
+	font-size: 12px;
+}

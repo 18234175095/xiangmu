@@ -1,0 +1,648 @@
+*{
+	margin: 0;padding: 0; 
+} 
+.f_left{
+	padding-right: 0;
+}
+.f_right{
+	padding: 0;
+}
+/*放大镜*/
+#MagnifierWrap2{
+	position: relative;
+	width: 90%;
+}
+#MagnifierWrap2 img{
+	vertical-align: top;
+	border: 0;
+}
+.MagnifierMain{
+	position: relative;
+	width: 100%;
+}
+.MagnifierMain img{
+	width: 100%;
+} 
+.MagnifierDrag{
+	position: absolute;
+	top:0;left: 0;
+	background-color: #ccc; 
+	opacity: 0.4;
+	filter:alpha(opacity = 40);
+	cursor: move;
+}
+.MagnifierPop{
+	position: absolute;
+	top:0;
+	overflow: hidden;
+}
+.MagnifierImg{
+	position: absolute;
+	top:0; 
+	left: 0;
+}
+.spec-items{
+	position: relative;
+	width: 80%;
+	height: 70px;
+	overflow: hidden;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+.spec-items ul{
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.spec-items ul *{
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.spec-items li{
+	width: 70px;
+	height: 70px;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+.spec-items li.on{
+	border:2px solid #000;
+	}
+.spec-items li img{
+	width: 100%;
+	-webkit-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	transform: scale(1,1);
+}
+.spec-items li.on img{
+	-webkit-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+span.spe_leftBtn,span.spe_rightBtn{
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 7%;
+	height: 69px;
+	line-height: 69px;
+	font-family: "黑体";
+	text-align: center;
+	font-size: 30px;
+	color: #ddd;
+	cursor: default;
+	background-color: #f9f9f9;
+}
+span.on{
+	background-color: #ccc;
+	color: #999;
+	cursor: pointer;
+} 
+span.spe_leftBtn{
+	left: 0;
+}
+span.spe_rightBtn{
+	right: 0;
+}
+/**/
+a:link, a:visited {
+    text-decoration: none;
+}
+.text-center{
+	height: auto;
+}
+.jieshao{
+	width: 90%;
+}
+
+@media only screen and (min-width:1200px ) {
+	.jieshao .p1{
+		color: #0F3677;font-size: 24px;padding-top: 20px;
+	}
+	.jieshao .p2{
+		color:crimson;padding: 10px 0;border-bottom: 1px dashed #ccc;
+	}
+	.jieshao .p2 span{
+		font-size: 26px;font-weight: bold;
+	}
+	.jieshao .pound-btns{
+		width: 100%;
+		padding: 10px 0;
+		list-style: none;
+	}
+	.jieshao .pound-btns li{
+	    width: 100px;
+	    height: 34px;
+	    float: left;
+	    margin-right: 10px;
+	    border: 1px solid #dcdcdc;
+	    text-align: center;
+	    line-height: 34px;
+	    position: relative;
+	}
+	.jieshao .pound-btns li.active{
+		border-color: #ea545d;
+		color: #ea545d;
+	}
+	.jieshao .pound-btns .btn-pound {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    color: inherit;
+	    line-height: 100%;
+	}
+	.jieshao .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	    border: 1px solid red;
+	    background: #fff;
+	}
+	#myTab li a {
+	    position: relative;
+	    display: block;
+	    padding: 10px 30px;
+	    color: #000;
+	    margin-right: 20px;
+	}
+	#myTabContent p{
+		color: #C0C0C0;
+	}
+	.jieshao .yh{
+		border:1px solid #ccc;
+		padding: 15px 0;
+		cursor: pointer;
+	}
+	.jieshao .num{
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		margin-top: 40px;
+		background: #f5f5f5;
+	}
+	.jieshao .num span{
+		float: left;
+		margin: 0 5px 0 20px;
+	}
+	.jieshao .num a{
+		float: left;
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin-top: 15px;
+		background: url(http://img.incake.net/UpImages/pc/detail/detail_icons.png) no-repeat;
+	}
+	.jieshao .num .btn-minus {
+	    background-position: -220px 0;
+	}
+	.jieshao .num input{
+	    width: 68px;
+	    height: 32px;
+	    line-height: 32px;
+	    text-align: center;
+	    background: transparent;
+	    border: 1px solid #dcdcdc;
+	    margin: 13px 10px 0;
+	    outline: none;
+	    font-size: 16px;
+	    float: left;
+		display: inline-block;
+	}
+	.jieshao .num .btn-plus.active {
+	    background-position: -250px -30px;
+	}
+	
+	.jieshao .jia{
+		margin-top: 30px;
+	}
+	.jieshao .jia span{
+		margin-left: 20px;
+		cursor: pointer;
+	}
+	.jieshao .jia button{
+		margin-left: 20px;
+		width: 170px;
+	}
+	.Incake-row .img_row img{
+		width:35%;
+		margin-right: 15px;
+	}
+}
+
+
+
+.jieshao .jia{
+	margin-top: 30px;
+}
+.jieshao .jia span{
+	margin-left: 20px;
+	cursor: pointer;
+}
+.jieshao .jia button{
+	margin-left: 20px;
+	width: 170px;
+}
+
+/*套餐*/
+.tc_row{
+	margin-bottom: 20px;
+}
+.h2_row h2{
+	font-size: 20px;
+	color: #0f3677;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 30px;
+	font-weight: normal;
+	background: url(../img/z-img/section_title_bg1.png) no-repeat left top;
+}
+.spts-row .text{
+	width: 264px;
+	margin-left: 28px;
+	height: 344px;
+	display: table;
+}
+.spts-row .text p{
+	display: table-cell;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.yzyl-row ul{
+	width: 340px;
+	padding-left: 0;
+}
+.yzyl-row ul li{
+	float: left;
+	width: 170px;
+	margin-bottom: 20px;
+	color: #787878;
+	list-style: none;
+}
+.yzyl-row ul li img{
+	float: left;
+}
+.yzyl-row ul li p{
+    line-height: 20px;
+    float: left;
+    margin-left: 10px;
+}
+.yzyl-row .ul_2 li{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.yzyl-row .ul_2 li img{
+	width: 90px;
+}
+.yzyl-row .notice{
+	width: 340px;
+	display: table-cell;
+	line-height: 24px;
+	vertical-align: middle;
+	color: #787878;
+}
+.Incake-row p{
+	width: 500px;
+	height: 260px;
+	margin-left: 28px;
+	display: table-cell;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.pj_row .yi{
+	margin-left: 8px;
+	padding-bottom: 10px;
+	border-top: 1px solid #f2f2f2;
+}
+.pj_row .yi .mobile{
+	line-height: 53px;
+}
+.pj_row .yi .comment-head{
+	width: 100%;
+	line-height: 30px;
+}
+.pj_row .yi .comment-head .star{
+	float: left;
+	margin-top: 8px;
+	list-style: none;
+	padding-left: 0;
+}
+.star li{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: url(http://img.incake.net/UpImages/pc/detail/detail_icons.png) no-repeat;
+    background-position: -306px 0;
+    margin-right: 4px;
+}
+.star li.active{
+	background-position: -306px -30px;
+}
+nav{
+	border-top: 1px solid #f2f2f2;
+	text-align: right;
+}
+
+/*侧边*/
+.aside{
+	padding: 0 ;
+}
+.aside dl{
+	width: 100%;
+}
+.aside dl dt{
+	width: 100%;
+	height: 84px;
+	display: table;
+}
+.aside dl dt p{
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.aside dl dt span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.aside dl dd{
+	width: 100%;
+	margin-bottom: 24px;
+}
+.aside dl dd img{
+	width: 180px;
+    height: 180px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+.aside dl dd p{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #4f4f4f;
+	text-align: center;
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.jieshao .p1{
+		color: #0F3677;font-size: 24px;padding-top: 20px;
+	}
+	.jieshao .p2{
+		color:crimson;padding: 10px 0;border-bottom: 1px dashed #ccc;
+	}
+	.jieshao .p2 span{
+		font-size: 26px;font-weight: bold;
+	}
+	.jieshao .pound-btns{
+		/*width: 100%;*/
+		padding: 10px 0;
+		list-style: none;
+	}
+	.jieshao .pound-btns li{
+	    /*width: 100px;*/
+	    height: 34px;
+	    float: left;
+	    margin-right: 10px;
+	    border: 1px solid #dcdcdc;
+	    text-align: center;
+	    line-height: 34px;
+	    position: relative;
+	}
+	.jieshao .pound-btns li.active{
+		border-color: #ea545d;
+		color: #ea545d;
+	}
+	.jieshao .pound-btns .btn-pound {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    color: inherit;
+	    line-height: 100%;
+	}
+	.jieshao .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	    border: 1px solid red;
+	    background: #fff;
+	}
+	#myTab li a {
+	    position: relative;
+	    display: block;
+	    /*padding: 10px 30px;*/
+	    color: #000;
+	    margin-right: 10px;
+	}
+	#myTabContent p{
+		color: #C0C0C0;
+	}
+	.jieshao .yh{
+		border:1px solid #ccc;
+		padding: 15px 0;
+		cursor: pointer;
+	}
+	.jieshao .num{
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		margin-top: 20px;
+		background: #f5f5f5;
+	}
+	.jieshao .num span{
+		float: left;
+		margin: 0 5px 0 20px;
+	}
+	.jieshao .num a{
+		float: left;
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin-top: 15px;
+		background: url(http://img.incake.net/UpImages/pc/detail/detail_icons.png) no-repeat;
+	}
+	.jieshao .num .btn-minus {
+	    background-position: -220px 0;
+	}
+	.jieshao .num input{
+	    width: 68px;
+	    height: 32px;
+	    line-height: 32px;
+	    text-align: center;
+	    background: transparent;
+	    border: 1px solid #dcdcdc;
+	    margin: 13px 10px 0;
+	    outline: none;
+	    font-size: 16px;
+	    float: left;
+		display: inline-block;
+	}
+	.jieshao .num .btn-plus.active {
+	    background-position: -250px -30px;
+	}
+
+	.jieshao .jia button{
+		margin-left: 20px;
+		width: 120px;
+	}
+	.tc_row img{
+		width: 95%;
+	}
+	.spts-row .img_row img{
+		width:55%;
+	}
+	.yzyl-row .img_row .img-first{
+		width:50% ;
+	}
+	.Incake-row .img_row p {
+	    width: 400px;
+	    height: 260px;
+	    margin-left: 28px;
+	    display: table-cell;
+	    line-height: 26px;
+	    vertical-align: middle;
+	}
+	.Incake-row .img_row img{
+		width:35%;
+		margin-right: 15px;
+	}
+	.Incake-row .img_row .hb{
+		margin-top: 30px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.jieshao .p1{
+		color: #0F3677;font-size: 20px;padding: 15px 0;margin-bottom: 0;
+	}
+	hr{
+		margin: 0;
+	}
+	.jieshao .p2{
+		color:crimson;padding: 5px 0;border-bottom: 1px dashed #ccc;
+	}
+	.jieshao .p2 span{
+		font-size: 24px;font-weight: bold;
+	}
+	.jieshao .pound-btns{
+		padding: 10px 0;
+		list-style: none;
+	}
+	.jieshao .pound-btns li{
+	    /*width: 100px;*/
+	    height: 34px;
+	    float: left;
+	    margin-right: 10px;
+	    border: 1px solid #dcdcdc;
+	    text-align: center;
+	    line-height: 34px;
+	    position: relative;
+	}
+	.jieshao .pound-btns li.active{
+		border-color: #ea545d;
+		color: #ea545d;
+	}
+	.jieshao .pound-btns .btn-pound {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    color: inherit;
+	    line-height: 100%;
+	}
+	.jieshao .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	    border: 1px solid red;
+	    background: #fff;
+	}
+	#myTab li a {
+	    position: relative;
+	    display: block;
+	    /*padding: 10px 30px;*/
+	    color: #000;
+	    margin-right: 10px;
+	}
+	#myTabContent p{
+		color: #C0C0C0;
+	}
+	.jieshao .yh{
+		border:1px solid #ccc;
+		padding: 10px 0;
+		cursor: pointer;
+	}
+	.jieshao .num{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 10px;
+		background: #f5f5f5;
+	}
+	.jieshao .num span{
+		float: left;
+		margin: 0 5px 0 20px;
+	}
+	.jieshao .num a{
+		float: left;
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin-top: 10px;
+		background: url(http://img.incake.net/UpImages/pc/detail/detail_icons.png) no-repeat;
+	}
+	.jieshao .num .btn-minus {
+	    background-position: -220px 0;
+	}
+	.jieshao .num input{
+	    width: 68px;
+	    height: 32px;
+	    line-height: 32px;
+	    text-align: center;
+	    background: transparent;
+	    border: 1px solid #dcdcdc;
+	    margin: 10px 10px 0;
+	    outline: none;
+	    font-size: 16px;
+	    float: left;
+		display: inline-block;
+	}
+	.jieshao .num .btn-plus.active {
+	    background-position: -250px -30px;
+	}
+
+	.jieshao .jia{
+		margin-top: 20px;
+	}
+	.jieshao .jia button{
+		margin-left: 20px;
+		width: 100px;
+		font-size: 14px;
+	}
+	.tc_row img{
+		width: 100%;
+	}
+	.spts-row .img_row img{
+		width:55%;
+	}
+	.yzyl-row .img_row .img-first{
+		width:40% ;
+		height: 300px;
+	}
+	.Incake-row .img_row p {
+	    width: 350px;
+	    height: 260px;
+	    margin-left: 28px;
+	    display: table-cell;
+	    line-height: 26px;
+	    vertical-align: middle;
+	}
+	.Incake-row .img_row img{
+		width:35%;
+		margin-right: 15px;
+	}
+	.Incake-row .img_row .hb{
+		margin-top: 30px;
+	}
+	.aside{
+		display: none;
+	}
+}

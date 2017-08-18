@@ -1,0 +1,176 @@
+.top-nav{
+	height: 50px;
+	border-bottom: 1px solid #f4f4f4;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	height: 50px;
+}
+@media only screen and (min-width: 785px) {
+	
+
+	.minute  li{
+		height: 50px;
+		line-height: 50px;
+		padding: 0 15px;
+		font-size: 16px;
+	}
+	.minute{
+		float: right;
+		margin-right: 80px;
+		padding: 0;
+	}
+	.minu{
+		display: none;
+	}
+	.minute2-inn{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 784px) {		
+	.minute{
+		display: none;
+	}
+	.minu{
+		height: 30px;
+		line-height: 30px;
+		margin-top: 10px;
+		width: 70px;
+		border-radius: 5px;
+		background: #00BFFF;
+		text-align: center;
+		float: right;
+		margin-right: 50px;
+		cursor: pointer;
+	}
+	.minute2-inn{
+		position: absolute;
+		width: 100%;
+		top: 50px;
+		left:0px;
+		z-index: 9999;
+		background: #FAFAFA;
+		padding: 10px;
+		display: none;
+	}
+	.minute2-inn ul li{
+		height: 30px;
+		padding: 5px 15px;
+	}
+	.minute2-inn ul li a{
+		font-size: 12px;
+		color: #333333;
+	}
+}
+.minute a{
+	color: #979797;
+}
+.banner{
+	/*height: 400px;*/
+	padding: 0;
+}
+.banner img{
+	/*height: 400px;*/
+}
+.max-title{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+/*.keting{
+	height: 630px;
+	overflow: hidden;
+}*/
+.max-keting{
+	padding: 10px;
+}
+.max-keting img{
+	width: 100%;
+}
+.shafa{
+	padding: 5px 0;
+	width: 100%;
+	overflow: hidden;
+}
+/*.shafa:hover img{
+	width: 120%;
+}*/
+.shafa-name{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.jiaqian span{
+	padding: 0 2px;
+}
+.jiaqian span:nth-child(1){
+	color: red;
+}
+
+.jiaqian span:nth-child(2){
+	color: #c0aead;
+}
+
+.jiaqian span:nth-child(4){
+	color: #57a7e7;
+}
+
+.jiaqian span:nth-child(5){
+	color: #747bfb;
+}
+
+
+@media only screen and (min-width: 992px){
+	.canting-min{
+		margin-top: 15px;
+	}
+}
+@media only screen and (max-width: 991px){
+	.canting-min{
+		margin-top: 0px;
+	}
+	.canting-two{
+		margin-top: 15px;
+	}
+	.shufang-two{
+		margin-top: 15px;
+	}
+}
+.shufang-down{
+	margin-top: 20px;
+}
+.shufang-min{
+	margin-top: 18px;
+}
+.ertongfang-md{
+	margin-top: 18px;
+}
+.bottom{
+	margin-top: 18px;
+}
+
+.erweima{
+	width: 60%;
+}
+.bottom-top{
+	background: #a9a9a9;
+}
+.bottom-top a{
+	color: white;
+	font-size: 14px;
+}
+.bottom-top .h4{
+	font-size: 16px;
+	color: white;
+}
+.bottom-down{
+	background: #c3c3c3;
+	padding: 18px 0;
+}
+.bottom-down span{
+	display: block;
+	font-size: 10px;
+	color: #333333;
+}

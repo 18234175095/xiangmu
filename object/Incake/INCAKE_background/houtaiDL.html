@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/amazeui.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/houtaiDL.js" ></script>
+		<script type="text/javascript" src="../js/amazeui.js" ></script>
+	</head>
+
+	<body>
+		<div class="background-top" style="margin: 0 auto; padding:0 50px;width: 1260px; border-bottom: 1px solid #0F3677;">
+			<div class="top-num">
+				<div class="top-num-inner">
+					<!--<span>欢迎登陆:</span>	<span id="user">user</span> <span id="tuichu"><i class="am-icon-power-off"></i> 退出</span>-->
+				</div>
+			</div>
+			<div class="background-logo">
+				<div class="logo-img">
+					<img src="img/logo.png"/>
+				</div>
+				<div class="back-text">
+					印克时光后台管理系统
+				</div>
+				<div class="back-time">
+					<span>今天是:</span><span>2016年11月25日</span><span>星期五</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="lk-centers"style="border: 0px solid red;width: 1348px;overflow: hidden; margin-bottom: 30px;">
+			<!--内容-->
+			<div class="container">
+				<div class="container-wrapper">
+					<!-- login container begin -->
+					<div class="login-container clearfix">
+						<a href="" class="login-img">
+							<img src="img/loginBanner.jpg" />
+						</a>
+						<div class="login-form">
+							<h2 class="form-header">
+                            <span>登陆</span>
+                        </h2>
+							<ul class="form-nav clearfix" style="margin-top: -50px;border: 0;">
+							</ul>
+							<ul class="form-list">
+								<li class="active">
+									<ul class="form-content">
+										<li class="li-login-name clearfix"><i class="icon-login-name"></i>
+											<input type="text" id="txt_Name" class="txt-login-name" placeholder="请输入您的账号" value="admin"/>
+										</li>
+										<li class="li-login-pwd clearfix"><i class="icon-login-pwd"></i>
+											<input type="password" id="txt_pass" class="txt-login-pwd" placeholder="请输入密码" value="admin"/>
+										</li>
+										<li class="clearfix"> <span class="forget-pwd"><a href="#">忘记密码？</a></span> </li>
+										<li>
+											<a href="#" class="btn-login" id="Denglu_">登 录</a>
+										</li>
+										<!--<li><span class="register-now">还没有账号？<a href="houtaiZC.html" class="btn-register-now">立即注册</a></span></li>-->
+									</ul>
+								</li>
+								
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- container end -->
+		</div>
+		<!--内容end-->
+<div class="back-bottom" style="margin: 0 auto;width: 1220px; margin-top: 70px;">
+	<p>上海印克电子商务股份有限公司 Copyright©2012-2016 版权所有</p>
+	<p>Rangtime:0.0928</p>
+</div>
+		
+
+<!---->
+<!--alert模态框-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog" style="width: 380px;">
+    <div class="am-modal-hd alert-title">提示信息</div>
+    <div class="am-modal-bd" id="alert-text">
+    	不能为空！
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
+    </div>
+  </div>
+</div>
+<!--alerts模态框 end-->
+	</body>
+
+</html>

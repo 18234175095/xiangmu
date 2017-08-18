@@ -1,0 +1,27 @@
+/*
+ * 全局样式
+*/
+*{
+margin:0; 
+padding:0;	
+}
+.containter{
+	width: 100%;
+	font: "微软雅黑";
+}
+.inner_containter{
+	width: 1349px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	font: "微软雅黑","楷体";
+}
+
+.inner_containter img{
+	cursor:pointer;
+}
+a{
+	text-decoration: none;
+}
+input,textarea:focus {outline: none;}

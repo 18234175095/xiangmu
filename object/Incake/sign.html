@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/amazeui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bottom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/amazeui.js" ></script>
+		<script type="text/javascript" src="js/nav.js" ></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body><!-- 未添加 .am-u-end 的情形 -->
+		<div class="am-g bor" style="padding: 0;"><!--nav begin-->
+			<div class="am-g-fixed">
+				<div class="lk-top am-cf">
+					<div class="lk-navtop am-fl">
+						<span>欢迎来到印克时光！</span>
+						<span>周一至周日8:30~21:00</span>
+						<span>客服热线：400-921-5757</span>
+						<span>股票代码：837489</span>
+					</div>
+					<div class="lk-navtopright am-fr">
+						
+						<div class="am-fl gouwuc">
+							<a href="#" style="color: #333333;">
+								<i class="am-icon-shopping-basket am-icon-xs" aria-hidden="true"></i>
+								<span id="gouwu_che">0件</span>
+							</a>
+						</div>
+						<div class="am-fl lk-dlzc">
+							<span><a href="#" id="denglu">登录</a>|<a href="#" id="tuichu">注册</a></span>
+						</div>
+						
+						<div class="lk-dz am-fl">
+							<div class="lk-dzclick" style="width: 100%;">
+								<i class="am-icon-map-marker am-icon-sx" aria-hidden="true" style="margin-right: 5px;font-size: 14px;"></i>
+								<span id="lk-didian">上海</span>
+								<i class="am-icon-sort-desc am-icon-sx am-fr" aria-hidden="true" style="margin-right: 10px;font-size: 16px;display: block;margin-top: -3px;"></i>
+							</div>
+							
+							<div class="lk-dzinner">
+								请选择您要配送的城市：
+								<table border="0" cellspacing="0" cellpadding="0" id="dizs">
+									<tr>
+										<td style="background: #D4D4D4;">上海</td>
+										<td>福州</td>
+										<td>苏州</td>
+										<td>昆山</td>
+									</tr>
+									<tr>
+										<td>厦门</td>
+										<td>无锡</td>
+										<td>北京</td>
+										<td>南京</td>
+									</tr>
+									<tr>
+										<td>杭州</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lk-navbottom am-cf">
+					<div class="lk-logo am-fl">
+						<a href="#"><img src="img/logo.png"/></a>
+					</div>
+						
+					<div class="am-fr manues">
+						<ul>
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Cake List</span>
+								<span class="lk-lispan">蛋糕馆</span>
+							</a>
+								 <ul class="lk-ul" style="left: -22px;">
+			                        <li><a href="#"><span>Cheese</span>
+			                            <span>芝士系列</span> </a></li>
+			                        <li><a href="#"><span>Chocolate</span>
+			                            <span>巧克力系列</span> </a></li>
+			                        <li><a href="#"><span>Napoleon</span>
+			                            <span>拿破仑系列</span> </a></li>
+			                        <li><a href="#"><span>Mousse</span>
+			                            <span>慕斯系列</span> </a></li>
+			                        <li><a href="#"><span>Cream</span>
+			                            <span>乳脂系列</span> </a></li>
+			                        <li><a href="#"><span>DIY</span>
+			                            <span>选拼系列</span> </a></li>
+			                        <li><a href="#"><span>Star</span> <span
+			                           >星座系列</span> </a></li>
+			                        <li><a href="#"><span>DIY Cake</span>
+			                            <span>定制蛋糕</span> </a></li>
+	                    		</ul>
+	
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Genius at work</span>
+								<span class="lk-lispan">GAW蛋糕</span>
+							</a>
+								<ul class="lk-ul">
+			                        <li><a href='#'><span>GawDiy</span>
+			                            <span>GAW翻糖定制</span> </a></li>
+			                        <li><a href='#'><span>GawClassic</span>
+			                            <span>GAW经典</span> </a></li>
+			                        <li><a href='#'><span>GawStar</span>
+			                            <span>GAW星座</span> </a></li>
+			                    </ul>
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Insweet</span>
+								<span class="lk-lispan">思蜜</span>
+							</a>
+								<ul class="lk-ul">
+								</ul>
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Activities</span>
+								<span class="lk-lispan">活动专享</span>
+							</a>
+								<ul class="lk-ul">
+			                        <li><a href='#'><span>New Activity</span>
+			                            <span>最新活动</span> </a></li>
+			                        
+			                        <li><a href="#"><span>Points Mall</span>
+			                            <span>积分商城</span> </a></li>
+			                    </ul>
+	
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">My Incake</span>
+								<span class="lk-lispan">我的INCAKE</span>
+							</a>
+								<ul class="lk-ul" style="left: -6px;">
+			                        <li><a href="#"><span>My Orders</span>
+			                            <span>我的订单</span> </a></li>
+			                        <li><a href="#"><span>My Points</span>
+			                            <span>我的积分</span> </a></li>
+			                        <li><a href="#"><span>Coupons</span> <span
+			                           >我的优惠券</span> </a></li>
+			                    </ul>
+	
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Enterprises</span>
+								<span class="lk-lispan">企业专区</span>
+							</a>
+								 <ul class="lk-ul" style="left: -20px;">
+			                        <li><a href="#"><span>Apply For Foretaste</span>
+			                            <span>试吃申请</span> </a></li>
+			                        <li><a href="#"><span>VIP Login</span> 
+			                        	<span>企业VIP登录</span> </a>
+			                        </li>
+			                    </ul>
+	
+							</li>
+						</ul>
+					</div>
+					
+					<div class="lk-caidan am-fr am-text-center">
+						<span class="am-icon-bars am-icon-sm"></span>
+					</div>
+					<div class="lk-xiala">
+						<ol>
+							<li><a href="#">蛋糕馆</a></li>
+							<li><a href="#">GAW蛋糕</a></li>
+							<li><a href="#">思密</a></li>
+							<li><a href="#">活动专享</a></li>
+							<li><a href="#">我的INCAKE</a></li>
+							<li><a href="#">企业专区</a></li>
+						</ol>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--nav end-->
+		
+		
+		
+		<div class="lk-centers" style="margin-bottom: 10px;"><!--内容-->
+		 <!-- container begin -->
+        <div class="container" >
+            <div class="container-wrapper" style="border:  0px solid red; overflow: hidden;margin-bottom: 0px;">
+                <!-- register container begin -->
+                <div class="register-container clearfix">
+                    <a href="" class="register-img">
+                        <img src="img/login/loginBanner.jpg" alt="" />
+                    </a>
+                    <div class="register-form" style="border: 0px solid red;">
+                        <h2 class="form-header">
+                            <span>新用户注册</span></h2>
+                        <ul class="form-content" style="list-style: none;">
+                            <li class="li-register-mobile clearfix"><i class="icon-register-mobile"></i>
+                                <input type="text" id="" class="txt-register-mobile" placeholder="请输入手机号（必填）"/>
+                            </li>
+                            <!--<li class="li-register-vcode clearfix"><i class="icon-register-vcode"></i>
+                                <input type="text" id="vcode" class="txt-register-vcode" placeholder="请输入验证码（必填）" />
+                            </li>-->
+                            <li class="li-register-pwd clearfix"><i class="icon-register-pwd"></i>
+                                <input type="password" id="pwd" class="txt-register-pwd" placeholder="请输入密码（必填）" />
+                            </li>
+                            <li class="li-register-pwd clearfix"><i class="icon-register-pwd"></i>
+                                <input type="password" id="repwd" class="txt-register-pwd2" placeholder="请输入确认密码（必填）" />
+                            </li>
+                            <li class="li-register-name clearfix"><i class="icon-register-name"></i>
+                                <input type="text" id="realname" class="txt-register-name" placeholder="请输入您的姓名（必填）" />
+                            </li>
+                            <li><a href="javascript:;" class="btn-register">注 册</a> </li>
+                            <li><span class="login-now">已有账户，<a href="login.html" class="btn-login-now">登录</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- register container end -->
+				<!-- hot begin -->
+
+					<div class="hot" style=" overflow: hidden; border: 0px solid red;">
+						<div class="hot-title" style=" margin-top:-160px;">
+							<h2>你可能还会喜欢 HOT INCAKE</h2>
+						</div>
+						<ul class="hot-list clearfix" style="overflow: hidden;">
+
+							<li>
+								<a class="img" href="#">
+									<img src='img/login/one1.jpg' class='lazy' />
+									<p class="type"><span class="taste">重重的惊喜味觉体验</span></p>
+								</a>
+								<div class="info">
+									<p class="cn">百变魔方</p>
+									<p class="en">Rubik Cube</p>
+									<p class="size"><span class="price">￥209</span>/<span class="pound">1.5磅</span></p>
+								</div>
+							</li>
+
+							<li>
+								<a class="img" href="#">
+									<img src='img/login/one2.jpg' class='lazy' />
+									<p class="type"><span class="taste">一款经典拿破仑应有的品质</span></p>
+								</a>
+								<div class="info">
+									<p class="cn">草莓拿破仑</p>
+									<p class="en">Strawberry Napoleon</p>
+									<p class="size"><span class="price">￥189</span>/<span class="pound">1.5磅</span></p>
+								</div>
+							</li>
+
+							<li>
+								<a class="img" href="#">
+									<img src='img/login/one3.jpg' class='lazy' />
+									<p class="type">
+										<span class="taste">炎炎夏日的最佳选择</span></p>
+								</a>
+								<div class="info">
+									<p class="cn">樱桃冻芝士</p>
+									<p class="en">Cherry Cheese</p>
+									<p class="size">
+										<span class="price">￥189</span>/<span class="pound">1.5磅</span></p>
+								</div>
+							</li>
+
+							<li class='last'>
+								<a class="img" href="#">
+									<img src='img/login/one4.jpg' class='lazy' />
+									<p class="type">
+										<span class="taste">会燃烧的巧克力蛋糕。</span></p>
+								</a>
+								<div class="info">
+									<p class="cn">伦敦之焰</p>
+									<p class="en">Flame Of London</p>
+									<p class="size"><span class="price">￥189</span>/<span class="pound">1.5磅</span></p>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+					<!-- hot end -->
+               
+             
+            </div>
+        </div>
+        <!-- container end -->
+        </div><!--内容end-->
+		
+		<div class="am-g am-g-fixed-bottom am-cf">
+			<div class="am-g lk-phone">
+				<div class="lk-phontop">
+					<p>(周一至周日)8：30-21：00</p>
+					<p>客服热线：400-921-5757</p>
+				</div>
+				<div class="lk-phincenter">
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>配送服务</span>
+					</div>
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>关于我们</span>
+					</div>
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>帮助中心</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="lk-bottomtop am-cf">
+				<div class="am-u-sm-3 lk-sam">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_03.jpg"/>
+					</div>
+					<div class="lk-text">
+						<span>全年无休</span>
+						<span>送货上门</span>
+						<span>多种支付</span>
+					</div>
+				</div>
+				<div class="am-u-sm-3 lk-sam">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_05.jpg"/>
+					</div>
+					<div class="lk-text">
+						<span>品牌保障</span>
+						<span>专业挑选</span>
+						<span>品质认证</span>
+					</div>
+				</div>
+				<div class="am-u-sm-3 lk-sam">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_07.jpg"/>
+					</div>
+					<div class="lk-text">
+						<span>安全配送</span>
+						<span>专人专区</span>
+						<span>及时送达</span>
+					</div>
+				</div>
+				<div class="am-u-sm-3 text-center">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_09.jpg"/>
+					</div>
+					<div class="lk-text">
+						<span>专业客服</span>
+						<span>贴心服务</span>
+						<span>创造感动</span>
+					</div>
+				</div>
+			</div>
+			<div class="lk-center am-cf">
+				<div class="am-u-md-6 am-u-sm-12 weixin">
+					<div class="am-fl lk-erweima">
+						<img class="img-responsive" src="img/bottom/wechat_qrcode.jpg"/>
+					</div>
+					<div class="am-fl lk-two">
+						<p>微信订购流程：</p>
+						<p>关注微信公众号 → 点击［微信订购］→［蛋糕预定］→ 选择蛋糕磅数［立即购买］→ 点击［去结算］→ 确认订单信息 → 选择［支付方式］→ 输入优惠券密码 → 提交订单</p>
+					
+						<div class="am-vertical-align-middle lk-kefu">
+							<div class="am-fl">
+								微信公众号：
+							</div>
+							<div class="am-fl">
+								Incake
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="am-u-md-6 lk-lc">
+					<div class="am-u-md-3">
+						 <dl>
+	                        <dd>新手上路</dd>
+	                        <dd><a href="#">购买流程</a></dd>
+	                        <dd><a href="#">支付方式</a></dd>
+	                        <dd><a href="#">配送范围</a></dd>
+	                        <dd><a href="#">退货服务</a></dd>
+	                        <dd><a href="#">帮助中心</a></dd>
+	                    </dl>
+
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+	                        <dd>INCAKE产品</dd>
+	                        <dd><a href="#">精品蛋糕</a></dd>
+	                        <dd><a href="#">定制蛋糕</a></dd>
+	                        <dd><a href="#">思蜜</a></dd>
+	                        <dd><a href="#">GAW蛋糕</a></dd>
+	                    </dl>
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+	                        <dd>关于INCAKE</dd>
+	                        <dd><a href="#">品牌故事</a></dd>
+	                        <dd><a href="#">产品理念</a></dd>
+	                        <dd><a href="#">优质体验</a></dd>
+	                        <dd><a href="#">合作单位</a></dd>
+	                    </dl>
+
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+	                        <dd>加入INCAKE</dd>
+	                        <dd><a href="#">关于我们</a></dd>
+	                        <dd><a href="#">联系我们</a></dd>
+	                        <dd><a href="#">英才招聘</a></dd>
+	                    </dl>
+					</div>
+				</div>
+			</div>
+			<div class="lk-down am-cf">
+				<div class="am-u-md-6">
+					<div class="am-u-md-4 lk-btimg am-u-sm-0">
+						<img class="img-responsive" src="img/bottom/footer_logo.png"/>
+					</div>
+					<div class="am-u-md-8 text-center am-vertical-align lk-rx">
+						<div class="am-vertical-align-middle lk-time">
+							<span>周一至周日</span><br />
+							<span>8:30~21:00</span>
+						</div>
+					<!--</div>
+					<div class="am-u-md-5 am-vertical-align">-->
+						<div class="am-vertical-align-middle">
+							<div class="am-fl">
+								客服热线
+							</div>
+							<div class="am-fl">
+								400-921-5757
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<div class="am-u-md-6 am-u-sm-12 lk-dzz">
+						
+					
+						<div class="am-vertical-align lk-gszc am-fr">
+							<div class="am-vertical-align-middle">
+								<p>股票代码：837489 印克电商</p>
+		
+								<p class="pnon-don">
+			                        <span>沪ICP备12045835号</span>
+			                        <span>
+			                            <a href="#" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; margin-left: 10px;">
+			                                <img src="img/bottom/footer_gongan.png" />
+			                              	  沪公网安备 31010802001150号
+			                            </a>
+			                        </span>
+			                    </p>
+		
+								<p> 版权所有：上海印克电子商务股份有限公司 Copyright&copy;2012-2016</p>
+							</div>
+						</div>	
+						
+						<div class="am-vertical-align lg-jx am-fr">
+							<div class="am-vertical-align-middle">
+								<img src="img/bottom/footer_shgs.jpg"/>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	
+	</body>
+</html>

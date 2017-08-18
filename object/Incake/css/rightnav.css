@@ -1,0 +1,110 @@
+
+ul {
+	list-style: none;
+}
+
+/*侧拉导航*/
+.lk-cenav{
+	position: absolute;
+	top: 0;
+	right: -43px;
+	width: 43px;
+	height: 100%;
+	position: fixed;
+	background: #f1f1f1;
+}
+.lk-cenav ul{
+	padding: 0;
+	margin-top: 43px;
+}
+.lk-cenav ul li{
+	width: 100%;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 21px;
+	position: relative;
+	z-index: 150;
+	cursor: pointer;
+}
+.lk-cenav ul li .lk-ce-er{
+	position: absolute;
+	top: 5px;
+	right: -20px;
+	z-index: 40;
+	display: none;
+	z-index: 100;
+}
+.lk-cenav ul li:hover .lk-ce-er{
+	display: block;
+}
+.am-comment-meta{
+	background: white;
+	color: #333333;
+}
+.lk-cenav ul li:hover table a{
+	color: #333333;
+}
+.am-comment-meta table tr td{
+	padding: 6px 5px;
+}
+.am-comment-meta table tr td:hover a{
+	color: orangered;
+}
+.lk-cenav ul li a{
+	color: #787878;
+}
+.lk-cenav ul li:hover{
+	background:#787878 ;
+}
+.lk-cenav ul li:hover a{
+	color: whitesmoke;
+}
+
+
+.lk-cenav ul li:nth-child(4),
+.lk-cenav ul li:nth-child(9),
+.lk-cenav ul li:nth-child(10){
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.lk-cenav ul li #shopnum{
+	height: 16px;
+	line-height: 16px;
+	font-size: 10px;
+	color: white;
+	width: 16px;
+	border-radius: 20px;
+	background: red;
+	position: absolute;
+	z-index: 60;
+}
+
+
+
+/*按钮组*/
+.lk-buttonzu{
+	position: absolute;
+	position: fixed;
+	right: 45px;
+	bottom:50px;
+	
+}
+.lk-buttonzu div{
+	text-align: center;
+	font-size: 23px;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+@media only screen and (max-width: 650px) {
+	.lk-buttonzu .lk-an{
+		display: none;
+	}
+	.lk-cenav{
+		display: none;
+	}
+	.lk-buttonzu{
+		right: 10px;
+	}
+}

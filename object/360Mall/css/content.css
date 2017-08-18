@@ -1,0 +1,386 @@
+/*
+ * 内容页的样式  列表页
+*/
+
+
+/***********顶部菜单************/
+.topcaidan .tcaidan{
+	height: 36px;
+	line-height: 35px;
+	background: #363636;
+}
+.topcaidan .tcaidan ul{
+margin-left: 55px;
+
+
+}
+.topcaidan .tcaidan ul li{
+	
+	float: left;
+	margin-right:20px ;
+	font-size: 12px;	
+	list-style: none;	
+
+	color:  #bfbfbf;
+}
+.topcaidan .tcaidan ul li.dl{
+	margin-left: 580px;
+}
+.topcaidan .tcaidan ul li a{
+	color:  #bfbfbf;
+	text-decoration: none;
+}
+/***********顶部菜单end************/
+/***********logo************/
+.logo{
+	
+	padding-left: 55px;
+	margin: 30px 0;
+	height: 80px;
+}
+.logo #log{
+	margin-top: 10px;
+}
+.logo div{
+	
+	float: left;
+}
+.logo #logoimg {
+	width: 230px;
+	height: 100%;
+}
+.logo #logoimg img{
+	margin-top: 20px;
+	height: 40px;
+}
+.logo #logosousuo{
+	margin-left: 300px;
+} 
+.logo #logosousuo div{
+	float: left;
+	margin-top: 20px;
+}
+.logo #logosousuo #sousuoinput{
+	width: 460px;
+	height: 40px;
+	border: 1px solid #36aa3f;
+	
+}
+.logo #logosousuo #sousuoinput input{
+	width: 450px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 10px;
+	border: 0;
+	background: no-repeat;
+	
+}
+.logo #logosousuo #sousuoimg{
+	border-left: 0;
+	height: 40px;
+	width: 70px;
+	background: #36aa3f;
+	cursor:pointer;
+	border: 1px solid #36aa3f;
+	
+}
+.logo #logosousuo #sousuoimg img{
+	height: 28px;
+	margin-top: 7px;
+	margin-left: 20px;
+}
+.logo #logosousuo #sousuoimg:active{
+	background: #008000;
+}
+#gouwuc{
+	margin-top: 20px;
+	margin-left: 30px;
+	background: #f9f9f9;
+	width: 155px;
+	border: 1px solid #dddddd;
+	cursor:pointer;
+	position: relative;
+}
+#gouwuc #gouwuc_inner{
+	position: absolute;
+	z-index: 100;
+	background: white;
+	width: 360px;
+	height: 120px;
+	line-height: 120px;
+	top: 40px;
+	left: -204px;
+	text-align: center;
+	color: #333333;
+	border-radius: 3px;
+	display: none;
+	 box-shadow: 0 0 0 1px rgba(196,196,196,0.5);   
+	 box-shadow:0px 3px 3px #c4c4c4; /*左边阴影*/    
+   -moz-box-shadow: -3px 3px 3px #c4c4c4;   /*底边阴影*/    
+	
+}
+#gouwuc:hover #gouwuc_inner{
+	display: block;
+}
+#gouwuc div{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	font-size: 12px;
+	color: #363636;
+}
+#gouwuc img{
+	margin-top: 8px;
+	height:25px;
+	margin-left: 10px;
+	margin-right: 25px;
+}
+#tishitext{
+	margin-top: 12px;
+	margin-left: 300px;
+}
+#tishitext span{
+	margin-right: 10px;
+	font-size: 12px;
+	color: #848484;
+}
+
+
+.logo .gouwuc{
+	margin-left: 34px;
+	border: 2px solid #dddddd;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	background: #f9f9f9;
+	font-size: 12px;
+	color: #848484;
+	cursor:pointer;
+}
+.logo .gouwuc img{
+	height: 16px;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-top: 10px;
+	
+}
+/***********logoend************/
+/***********导航************/
+.daohang{
+
+	
+}
+.daohang #scaidan{
+	border-bottom: 1px solid #363636;
+	height: 38px;
+	line-height: 38px;
+}
+.daohang #scaidan b a{
+	text-decoration: none;
+	color: white;
+}
+.daohang b{
+	float: left;
+	margin-left: 55px;
+	margin-right: 40px;
+	width: 210px;
+	height: 38px;
+	line-height: 38px;
+	background: #363636;
+	color: white;
+	text-align: center;
+	cursor:pointer;
+}
+.daohang ul li{
+	float: left;
+	
+	list-style: none;
+	/*margin-right: 25px;	*/
+	padding: 0 15px;
+	text-align: center;
+}
+.daohang ul li a{
+	color:  #333333;
+	text-decoration: none;
+	
+}
+.daohang ul li:hover .nav{
+	transition-duration:0.5s;
+	opacity: 1;
+	display: block;
+	
+}
+/***********导航end************/
+/************************nav***************************/
+.daohang .nav{
+	
+	position: absolute;
+	z-index:82;
+	left: 0;	
+	*top: 278px;	
+	width: 100%;
+	height: 230px;
+	
+	background: white;
+	padding-left: 55px;
+	
+	display: none;
+
+	
+}
+
+.daohang .nav div{
+	float: left;
+	text-align: center;
+}
+.daohang .nav .nav_inner{
+	
+	
+	width: 200px;
+	height: 100%;
+}
+
+.daohang .nav .nav_inner:hover p{
+	color: #15AE2F;
+}
+.daohang .nav .leftbor{
+	margin-top: 30px;
+	border: 1px solid #e1e1e1;
+	height: 120px;
+}
+.daohang .nav img{
+	width: 120px;
+	margin-top:20px ;
+	/*margin-left: 15px;*/
+}
+.daohang .nav p,.daohang .nav h3{
+	text-align: center;
+	font-size: 12px;
+	text-align: center;
+}
+.daohang .nav p{
+	color: #33302B;
+	
+}
+.daohang .nav h3{
+	color: red;
+}
+/*************************nav end**************************/
+
+
+/*************内容******************/
+.center{
+	position: relative;
+	z-index: 10;
+}
+/*************内容******************/
+
+
+/*************bottom******************/
+.bottom{
+	background: white;
+}
+.bottom div{
+	
+	float: left;
+}
+.bottom .up{
+	width: 100%;
+	height: 93px;
+	line-height: 93px;
+	padding-left: 125px;
+	border-bottom:1px solid #e8e8e8;
+}
+.bottom .up div{
+	height: 93px;
+	float: left;
+	
+}
+
+.bottom .up .num{
+	margin-top: 23px;
+	display: block;
+	float: left;
+	border: 3px solid #59c069;
+	height: 42px;
+	line-height: 42px;
+	width: 42px;
+	text-align: center;
+	border-radius: 23px;
+	font-size: 28px;
+	color: #59c069;
+	margin-right: 10px;
+}
+.bottom .up .lin{
+	border: 1px solid #e8e8e8;
+	margin: 15px 73px 15px 70px;
+	height: 60px;
+}
+.bottom .up .tex{
+	font-size: 18px;
+}
+
+.bottom .line{
+	
+	width: 100%;	
+	border: 1px solid #e8e8e8;
+	height: 0;
+	margin-bottom: 30px;
+}
+.bottom .down{
+	
+	margin-top: 42px;
+	padding-left: 70px;
+	height: 210px;
+	width: 100%;
+}
+.bottom .down div{
+	float: left;
+	margin-right: 3px;
+	width: 198px;
+	
+	
+}
+.bottom .down div b{
+	display: block;
+	font-size: 16px;
+	color: #302e33;
+	margin-bottom: 20px;
+}
+.bottom .down div span{
+	display: block;
+	font-size: 12px;
+	color: #848484;
+	margin-bottom: 20px;
+	cursor:pointer;
+}
+.bottom .down span:hover{
+	color: #15AE2F;
+}
+.bottom #banquan{
+	margin: 35px 0;
+	text-align: center;
+	font-size: 12px;
+	color: #848484;
+}
+
+
+.bottom .linkw{
+	position: relative;
+}
+
+#weixin_img{
+	position: absolute;
+	z-index: 10;
+	top: -96px;
+	left: 20px;
+	display: none;
+}
+#xinlang_img{
+	position: absolute;
+	z-index: 10;
+	top: -96px;
+	left: 62px;
+	display: none;
+}
+/*************bottom  end******************/

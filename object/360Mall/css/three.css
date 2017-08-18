@@ -1,0 +1,258 @@
+.center{
+	height: 19000px;
+}
+.center .top{
+	width: 100%;
+	height: 650px;
+
+}
+.center .top div{
+	float: left;
+	/*border: 1px solid #00BFFF;*/	
+}
+
+.center .top .left .left_top{
+	height: 480px;
+	width: 655px;	
+}
+
+/***********************************************************************************************/
+.center .top .left .left_top img{
+	margin: 15px 0px 0px 80px;
+	height: 480px;
+}
+.center .top .left .left_top .dxianshi{
+	display: block;
+}
+.center .top .left .left_top img:hover{
+	 box-shadow: 0 0 0 2px rgba(196,196,196,0.5);	       
+}
+
+.center .top .left .Left_down{
+	padding-top: 15px;
+	padding-left: 53px;	
+}
+.center .top .left .Left_down div{
+	float: left;
+}
+.center .top .left .Left_down img{
+	height: 65px;
+	margin: 0 23px 0 0;
+}
+.center .top .left .Left_down img:hover{
+	box-shadow: 0 0 0 1px rgba(196,196,196,0.5);      
+}
+
+.center .top .left .Left_down .imgmin{
+	width: 475px;
+	height: 70px;
+}
+
+.center .top .left .Left_down #zuo,.center .top .left .Left_down #you{
+	margin-top: 18px;	
+	height: 25px;	
+}
+.center .top .right {
+	padding-left: 10px;
+	width: 650px;
+	float: right;
+	margin-right: 40px;
+}
+.center .top .right h1{
+	font-size: 26px;
+	margin-top: 55px;
+	margin-bottom: 25px;
+	color: #0e0e0e;
+}
+.center .top .right h3{
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 35px;
+}
+.center .top .right h4{
+	font-size: 14px;
+	color: red;
+	margin-bottom: 25px;
+}
+.center .top .right hr{
+	color: #e6e9ed;
+	margin-bottom: 25px;
+}
+.center .top .right p{
+	color: #fa5437;
+	font-size: 26px;
+	background: #f8f8f8;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 24px;
+}
+
+.center .top .right #fenlei{
+		width: 540px;
+}
+.center .top .right #fenlei span{
+	float: left;
+	display: block;
+	border: 1px solid red;
+	height: 30px;
+	line-height: 30px;
+	width: 120px;
+	margin-right: 10px;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+.center .top .right #shulaing{
+	margin-top: 30px;
+	width: 100%;
+	margin-bottom: 35px;
+}
+.center .top .right #shulaing div{
+	border: 1px solid #cccccc;
+	
+}
+.center .top .right #shulaing span{
+	height: 30px;
+	line-height: 30px;
+	width: 50px ;
+	display: block;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 10px;
+}
+.center .top .right #shulaing input{
+	height: 30px;
+	
+	line-height: 30px;
+	width: 30px;
+	border: 1px solid #cccccc;
+	border-top: 0;
+	border-bottom: 0;
+	text-align: center;
+	
+}
+.center .top .right #shulaing button{
+	height: 30px;
+	line-height: 30px;
+	
+	width: 25px;
+	border: 0;
+	background: no-repeat;
+	cursor:pointer;
+}
+
+.center .top .right #daojis{
+	width: 400px;
+	height: 35px;
+	line-height: 35px;
+	background: #f7f7f7;
+	margin-bottom: 10px;
+}
+.center .top .right #tixing{
+	width: 100%;
+	margin-bottom: 35px;	
+}
+.center .top .right #daotime{
+	color: red;
+}
+.center .top .right #tixing  h5{
+	display: block;
+	width: 240px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #008000;
+	border-radius: 5px;
+	font-size: 16px;
+	color: white;
+	cursor:pointer;
+}
+.center .top .right #tixing  h5:hover{
+	background: #15AE2F;
+}
+.center .top .right #tixing img{
+	
+}
+.center #baozhang #bz{
+	
+	margin-right: 7px;
+}
+.center #baozhang div{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #8a8a8a;
+}
+.center #baozhang img{
+	margin-right: 5px;
+	margin-left: 20px;
+}
+.center #xiangqing{
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #e6e9ed;
+	border-top: 1px solid #e6e9ed;
+	padding-left: 25px;
+	color: #e1e1e1;
+	font-size: 18px;
+	margin-bottom: 20px;
+	
+}
+.center #xiangqinga{
+	width: 1324px;
+	height: 70px;
+	line-height: 70px;
+	
+	background: white;
+	padding-left: 25px;
+	color: #e1e1e1;
+	font-size: 18px;
+	margin: 0 auto;
+	position: fixed;
+	top: 0px;
+	box-shadow:0px 5px 5px #c4c4c4; /*左边阴影*/    
+    display: none;
+}
+.center #xiangqing span,.center #xiangqinga span{
+	margin: 0 20px;
+	color: #31373c;
+}
+.center #xiangqing span:hover{
+	color: #6ec177;
+}
+.center #xiangqinga span:hover{
+	color: #6ec177;
+}
+.center #xiangqinga div{
+	float: right;
+	height: 50px;
+	margin-top: 10px;
+	line-height: 50px;
+	margin-right: 100px;
+	background: red;
+	color: #ecf0f1;
+}
+.center #xiangqinga .join{
+	width: 200px;
+	border-radius: 3px;
+}
+.center #xiangqinga .join img{
+	float: left;
+	height: 30px;
+	
+	
+	margin-left: 27px;
+	margin-right: 18px;
+	margin-top: 10px;
+}
+
+
+
+
+.center #ppp img{	
+	margin-left: -280px;
+}
+

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js" ></script>
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	</head>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		#container{
+			width: 1366px;
+			margin: 0 auto;
+		}
+		#header{
+			width: 100%;
+			height: 100px;
+			background: khaki;
+			overflow: hidden;
+		}
+		#head{
+			width: 90%;
+			height: 100px;
+			float: left;
+		}
+		#head{
+			text-align: center;
+		}
+		#head span{
+			height: 50px;
+			line-height: 50px;
+		}
+		#head1{
+			float: right;
+			margin-top: 50PX;
+			margin-right: 10px;
+		}
+		#dh{
+			width: 100%;
+			height: 50px;
+			background: #000000;
+		}
+		#dh span{
+			color: #FFFFFF;
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			margin-left: 190px;
+		}
+		#coll{
+			position: absolute;
+			z-index: 1;
+			display: inline-block;
+			width: 100%;
+			height: 300px;
+			background: #000000;
+			display: none;
+		}
+		#coll img{
+			position: absolute;
+			width: 100%;
+		}
+		#our{
+			text-align: center;
+			position: absolute;
+			z-index: 1;
+			display: inline-block;
+			width: 100%;
+			height: 200px;
+			background: #000000;
+			display: none;
+		}
+		#new{
+			position: absolute;
+			display: inline-block;
+			width: 100%;
+			height: 200px;
+			background: #000000;
+			display: none;
+		}
+		#con{
+			position: absolute;
+			display: inline-block;
+			width: 100%;
+			height: 200px;
+			background: #000000;
+			display: none;
+		}
+		#cata{
+			position: relative;
+			text-align: center;
+		}
+		#lb img{
+			width: 100%;
+			height: 400px;
+			display: none;
+		}
+		#lb1{
+			position: absolute;
+			margin-top: -10px;
+			margin-left: 650px;
+		}
+		#lb1 span{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			border: 1px solid #999999;
+			/*background: bisque;*/
+		}
+		#back{
+			background-image: url(img/46.png);
+		}
+		
+		
+		#cc{
+			width: 100%;
+			height: 150px;
+			background: khaki;
+		}
+		#ccc{
+			text-align: center;
+			width: 90%;
+			height: 130px;
+			background: #000000;
+			margin-left: 5%;
+			position: absolute;
+			margin-top: 10px;
+			display: none;
+		}
+		#ccc span{
+			color: #FFFFFF;
+		}
+		#cccc{
+			margin-top: 20px;
+		}
+		#cccc span{
+			display: inline-block;
+			border: 0px solid #000000;
+			width: 420px;
+			height: 370px;
+			margin-left: 25px;
+			background: #000000;
+			color: #FFFFFF;
+		}
+		 h1{
+			text-align: center;
+		}
+		/*#nf{
+			position: absolute;
+			margin-top: -370px;
+		}
+		#nf span{
+			display: inline-block;
+			width: 420px;
+			height: 320px;
+			background: cornsilk;
+			margin-left: 25px;
+			opacity: 0.7;
+			text-align: center;
+		}*/
+		#c2016{
+			position: absolute;
+			margin-top: -370px;
+			display: inline-block;
+			width: 420px;
+			height: 320px;
+			background: cornsilk;
+			margin-left: 25px;
+			opacity: 0.7;
+			text-align: center;
+		}
+		#c20166{
+			position: absolute;
+			margin-top: -370px;
+			left: 450px;
+			display: inline-block;
+			width: 420px;
+			height: 320px;
+			background: cornsilk;
+			margin-left: 25px;
+			opacity: 0.7;
+			text-align: center;
+		}
+		#xll:hover{
+			transform: rotateY(360deg);
+		}
+		#c2015{
+			position: absolute;
+			margin-top: -370px;
+			left: 890px;
+			display: inline-block;
+			width: 420px;
+			height: 320px;
+			background: cornsilk;
+			margin-left: 25px;
+			opacity: 0.7;
+			text-align: center;
+		}
+		#nf span b{
+			font-size: 80px;
+			
+		}
+		#nf span a{
+			font-family: "微软雅黑";
+		}
+		#shu{
+			width: 95%;
+			height: 270px;
+			margin-top: 10px;
+			margin-left: 25px;
+			display: none;
+		}
+		#shu img {
+			position: absolute;
+			transition: 2s;
+		}
+		#shu img:hover {
+			transform: translate(100px,50px);
+		}
+		#rwjh{
+			width: 100%;
+			height: 380px;
+			text-align: center;
+			font-size: 15px;
+			font-family: "微软雅黑";
+			margin-left: 25px;
+		}
+		#rwjh img{
+			float: right;
+		}
+		#left{
+			display: none;
+			float: left;
+			width: 1000px;
+			height: 380px;
+			/*background: #FFFFFF;*/
+			color: #333333;
+			line-height: 27px;
+		}
+		#right{
+			display: none;
+			margin-right: 80px;
+		}
+		
+		
+		#db{
+			width: 100%;
+			height: 350px;
+			background: khaki;
+			overflow: hidden;
+		}
+		#db div{
+			color: #000000;
+			text-align: center;
+		}
+		#kx{
+			width: 100%;
+			height: 350px;
+			background:#000000;
+		}
+		#kx span{
+			display: inline-block;
+			margin-top: 20px;
+			color: #FFFFFF;
+		}
+		#kx{
+			text-align: center;
+		}
+		
+	</style>
+	<body>
+		<div id="container">
+			<div class="section">
+				<div id="header">
+					<div id="head"><span style="font-size: 40px;"><b>·M——A——R——K——I——N·</b></span><br>
+					<span style="font-size: 20px;">F - I - N - E &nbsp;J - E - W - E - L - L - E - R - Y</span>
+					</div>
+					<div id="head1">
+						<span style="font-size: 20px;">OUR SHOPS</span><br>
+						<span style="font-size: 20px;">RUSSIAN</span>
+					</div>
+				</div>
+				<div id="dh">
+					<span id="co">COLLECTIONS</span> <span id="ou">OUR STORY</span> <span id="ne">NEWS</span> <span id="cont">CONTACTS</span><br>
+				<a id="coll">
+					<img src="img/3.png"><img src="img/4.png"><img src="img/5.png">
+				</a>
+				<a id="our" style="color: #FFFFFF;">
+					<span style="font-size: 70px;">PRECIOUS STATIONERY</span><br>
+					Who would have thought that the things we see every day in the <br>
+					office - all these paperclips, boring pushpins,sharpeners forgotten<br> 
+					in the locker might look so great. Meet a pencil stub pendant <br>
+					with a coral eraser, diamond lead and ruby or sapphire body! MARKIN<br> 
+					gave eternal life to squeezed tubes of paint! Our daily office life<br> 
+					is not so simple!
+				</a>
+				<a id="new">
+					
+				</a>
+				<a id="con">
+					
+				</a>
+				</div>
+				<div id="cata">
+					<span style="font-size: 80px;">CATALOGUE</span><br>
+				</div>
+				<div id="lb">
+					<img src="img/lb1.png" style="display: block;"><img src="img/lb2.png"><img src="img/lb3.png">
+					<div id="lb1"><span id="back"></span><span></span><span></span></div>
+				</div>
+			</div>
+			
+			
+			<div class="section">
+				<div id="cc">
+					<div id="ccc">
+						<span style="font-size: 70px;">LABORATORY</span><br>
+						<span style="font-size: 40px;">CREATING EXCLUSIVE JEWELLERY</span>
+					</div>
+				</div>
+				<div style="width: 100%; height: 80px; background: beige; margin-top: 20px;">
+					<span style="font-size: 20px; margin-left: 30px;"><b><span style="font-size: 30px;">THE LAB</span> where precise <span style="font-size: 30px;">MECHANISMS</span> are built with precious parts.
+						 A simple touch allows you to feel them come <span style="font-size: 30px;">ALIVE</span> which undoubtedly will <span style="font-size: 30px;">CAPTURE</span> your mind.</b></span>
+				</div>
+				<div id="cccc">
+					<span><img src="img/12311.jpg" id="sh"><h1 id="h1">STONES</h1></span><span><img src="img/12312.jpg" id="xll"><h1 id="h2">MECHANICC</h1></span><span><img src="img/12313.jpg"><h1 id="h3">WEDDING RINGS</h1></span>
+				</div>
+				<div id="nf">
+					<span id="c2016" style="display: none;"><b>2016</b><br><br><a>The founder of the M-A-R-K-I-N</a><br><br><a>jewellery lab is Vladimir Markin</a><br><br><a>a Moscow-based artist with a distinctly personal style</a></span>
+					<span id="c20166" style="display: none;"><b>2016</b><br><br><a>The founder of the M-A-R-K-I-N</a><br><br><a>jewellery lab is Vladimir Markin</a><br><br><a>a Moscow-based artist with a distinctly personal style</a></span>
+					<span id="c2015" style="display: none;"><b>2015</b><br><br><a>The founder of the M-A-R-K-I-N</a><br><br><a>jewellery lab is Vladimir Markin</a><br><br><a>a Moscow-based artist with a distinctly personal style</a></span>
+				</div>
+			</div>
+			
+			
+			<div class="section">
+				<div id="shu">
+					<img src="img/shu.png" style="z-index: 14;">
+					<img src="img/shu1.png" style="margin-left: 100px;  z-index:13;">
+					<img src="img/shu2.png" style="margin-left: 200px; z-index:12;">
+					<img src="img/shu3.png" style="margin-left: 300px; z-index:11;">
+					<img src="img/shu4.png" style="margin-left: 400px; z-index:10;">
+					<img src="img/shu5.png" style="margin-left: 500px; z-index:9;">
+					<img src="img/shu6.png" style="margin-left: 600px; z-index:8;">
+					<img src="img/shu7.png" style="margin-left: 700px; z-index:7;">
+					<img src="img/shu8.png" style="margin-left: 800px; z-index:6;">
+					<img src="img/shu9.png" style="margin-left: 900px; z-index:5;">
+					<img src="img/shu10.png" style="margin-left: 1000px; z-index:4;">
+					<img src="img/shu11.png" style="margin-left: 1100px; z-index:3;">
+				</div>
+				<div id="rwjh">
+					<div id="left">
+						<div style="width: 500px; float: left;">
+							<b>The founder of the M-A-R-K-I-N jewellery lab is Vladimir <br>
+							Markin, a Moscow-based artist with a distinctly personal<br>
+							style. In case you are wondering, ajewellery lab is an <br>
+							ongoing experiment in creating jewellery pieces, open to <br>
+							anyone willing to share their ideas. The lab’s first year<br> 
+							has yielded twocollections, “Lingerie” and “Stationery”. <br>
+							Both proved an instant sell-out inoutiques in Moscow and <br>
+							London. Today jewellery by M-A-R-K-I-N can also be foundin <br>
+							Asia, in Singapore and Hong Kong, but your order can be <br>
+							shippedto just aboutany place on earth. June 2012 saw the<br>
+							unveiling of a third line, “Bridges”, which tackles the<br>
+							designer’s favorite concepts - those of industrial design,<br> 
+							jewellery mechanics and materials. The collection was inspired<br>
+							by the</b> 
+						</div>
+						<div style="width: 500px; float: right;">
+							<b>The founder of the M-A-R-K-I-N jewellery lab is Vladimir <br>
+							Markin, a Moscow-based artist with a distinctly personal<br>
+							style. In case you are wondering, ajewellery lab is an <br>
+							ongoing experiment in creating jewellery pieces, open to <br>
+							anyone willing to share their ideas. The lab’s first year<br> 
+							has yielded twocollections, “Lingerie” and “Stationery”. <br>
+							Both proved an instant sell-out inoutiques in Moscow and <br>
+							London. Today jewellery by M-A-R-K-I-N can also be foundin <br>
+							Asia, in Singapore and Hong Kong, but your order can be <br>
+							shippedto just aboutany place on earth. June 2012 saw the<br>
+							unveiling of a third line, “Bridges”, which tackles the<br>
+							designer’s favorite concepts - those of industrial design,<br> 
+							jewellery mechanics and materials. The collection was inspired<br>
+							by the</b> 
+						</div>
+					</div>
+					<div id="right">
+						<img src="img/rw.png">
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="section">
+				<div id="db">
+					<div style="float: left; width: 50%;">
+						<span style="font-size: 70px;">MOSCOW</span><br>
+						<span style="font-size: 40px;">3/4, BOLOTNAYA BANK </span><br>
+						<span style="font-size: 40px;">+7 (495) 545-42-33</span><br>
+						<span style="font-size: 40px;">info@vladimirmarkin.com</span>
+					</div>
+					<div style="float: right; width: 50%;">
+						<span style="font-size: 70px;">HONG KONG,</span><br>
+						<span style="font-size: 70px;">CENTRAL</span><br>
+						<span style="font-size: 40px;">ELGIN STREET, 8</span><br>
+						<span style="font-size: 40px;">+852 2803 7800</span><br>
+						<span style="font-size: 40px;">HK@VLADIMIRMARKIN.COM</span>
+					</div>
+				</div>
+				<div id="kx">
+					<span style="font-size: 40px;">·M——A——R——K——I——N·</span><br>
+					<span style="font-size: 30PX;">MOSCOW,BOLOTNAYA BANK,3/4<br>
+						+7 (985) 421-30-26 </span><br>
+					<span style="font-size: 30PX;">CONTACTS<br>
+						INFO@VLADIMIRMARKIN.COM
+					</span><br>
+					<span><img src="img/dbb.png"></span>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var cc = document.getElementById("lb");
+	 	   	var img = cc.getElementsByTagName("img");
+	 	   	var cv = document.getElementById("lb1");
+	 	   	var span = cv.getElementsByTagName("span");
+	 	   	for(var i=0;i<span.length;i++){
+	 	   		span[i].index=i;
+	 	   		span[i].onmouseover=function(){
+	 	   			for(var j=0;j<span.length;j++){
+	 	   				span[j].id="";
+	 	   				img[j].style.display="none";
+	 	   			}
+	 	   			this.id="back";
+	 	   			img[this.index].style.display="block";
+	 	   		}
+	 	   	}
+	 	   	
+	 		$("#co").hover(function(){
+	 				$("#coll").slideDown(1000);
+	 			},function(){
+	 				$("#coll").fadeOut(1000);
+	 			}
+	 		)
+	 				
+	 		$("#ou").hover(function(){
+	 				$("#our").slideDown(1000);
+	 			},function(){
+	 				$("#our").fadeOut(1000);
+	 		})
+	 				
+	 				
+	 		$("#ne").hover(function(){
+	 				$("#new").slideDown(1000);
+	 			},function(){
+	 				$("#new").fadeOut(1000);
+	 		})
+	 		$("#cont").hover(function(){
+	 				$("#con").slideDown(1000);
+	 			},function(){
+	 				$("#con").fadeOut(1000);
+	 		})
+	 	   	
+	 	   	
+	 	   	
+	 	   	
+			$("#container").fullpage({
+//				navigation:true,
+//	 			navigationPosition:'left',
+	 			verticalCentered:false,
+	 			anchors:['1','2','3','4'],
+	 			afterLoad:function(anchorLink,index){
+	 				if(index==2){
+	 					$("#ccc").slideDown(2500);
+	 					var a = true;
+	 					$("#h1").click(function(){
+	 						if(a){
+	 							$("#c2016").fadeIn(2000);
+	 							a = false;
+	 						}else{
+	 							$("#c2016").fadeOut(1000);
+	 							a = true;
+	 						}
+	 						
+	 					})
+	 					var b = true;
+	 					$("#h2").click(function(){
+	 						if(b){
+	 							$("#c20166").fadeIn(2000);
+	 							b = false;
+	 						}else{
+	 							$("#c20166").fadeOut(1000);
+	 							b = true;
+	 						}
+	 					})
+	 					var c = true;
+	 					$("#h3").click(function(){
+	 						if(c){
+	 							$("#c2015").fadeIn(2000);
+	 							c = false;
+	 						}else{
+	 							$("#c2015").fadeOut(1000);
+	 							c = true;
+	 						}
+	 					})
+	 					
+	 				}else{
+	 					$("#ccc").slideUp(1000);
+	 				}
+	 				if(index==3){
+	 					$("#shu").show(2000);
+	 					$("#left").slideDown(2000);
+	 					$("#right").show(2000);
+	 				}else{
+	 					$("#shu").fadeOut(500);
+	 					$("#left").fadeOut(500);
+	 					$("#right").hide(500);
+	 				}
+	 			}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Incake</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/amazeui.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/bottom.css" />
+		<link rel="stylesheet" type="text/css" href="css/my incake.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/amazeui.js"></script>
+		<!--<script type="text/javascript" src="js/bootstrap.js" ></script>-->
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/myincake.js" ></script>
+	</head>
+
+	<body>
+		<!-- 未添加 .am-u-end 的情形 -->
+		<div class="am-g bor">
+			<!--nav begin-->
+			<div class="am-g-fixed">
+				<div class="lk-top am-cf">
+					<div class="lk-navtop am-fl">
+						<span>欢迎来到印克时光！</span>
+						<span>周一至周日8:30~21:00</span>
+						<span>客服热线：400-921-5757</span>
+						<span>股票代码：837489</span>
+					</div>
+					<div class="lk-navtopright am-fr">
+
+						<div class="am-fl gouwuc">
+							<a href="#" style="color: #333333;">
+								<i class="am-icon-shopping-basket am-icon-xs" aria-hidden="true"></i>
+								<span id="gouwu_che">0件</span>
+							</a>
+						</div>
+						<div class="am-fl lk-dlzc">
+							<span><a href="incake_login.html" id="denglu">登录</a>|<a href="incake_zhuce.html" id="tuichu">注册</a></span>
+						</div>
+
+						<div class="lk-dz am-fl">
+							<div class="lk-dzclick" style="width: 100%;">
+								<i class="am-icon-map-marker am-icon-sx" aria-hidden="true" style="margin-right: 5px;font-size: 14px;"></i>
+								<span id="lk-didian">上海</span>
+								<i class="am-icon-sort-desc am-icon-sx am-fr" aria-hidden="true" style="margin-right: 10px;font-size: 16px;display: block;margin-top: -3px;"></i>
+							</div>
+
+							<div class="lk-dzinner">
+								请选择您要配送的城市：
+								<table border="0" cellspacing="0" cellpadding="0" id="dizs">
+									<tr>
+										<td style="background: #D4D4D4;">上海</td>
+										<td>福州</td>
+										<td>苏州</td>
+										<td>昆山</td>
+									</tr>
+									<tr>
+										<td>厦门</td>
+										<td>无锡</td>
+										<td>北京</td>
+										<td>南京</td>
+									</tr>
+									<tr>
+										<td>杭州</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lk-navbottom am-cf">
+					<div class="lk-logo am-fl">
+						<a href="home.html"><img src="img/logo.png" /></a>
+					</div>
+
+					<div class="am-fr manues">
+						<ul>
+							<li class="lk-li">
+								<a href="GAW.html">
+									<span class="lk-lispan">Cake List</span>
+									<span class="lk-lispan">蛋糕馆</span>
+								</a>
+								<ul class="lk-ul" style="left: -22px;">
+									<li>
+										<a href="GAW.html"><span>Cheese</span>
+											<span>芝士系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>Chocolate</span>
+											<span>巧克力系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>Napoleon</span>
+											<span>拿破仑系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>Mousse</span>
+											<span>慕斯系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>Cream</span>
+											<span>乳脂系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>DIY</span>
+											<span>选拼系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>Star</span> <span>星座系列</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>DIY Cake</span>
+											<span>定制蛋糕</span> </a>
+									</li>
+								</ul>
+
+							</li>
+
+							<li class="lk-fen">\</li>
+
+							<li class="lk-li">
+								<a href="GAW.html">
+									<span class="lk-lispan">Genius at work</span>
+									<span class="lk-lispan">GAW蛋糕</span>
+								</a>
+								<ul class="lk-ul">
+									<li>
+										<a href='#'><span>GawDiy</span>
+											<span>GAW翻糖定制</span> </a>
+									</li>
+									<li>
+										<a href='#'><span>GawClassic</span>
+											<span>GAW经典</span> </a>
+									</li>
+									<li>
+										<a href='#'><span>GawStar</span>
+											<span>GAW星座</span> </a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="lk-fen">\</li>
+
+							<li class="lk-li">
+								<a href="#">
+									<span class="lk-lispan">Insweet</span>
+									<span class="lk-lispan">思蜜</span>
+								</a>
+								<ul class="lk-ul">
+								</ul>
+							</li>
+
+							<li class="lk-fen">\</li>
+
+							<li class="lk-li">
+								<a href="new_activities.html">
+									<span class="lk-lispan">Activities</span>
+									<span class="lk-lispan">活动专享</span>
+								</a>
+								<ul class="lk-ul">
+									<li>
+										<a href='new_activities.html'><span>New Activity</span>
+											<span>最新活动</span> </a>
+									</li>
+
+									<li>
+										<a href="new_activities.html"><span>Points Mall</span>
+											<span>积分商城</span> </a>
+									</li>
+								</ul>
+
+							</li>
+
+							<li class="lk-fen">\</li>
+
+							<li class="lk-li">
+								<a href="my incake.html">
+									<span class="lk-lispan">My Incake</span>
+									<span class="lk-lispan">我的INCAKE</span>
+								</a>
+								<ul class="lk-ul" style="left: -6px;">
+									<li>
+										<a href="#"><span>My Orders</span>
+											<span>我的订单</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>My Points</span>
+											<span>我的积分</span> </a>
+									</li>
+									<li>
+										<a href="#"><span>Coupons</span> <span>我的优惠券</span> </a>
+									</li>
+								</ul>
+
+							</li>
+
+							<li class="lk-fen">\</li>
+
+							<li class="lk-li">
+								<a href="foretaste.html">
+									<span class="lk-lispan">Enterprises</span>
+									<span class="lk-lispan">企业专区</span>
+								</a>
+								<ul class="lk-ul" style="left: -20px;">
+									<li>
+										<a href="foretaste.html"><span>Apply For Foretaste</span>
+											<span>试吃申请</span> </a>
+									</li>
+									<li>
+										<a href="foretaste.html"><span>VIP Login</span>
+											<span>企业VIP登录</span> </a>
+									</li>
+								</ul>
+
+							</li>
+						</ul>
+					</div>
+
+					<div class="lk-caidan am-fr am-text-center">
+						<span class="am-icon-bars am-icon-sm"></span>
+					</div>
+					<div class="lk-xiala">
+						<ol>
+							<li>
+								<a href="#">蛋糕馆</a>
+							</li>
+							<li>
+								<a href="#">GAW蛋糕</a>
+							</li>
+							<li>
+								<a href="#">思密</a>
+							</li>
+							<li>
+								<a href="#">活动专享</a>
+							</li>
+							<li>
+								<a href="#">我的INCAKE</a>
+							</li>
+							<li>
+								<a href="#">企业专区</a>
+							</li>
+						</ol>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--nav end-->
+
+		<div class="lk-centers ">
+			<!--内容begin-->
+
+			<div class="am-g myincake">
+				<div class="am-u-md-2 mylk-left">
+					<div class="caidan-640">
+						<div class="mylk-title">我的INCAKE</div>
+						<div class="nav-640">
+							<i class="am-icon-server"></i>
+						</div>
+						<div class="nav-640-inner">
+							<div class="jk-guanli">
+								<ul>
+									<li style="background: #D1D1D1;" class="640-one">交易管理</li>
+									<div class="my-message-zong">
+										<li class="my-lk-nav my-message message-clickcss">我的订单<i class="am-icon-angle-right"></i> </li>
+									</div>
+								</ul>
+							</div>
+							<div class="jk-guanli">
+								<ul>
+									<li style="background: #D1D1D1;" class="640-one">我的账户</li>
+									<div class="my-message-zong">
+										<li class="my-lk-nav my-message">我的积分<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">我的奖品<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">我的优惠券<i class="am-icon-angle-right"></i> </li>
+										<!--<li class="my-lk-nav my-message">积分兑换优惠券<i class="am-icon-angle-right"></i> </li>-->
+										<li class="my-lk-nav my-message">我喜欢的<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">我的评论<i class="am-icon-angle-right"></i> </li>
+									</div>
+								</ul>
+							</div>
+							<div class="jk-guanli">
+								<ul>
+									<li style="background: #D1D1D1;" class="640-one">个人信息管理</li>
+										<div class="my-message-zong">
+										<li class="my-lk-nav my-message">个人信息<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">纪念日管理<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">修改密码<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">收货地址<i class="am-icon-angle-right"></i> </li>
+										<li class="my-lk-nav my-message">发票管理<i class="am-icon-angle-right"></i> </li>
+									</div>
+								</ul>
+							</div>
+							
+						</div><!--nav640inner-->
+					</div>
+					
+					<div class="jk-guanli">
+						<ul>
+							<li style="background: #D1D1D1;">交易管理</li>
+							<li class="my-lk-nav my-message message-clickcss">我的订单<i class="am-icon-angle-right"></i> </li>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li style="background: #D1D1D1;">我的账户</li>
+							<li class="my-lk-nav my-message">我的积分<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">我的奖品<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">我的优惠券<i class="am-icon-angle-right"></i> </li>
+							<!--<li class="my-lk-nav my-message">积分兑换优惠券<i class="am-icon-angle-right"></i> </li>-->
+							<li class="my-lk-nav my-message">我喜欢的<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">我的评论<i class="am-icon-angle-right"></i> </li>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li style="background: #D1D1D1;">个人信息管理</li>
+							<li class="my-lk-nav my-message">个人信息<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">纪念日管理<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">修改密码<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">收货地址<i class="am-icon-angle-right"></i> </li>
+							<li class="my-lk-nav my-message">发票管理<i class="am-icon-angle-right"></i> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="am-u-md-10 mylk-right">
+
+					<div class="lk-biao lk-biaos">
+						<!--001 订单-->
+						<div class="lk-xinxi">
+							<p>您共有<span>0</span>个订单其中<span>0</span>个订单未处理</p>
+							<div class="xinxi-nav">
+								<ul>
+									<li>全部订单</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>已发货</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>待付款</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>正在处理中</li>
+								</ul>
+							</div>
+						</div>
+						<div class="am-u-lg-5 am-u-md-7 am-u-sm-7 lk-shuru">
+							<div class="am-input-group">
+								<input id="dingdannumber" type="number" class="am-form-field" value="" placeholder="请输入订单编号进行查询">
+								<span class="am-input-group-btn">
+						        	<button id="dingdanbtn" class="am-btn am-btn-default" type="button">订单搜索</button>
+						      	</span>
+							</div>
+						</div>
+
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td>商品信息</td>
+										<td>单价(元)</td>
+										<td>数量</td>
+										<td>总金额(元)</td>
+										<td>要求</td>
+										<td>订单状态</td>
+										<td>操作</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+									<tr>
+										<td>201601</td>
+										<td>99</td>
+										<td>1</td>
+										<td>99</td>
+										<td>配送</td>
+										<td>待配送</td>
+										<td>--</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--001 end-->
+
+					<div class="lk-biao lk-biaos">
+						<!--002积分-->
+						<div class="lk-xinxi">
+							<p>您现在有<span>0</span>积分,查看
+								<a href="#">积分规则</a>
+							</p>
+							<div class="xinxi-nav">
+								<ul>
+									<li>全部积分</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>已获积分</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>消费积分</li>
+								</ul>
+							</div>
+						</div>
+								<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td>日期</td>
+										<td>积分变动</td>
+										<td>有效期/兑换日期</td>
+										<td>说明</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>10</td>
+										<td>2016-12-5</td>
+										<td>芝士系列有效</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+								</div>
+						<div class="point-rule" id="point-rule">
+							<dl>
+								<dd>积分规则</dd>
+								<dd>一、注册送积分</dd>
+								<dd>注册完成后送5个积分。</dd>
+								<dd>二、购买送积分</dd>
+								<dd>现金消费蛋糕（包括网银，POS机）可积分。会员每消费9元积1分，单次累计。不满9元，积0分，例如消费149元积16分；现金（包括网银，POS机）与卡、券混合使用时，只现金（包括网银，POS 机）部分可积分。以下情况不可积分</dd>
+								<dd>1. 代金卡，其他优惠卡、优惠券等不可积分</dd>
+								<dd>2. 非蛋糕消费（餐具、配送费等）不可积分</dd>
+								<dd>3. 已参与了其他优惠活动也不可积分</dd>
+								<dd>三、评论送积分</dd>
+								<dd>1. 当蛋糕配送完毕后可获得评论机会。</dd>
+								<dd>2. 订单中的每款蛋糕限评论1次，每条评论赠送2个积分。</dd>
+								<dd>四、积分使用规则</dd>
+								<dd>1.可兑换蛋糕（须首先将积分兑换成蛋糕兑换码，使用该码方可兑换蛋糕，不可直接兑换）</dd>
+								<dd>2.可兑换其它配件（餐具，蜡烛等指定配件，见网站提示）</dd>
+								<dd>3.积分兑换不与其他优惠券（代金卡）共同使用，每次订单仅限使用一张，不得累计使用。</dd>
+								<dd>4.会员购物所得积分将于订单成功交易及结账后存入账户。如由于产品质量问题而修改订单或退货，积分将以最终订单金额为准。</dd>
+								<dd>5.会员个人累计积分有效期为一自然年，积分不能互转，不能兑换现金。</dd>
+								<dd>6.积分不可用来兑换SuperCake、主题蛋糕和下午茶点。</dd>
+								<dd>例：2014年7月1日消费149元，产生16积分，将于2015年7月1日零时此笔积分清零。</dd>
+								<dd>兑换方法：</dd>
+								<dd>1. 在积分兑换区可使用积分兑换蛋糕兑换码。</dd>
+								<dd>2. 或购买蛋糕时，进入购买页面进行支付时选择使用积分兑换，可自动进入积分兑换区，使用积分兑换蛋糕兑换码。（兑换码为电子码，不可更换成硬质代金卡）</dd>
+								<dd>3. 需购买配件时，可选择使用积分，直接输入相对应的积分即可。</dd>
+							</dl>
+						</div>
+					</div>
+					<!--002 end-->
+
+					<div class="lk-biao lk-biaos">
+						<!--003 我的奖品-->
+						<div class="lk-xinxi">
+							<div class="xinxi-nav">
+								<ul>
+									<li>全部奖品</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>已使用</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>未使用</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td>奖品名称</td>
+										<td>奖项</td>
+										<td>有效期</td>
+										<td>状态</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+									<tr>
+										<td>抽奖</td>
+										<td>芝士小蛋糕</td>
+										<td>2016-12-05</td>
+										<td>未使用</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--003 end-->
+
+					<div class="lk-biao lk-biaos"><!--004我的优惠卷-->
+						
+						<div class="lk-xinxi">
+							<p>您还没有可用的优惠券,查看<a href="#">优惠券使用说明</a>。</p>
+							<div class="xinxi-nav">
+								<ul>
+									<li>全部</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>已使用</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>未使用</li>
+								</ul>
+							</div>
+						</div>
+						<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td>日期</td>
+										<td>积分变动</td>
+										<td>有效期/兑换日期</td>
+										<td>说明</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2016-11-25</td>
+										<td>99</td>
+										<td>2016-12-05</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>99</td>
+										<td>2016-12-05</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>99</td>
+										<td>2016-12-05</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>99</td>
+										<td>2016-12-05</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>99</td>
+										<td>2016-12-05</td>
+										<td>说明</td>
+									</tr>
+									<tr>
+										<td>2016-11-25</td>
+										<td>99</td>
+										<td>2016-12-05</td>
+										<td>说明</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						</div>
+						<div class="lk-ov-tab">
+							
+							<div class="youhuij am-u-md-12">
+								<p>积分兑换优惠卷</p>
+								<p>您目前共有<span>1200积分</span>，更多精美礼品兑换请至。<a href="#">积分商城 </a>查询。</p>
+							</div>
+								<div class="lk-tab am-u-lg-12">
+									<table class="am-table am-table-bordered am-table-radius ">
+										<thead>
+											<tr>
+												<td>名称</td>
+												<td>有效期</td>
+												<td>所需积分</td>
+												<td>操作</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>189元蛋糕一个</td>
+												<td>2017/12/31 23:59:59</td>
+												<td>425</td>
+												<td>兑换</td>
+											</tr>
+											<tr>
+												<td>1.5磅蛋糕可升级至2.5磅蛋糕一次</td>
+												<td>2017/12/31 23:59:59</td>
+												<td>225</td>
+												<td>兑换</td>
+											</tr>
+											<tr>
+												<td>50元现金抵用券</td>
+												<td>2017/12/31 23:59:59</td>
+												<td>100</td>
+												<td>兑换</td>
+											</tr>
+											<tr>
+												<td>20元现金抵用券</td>
+												<td>2017/12/31 23:59:59</td>
+												<td>50</td>
+												<td>兑换</td>
+											</tr>
+											<tr>
+												<td>I LOVE YOU蜡烛一盒</td>
+												<td>2017/12/31 23:59:59</td>
+												<td>25</td>
+												<td>兑换</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						<div class="point-rule" id="point-rule">
+							<dl>
+								<dd>优惠卷使用说明</dd>
+								<dd>一、什么是优惠券？</dd>
+								<dd>优惠券是指INCAKE平台对外发行和认可的抵用优惠券，在INCAKE微信及官网下单中使用，满足使用条件方可抵扣相应金额。</dd>
+								<dd>二、优惠券有哪些类型？</dd>
+								<dd>INCAKE平台发放的优惠券有四种：一般优惠券，指发放的含有兑换码及密码的优惠券；账户优惠券，指与账户绑定的优惠券，优惠券的金额为10元，20元，50元，80元不等；50,30元蛋糕券，可购买常规款蛋糕，主题蛋糕以及活动套餐除外；10元思蜜券，只支持购买思蜜甜品。</dd>
+								<dd>三、如何获得优惠券？</dd>
+								<dd>通过参加INCAKE平台在官网微博和微信平台发布的各种活动，有机会获得INCAKE的优惠券。</dd>
+								<dd>四、优惠券使用条件</dd>
+								<dd>1.一般优惠券不限使用者，账户优惠券仅限领用时的账号使用，不可提现，买卖，兑换或者转赠他人；</dd>
+								<dd>2.仅限在线支付使用，每个订单只能使用一张优惠券，不能与其他优惠券/团购券叠加使用，且不找零；</dd>
+								<dd>3.优惠券请在有效期内使用，过期即视为作废。</dd>
+								<dd>五、下单时使用优惠券，后来取消订单，优惠券还会返还吗？</dd>
+								<dd>取消订单后，账户优惠券将自动返回到用户账户，一般优惠券兑换码将继续有效，但是取消订单后，优惠券的有效期不会延长，请在优惠券过期前，尽快使用。</dd>
+							</dl>
+						</div>
+					</div>
+					<!--004 end-->
+
+					<div class="lk-biao lk-biaos"><!--005我喜欢的-->
+						<div class="lk-xinxi">
+							<p>您收藏了<span>2</span>个商品</p>
+						</div>
+						<div class="shouc-shangp">
+							<div class="am-u-md-3 am-u-sm-12 ">
+								<img class="am-thumbnail am-center" src="img/z-img/one_01.jpg"/>
+							</div>
+							<div class="am-u-md-9 am-u-sm-12">
+								<p>奶香巧克力 chocolate cake</p>
+								<p>在进口的第一刹那就沉沦，只留下奶香巧克力化也化不开的醇香。</p>
+								<p>Sinking in the first moment of imports, leaving only the milk chocolate also is not mellow.</p>
+								<p>
+									<span>甜度 Sweetness</span>
+									<i class="am-icon-heart"></i>
+									<i class="am-icon-heart"></i>
+									<i class="am-icon-heart"></i>
+									<i class="am-icon-heart-o"></i>
+									<i class="am-icon-heart-o"></i>
+								</p>
+
+							</div>
+						</div>
+						<div class="shouc-shangp">
+							<div class="am-u-md-3 am-u-sm-12 ">
+								<img class="am-thumbnail am-center" src="img/z-img/one_02.jpg"/>
+							</div>
+							<div class="am-u-md-9 am-u-sm-12">
+								<p>奶香巧克力 chocolate cake</p>
+								<p>在进口的第一刹那就沉沦，只留下奶香巧克力化也化不开的醇香。</p>
+								<p>Sinking in the first moment of imports, leaving only the milk chocolate also is not mellow.</p>
+								<p>
+									<span>甜度 Sweetness</span>
+									<i class="am-icon-heart"></i>
+									<i class="am-icon-heart"></i>
+									<i class="am-icon-heart"></i>
+									<i class="am-icon-heart-o"></i>
+									<i class="am-icon-heart-o"></i>
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<!--005 end-->
+					<div class="lk-biao lk-biaos"><!--006 评价-->
+						
+						<div class="lk-xinxi">
+							<p>您共有<span>0</span>条商品未评论</p>
+							
+							<div class="xinxi-nav">
+								<ul>
+									<li>全部商品</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>已评论</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>未评论</li>
+								</ul>
+							</div>
+						</div>
+								<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td>订单号</td>
+										<td>商品名称</td>
+										<td>总体评价</td>
+										<td>评价内容</td>
+										<td>评论时间</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+									<tr>
+										<td>2016001</td>
+										<td>芝士小蛋糕</td>
+										<td>口感很好</td>
+										<td>优惠好吃</td>
+										<td>2016-11-25</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+								</div>
+						
+					</div>
+					<!--006 end-->
+					<div class="lk-biao lk-biaos"><!--007  个人信息-->
+						<div class="lk-xinxi">
+							<p>请尽量完善您的个人信息，方便我们同您取得联系。</p>
+						</div>
+							<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-7 am-u-md-11 am-u-sm-12 am-u-xs-12">
+							<!--<form>-->
+							
+							<table class="am-table am-table-bordered am-table-radius shopper">
+								<tbody>
+									<tr>
+										<td>姓名：</td>
+										<td colspan="2" class="inputs"><input type="text" name="shoppername" id="shoppername" value="" /></td>
+										<td class="inputs">
+											<select id="doc-select-1">
+										        <option value="option1">男</option>
+										        <option value="option2">女</option>
+										    </select>
+										</td>
+									</tr>
+									<tr>
+										<td>出生日期：</td>
+										<td colspan="3">
+											<input type="text" class="riqi" id="birthday" placeholder="出生日期" data-am-datepicker readonly required />
+										</td>
+									</tr>
+									<tr>
+										<td>所在地：</td>
+										<td colspan="3" class="dizhi">
+											<select id="sheng">
+										        <option value="option1">--请选择--</option>
+										    </select>
+											<select id="shi">
+										        <option value="option1">--请选择--</option>
+										    </select>
+											<select id="qu" style="margin-right: 0;float: right;">
+										        <option value="option1">--请选择--</option>
+										    </select>
+										</td>
+									</tr>
+									<tr>
+										<td> </td>
+										<td colspan="3">
+											<input type="text" name="" id="xiangxidz" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>固定电话：</td>
+										<td colspan="3">
+											<input type="tel" name="" id="tel" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>手机号码：</td>
+										<td colspan="3">
+											<input type="tel" name="" id="phonenumber" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>邮箱：</td>
+										<td colspan="3">
+											<input type="email" name="" id="email" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4"> </td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td colspan="3" class="am-text-center">
+											<input type="button" name="tijiao" id="tijiao" value="确认提交" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!--</form>-->
+						</div>
+								</div>
+					</div>
+					<!--007 end-->
+					<div class="lk-biao lk-biaos"><!--008 纪念日管理-->
+						<div class="lk-xinxi">
+							<p>您已有<span>0</span>个纪念日</p>
+							<p class="add-memorial am-btn " id="doc-prompt-toggle">添加纪念日</p>
+						</div>
+						
+						<div class="memorial-day">
+							<!--生日标签模板-->
+								<div class="memorial-muban">
+									<div class="am-panel  Memorial">
+										<div class="am-panel-hd memorial-title">time</div>
+										<div class="am-panel-bd memorial-remarks">
+										   	 备注
+										</div>
+										<footer class="am-panel-footer">
+											<p><span class="memorial-remove">删除</span><span>|</span><span class="memorial-change">修改</span> </p>
+										</footer>
+									</div>
+								</div>
+							<!--生日标签模板 end-->	
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 memorials">
+								
+							</div>
+						</div>
+						
+					</div>
+					<!--008 end-->
+					<div class="lk-biao lk-biaos"><!--009  密码管理-->
+						<div class="lk-xinxi">
+							<p>请尽量使用高强度密码。</p>
+						</div>
+							<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-7 am-u-md-11 am-u-sm-12 am-u-xs-12">
+							<form>
+							
+							<table class="am-table am-table-bordered am-table-radius shopper">
+								<tbody>
+									<tr>
+										<td>旧密码：</td>
+										<td colspan="3" class="dizhi">
+											<input type="password" name="" id="" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>新密码：</td>
+										<td colspan="3" class="dizhi">
+											<input type="password" name="" id="" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>确认密码：</td>
+										<td colspan="3" class="dizhi">
+											<input type="password" name="" id="" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4"> </td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td colspan="3" class="am-text-center">
+											<input type="submit" name="change-mima" id="change-mima" value="确认提交" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</form>
+						</div>
+								</div>
+					</div>
+					<!--009 end-->
+					<div class="lk-biao lk-biaos"><!--010 收获地址-->
+						<div class="lk-xinxi">
+							<p>已有<span>6</span>收货地址</p>
+							<p class="add-address">新增收货地址</p>
+						</div>
+						
+						<div class="address">
+							<!--收货地址模板-->
+								<div class="am-panel am-panel-primary address-muban">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">张</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							<!--收货地址模板 end-->	
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">大毛</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	【地址：】 上海市东城区广宣街景阳小区3栋502室
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">二毛</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	【地址：】 上海市东城区广宣街景阳小区3栋502室
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">三毛</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	【地址：】 上海市东城区广宣街景阳小区3栋502室
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">四毛</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	【地址：】 上海市东城区广宣街景阳小区3栋502室
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">五毛</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	【地址：】 上海市东城区广宣街景阳小区3栋502室
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd address-title">
+										<span class="address-name">六毛</span>
+										<span class="address-call">18234175095</span>
+									</div>
+									<div class="am-panel-bd address-remarks">
+									   	【地址：】 上海市东城区广宣街景阳小区3栋502室
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="address-remove">删除</span><span>|</span><span class="address-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 address">
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 am-u-end address">
+							</div>
+						</div>
+					</div>
+					<!--010 end-->
+					<div class="lk-biao lk-biaos"><!--011 发票管理-->
+						<div class="lk-xinxi">
+							<p>已有<span>6</span>个发票信息</p>
+							<p class="add-invoice">添加新发票</p>
+						</div>
+						
+						<div class="invoice">
+							<!--收货地址模板-->
+								<div class="am-panel am-panel-primary invoice-muban">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							<!--收货地址模板 end-->	
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张先生</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张先生</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	 【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张先生</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	 【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张先生</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张先生</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								<div class="am-panel am-panel-primary">
+									<div class="am-panel-hd invoice-title">
+										<span class="invoice-type">张先生</span>
+										<span class="invoice-titletype">个人</span>
+										<span class="invoice-inner">蛋糕</span>
+									</div>
+									<div class="am-panel-bd invoice-ps">
+									   	【发票描述】 生日快乐！
+									</div>
+									<footer class="am-panel-footer">
+										<p><span class="invoice-remove">删除</span><span>|</span><span class="invoice-change">修改</span> </p>
+									</footer>
+								</div>
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 invoice">
+								
+							</div>
+							<div class="am-u-lg-4 am-u-md-6 am-u-sm-12 am-u-end invoice">
+								
+							</div>
+						</div>
+					</div>
+					<!--011 end-->
+				</div>
+
+			</div>
+
+		</div>
+		<!--内容end-->
+
+		<div class="am-g am-g-fixed-bottom am-cf">
+			<div class="am-g lk-phone">
+				<div class="lk-phontop">
+					<p>(周一至周日)8：30-21：00</p>
+					<p>客服热线：400-921-5757</p>
+				</div>
+				<div class="lk-phincenter">
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>配送服务</span>
+					</div>
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>关于我们</span>
+					</div>
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>帮助中心</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="lk-bottomtop am-cf">
+				<div class="am-u-sm-3 lk-sam">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_03.jpg" />
+					</div>
+					<div class="lk-text">
+						<span>全年无休</span>
+						<span>送货上门</span>
+						<span>多种支付</span>
+					</div>
+				</div>
+				<div class="am-u-sm-3 lk-sam">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_05.jpg" />
+					</div>
+					<div class="lk-text">
+						<span>品牌保障</span>
+						<span>专业挑选</span>
+						<span>品质认证</span>
+					</div>
+				</div>
+				<div class="am-u-sm-3 lk-sam">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_07.jpg" />
+					</div>
+					<div class="lk-text">
+						<span>安全配送</span>
+						<span>专人专区</span>
+						<span>及时送达</span>
+					</div>
+				</div>
+				<div class="am-u-sm-3 text-center">
+					<div class="lk-img">
+						<img src="img/bottom/bottmo_top_09.jpg" />
+					</div>
+					<div class="lk-text">
+						<span>专业客服</span>
+						<span>贴心服务</span>
+						<span>创造感动</span>
+					</div>
+				</div>
+			</div>
+			<div class="lk-center am-cf">
+				<div class="am-u-md-6 am-u-sm-12 weixin">
+					<div class="am-fl lk-erweima">
+						<img class="img-responsive" src="img/bottom/wechat_qrcode.jpg" />
+					</div>
+					<div class="am-fl lk-two">
+						<p>微信订购流程：</p>
+						<p>关注微信公众号 → 点击［微信订购］→［蛋糕预定］→ 选择蛋糕磅数［立即购买］→ 点击［去结算］→ 确认订单信息 → 选择［支付方式］→ 输入优惠券密码 → 提交订单</p>
+
+						<div class="am-vertical-align-middle lk-kefu">
+							<div class="am-fl">
+								微信公众号：
+							</div>
+							<div class="am-fl">
+								Incake
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="am-u-md-6 lk-lc">
+					<div class="am-u-md-3">
+						<dl>
+							<dd>新手上路</dd>
+							<dd>
+								<a href="#">购买流程</a>
+							</dd>
+							<dd>
+								<a href="#">支付方式</a>
+							</dd>
+							<dd>
+								<a href="#">配送范围</a>
+							</dd>
+							<dd>
+								<a href="#">退货服务</a>
+							</dd>
+							<dd>
+								<a href="#">帮助中心</a>
+							</dd>
+						</dl>
+
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+							<dd>INCAKE产品</dd>
+							<dd>
+								<a href="#">精品蛋糕</a>
+							</dd>
+							<dd>
+								<a href="#">定制蛋糕</a>
+							</dd>
+							<dd>
+								<a href="#">思蜜</a>
+							</dd>
+							<dd>
+								<a href="#">GAW蛋糕</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+							<dd>关于INCAKE</dd>
+							<dd>
+								<a href="#">品牌故事</a>
+							</dd>
+							<dd>
+								<a href="#">产品理念</a>
+							</dd>
+							<dd>
+								<a href="#">优质体验</a>
+							</dd>
+							<dd>
+								<a href="#">合作单位</a>
+							</dd>
+						</dl>
+
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+							<dd>加入INCAKE</dd>
+							<dd>
+								<a href="#">关于我们</a>
+							</dd>
+							<dd>
+								<a href="#">联系我们</a>
+							</dd>
+							<dd>
+								<a href="#">英才招聘</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="lk-down am-cf">
+				<div class="am-u-md-6">
+					<div class="am-u-md-4 lk-btimg am-u-sm-0">
+						<img class="img-responsive" src="img/bottom/footer_logo.png" />
+					</div>
+					<div class="am-u-md-8 text-center am-vertical-align lk-rx">
+						<div class="am-vertical-align-middle lk-time">
+							<span>周一至周日</span><br />
+							<span>8:30~21:00</span>
+						</div>
+						<!--</div>
+					<div class="am-u-md-5 am-vertical-align">-->
+						<div class="am-vertical-align-middle">
+							<div class="am-fl">
+								客服热线
+							</div>
+							<div class="am-fl">
+								400-921-5757
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="am-u-md-6 am-u-sm-12 lk-dzz">
+
+					<div class="am-vertical-align lk-gszc am-fr">
+						<div class="am-vertical-align-middle">
+							<p>股票代码：837489 印克电商</p>
+
+							<p class="pnon-don">
+								<span>沪ICP备12045835号</span>
+								<span>
+			                            <a href="#" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; margin-left: 10px;">
+			                                <img src="img/bottom/footer_gongan.png" />
+			                              	  沪公网安备 31010802001150号
+			                            </a>
+			                        </span>
+							</p>
+
+							<p> 版权所有：上海印克电子商务股份有限公司 Copyright&copy;2012-2016</p>
+						</div>
+					</div>
+
+					<div class="am-vertical-align lg-jx am-fr">
+						<div class="am-vertical-align-middle">
+							<img class="am-thumbnail" width="" src="img/bottom/footer_shgs.jpg" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+<!--alert模态框-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd alert-title"> 请确认您填写的信息！</div>
+    <div class="am-modal-bd" id="alert-text">
+    	不能为空！
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
+    </div>
+  </div>
+</div>
+<!--alerts模态框 end-->
+
+<!--messages 模态框-->
+<div class="am-modal am-modal-prompt" closeViaDimmer="flase" tabindex="-1" id="message-motai">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd am-text-left">新的纪念日</div>
+    <div class="am-modal-bd am-text-left">
+    	<div class="birthday-time">
+    		<div class="am-u-lg-2 am-u-md-2 am-u-sm-6">
+    			时间：
+    		</div>
+    		<div class="am-u-lg-10 am-u-md-10 am-u-sm-10 am-u-end">
+				<input id="motai-time" type="text" class="am-form-field" placeholder="日历组件" data-am-datepicker="{format: 'mm-dd', viewMode: 'months', minViewMode: 'days'}"  readonly required  value="01-01"/>
+    		</div>
+		</div>
+		<div class="birthday-name">
+			<div class="am-u-lg-2 am-u-md-2 am-u-sm-6">
+    			名称：
+    		</div>
+    		<div class="am-u-lg-10 am-u-md-10 am-u-sm-10 am-u-end birthday-name-right">
+    			<div class="am-u-lg-4 am-u-md-4 am-u-sm-12">
+    				<select id="motai-name">
+    					<option>爸爸生日</option>
+    					<option>妈妈生日</option>
+    					<option>其它</option>
+    				</select>
+	    		</div>
+	    		<div class="am-u-lg-8 am-u-md-8 am-u-sm-12">
+	    			<input type="text" name="beizhu" id="beizhu" value="" />
+	    		</div>
+    		</div>
+		</div>
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+<!--messages 模态框 end-->
+
+
+	</body>
+
+</html>

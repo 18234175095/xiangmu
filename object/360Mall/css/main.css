@@ -1,0 +1,460 @@
+
+.center{
+	width: 100%;
+
+	height:4700px;
+	
+}
+
+/**************************************************************/
+.hout .houtone {
+	margin-top: 20px;
+	width: 100%;
+	
+	height: 320px;
+	
+}
+.hout .houtone img{
+	
+	width: 240px;
+	opacity: 1;
+}
+.hout  img:hover{
+	transition-duration:0.3s;
+	opacity: 0.8;
+}
+
+.hout .houtone div{
+	float: left;
+	overflow: hidden;
+	background: white;
+	float: left;
+	margin-right: 4px;
+	width: 240px;
+	height: 320px;
+	margin-right: 10px;
+}
+.hout h1{
+	font-size: 18px;
+	margin-top: 25px;
+	margin-left: 20px;
+	margin-bottom: 18px;
+	font-weight: 600;
+	color: #333333;
+}
+.hout h2{
+	font-size: 16px;
+	color: #7a7a7a;
+	margin-left: 20px;
+	margin-bottom: 16px;
+}
+.hout .pics p{
+	margin-left: 20px;
+	width: 90px;
+	height: 30px;
+	line-height: 33px;
+	text-align: center;
+	color: #f44545;
+	border: 2px solid #f44545;
+	border-radius: 20px;
+	font-size: 12px;
+	cursor:pointer;
+	margin-bottom: 0px;
+	
+}
+
+.rexiao{
+	width: 100%;
+	height: 420px;
+}
+.rexiao div{
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.rexiao .rxleft{
+	width: 265px;
+	height: 420px;
+}
+.rexiao .rxcenter{
+	width: 340px;
+}
+/**************************************************************/
+/*******************banner**********************/
+.center .banner{
+	width: 100%;
+	height: 450px;	
+}
+
+.center .banner .pic{
+	margin-left: -260px;
+	height: 450px;	
+}
+.center .banner .pic img{
+	
+	height: 450px;	
+	display: none;
+
+}
+
+.center .banner .dian{
+	
+	position: absolute;
+	z-index: 20;
+	top:400px;
+	padding-left:590px ;
+	
+}
+.center .banner .dian span{
+	margin-right: 18px;
+	float: left;
+	display: block;
+	height: 14px;
+	width: 14px;
+	border-radius: 10px;
+	background: #9d978b;
+
+}
+.center .banner .jian{
+	position: absolute;
+	z-index: 20;
+	top:208px;
+}
+.center .banner .jian img{
+		
+	height: 40px;
+	width: 30px;
+}
+.center .banner .jian #zuo{
+	margin-left: 275px;
+	margin-right: 920px;
+}
+
+/******************left menu*/
+.center .banner .leftmenu{
+	width: 210px;
+	position: absolute;
+	z-index: 30;
+	top:0px;
+	left: 55px;
+	background: rgba(74,74,74,0.5 )!important;
+	background: rgb(74,74,74);
+	
+	cursor:pointer;
+	
+}
+.center .banner .leftmenu ul{
+	height: 450px;
+	
+}
+.center .banner .leftmenu ul li{
+	border-bottom: 1px solid #a49c92;	
+    height: 55px;
+    line-height: 55px;
+    padding-left: 55px;
+    
+}
+.center .banner .leftmenu ul li:hover table{
+	/*transition-duration:.5,1s;*/
+	display: block;
+	*display: none;
+}
+.center .banner .leftmenu ul li:hover{
+	transition-duration:1s;
+	
+	background: #F9F9F9;
+}
+.center .banner .leftmenu ul li a{
+	font-size: 14px;
+	color: #b0aeab;
+	text-decoration: none;
+}
+.center .banner .leftmenu ul li:hover a{
+	color: black;
+}
+/******************left menu end*/
+
+
+/**************************menu two***********************************/
+/*.center .banner .menutwo{
+	
+	position: absolute;
+	z-index: 30;
+	top:-1px;
+	left: 265px;
+}*/
+.banner .leftmenu table{
+	background: white;
+	margin: 0;
+	padding: 0;
+	margin-top: 1px;
+	display: none;
+	height: 450px;
+	position: absolute;
+	z-index: 30;
+	top:-1px;
+	left: 210px;	
+}
+
+.banner .leftmenu table tr td{	
+	height: 75px;
+	line-height: 75px;
+	width: 250px;
+	
+	
+	
+}
+
+.banner .leftmenu table tr img{
+margin-top: 18px;
+margin-left: 15px;
+margin-right: 20px;
+float: left;
+}
+
+.banner .leftmenu table tr td p{
+	height: 75px;	
+	line-height: 75px;
+	width: 250px;
+	
+	font-size: 14px;	
+	
+}
+
+.banner .leftmenu table tr td p:hover{
+	color: #15AE2F;
+}
+/********************************************************88*/
+/*.banner .menutwo table tr td{	
+	height: 30px;
+}
+.banner .menutwo table tr .tu{
+	padding-left: 20px;
+	width: 60px;
+}	
+
+.banner .menutwo table tr td p{
+	
+	width: 200px;
+	
+	margin-top: 0px;
+	position: relative;
+	top: -15px;
+	
+}*/
+
+/*.banner .menutwo table tr .tu img{
+margin-top: 17px;
+}*/
+
+/**************************menu two* end******************************/
+/*********************banner end***********************/
+
+
+.center .chanpin{
+	padding-left: 55px;
+	/*background: #ededed;*/
+	background: #f5f5f5;
+	padding-top: 10px;
+	
+}
+.center .chanpin img{
+	cursor:pointer;
+	
+}
+.center .chanpin h3:active{	
+	color: red;
+}
+
+.center  .chanpin .one{
+	
+	width: 100%;
+	height: 150px;
+}
+
+.center  .chanpin .one div{
+	float: left;
+	margin-right: 11px;
+	
+}
+.center .chanpin .one #onea{
+	
+	background: #a49b98;
+	height: 150px;
+	width: 210px;	
+	position: relative;
+	
+}
+#guanfwx_img{
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 45px;
+	height: 150px;
+	display: none;
+}
+
+#guanfwx:hover #guanfwx_img{
+	display: block;
+}
+.center .chanpin .one #onea div{
+	
+	float: left;
+	height: 60px;
+	width: 102px;
+	margin: 0 auto;
+	margin-top: 10px;	
+	
+}
+.center .chanpin .one #onea img{
+	margin-left: 33px;
+	cursor:pointer;
+}
+.center .chanpin .one #onea img:hover{
+	transition-duration:0.3s;	
+	opacity: 0.5;
+}
+
+.center .chanpin .one #onea p{
+	text-align: center;
+	font-size: 14px;
+	margin-top: 5px;
+	color: #dedbdb;
+}
+.center .chanpin .one .oneb {
+	
+	width: 333px;
+	height: 150px;
+	background: #dddcd8;	
+	
+	/*-webkit-transition:all 0.5s ease;
+	-moz-transition: all 0.5s ease;	*/
+	
+}
+.center .chanpin .one .oneb:hover{
+	transition-duration:0.5s;	
+	box-shadow:-5px 5px 5px #c4c4c4; /*左边阴影*/    
+   -moz-box-shadow: -5px 5px 5px #c4c4c4;   /*底边阴影*/ 
+}
+
+.center .chanpin .one .oneb h3{
+	
+	font-size: 12px;
+	margin-top: 28px ;
+	margin-bottom: 18px;
+}
+.center .chanpin .one .oneb span{
+	display: block;
+	font-size: 12px;
+	margin-bottom: 35px;
+	color: #666666;
+}
+.center .chanpin .one .oneb h2{
+	font-size: 13px;
+	color:#f23236 ;
+}
+
+/*       第一部分end*/
+
+/*标题*/
+.center .chanpin  .biaoti{
+	
+	padding-top: 53px;
+	padding-bottom: 25px;
+	font-size: 22px;	
+}
+
+/**********************/
+
+/************第二部分***********/
+.center .chanpin .two{
+	
+	height: 345px;
+	width: 100%;
+}
+.center .chanpin .two div,.center .chanpin .three .thereone div,.center .chanpin .three .theretwo div,.center .chanpin .three .therethree div{
+	
+	background: white;
+	float: left;
+	margin-right: 4px;
+	height: 345px;
+	width: 244px;
+	
+}
+
+
+/**********产品图片***************/
+.center .chanpin .imgs{
+	text-align: center;
+	
+}
+
+.center .chanpin .imgs img{
+	
+	margin: 45px auto 20px auto;
+	cursor:pointer;
+	height: 170px;
+	/*-webkit-transition:all 0.3s ease;
+	-moz-transition: all 0.3s ease;	*/
+	transition-duration:0.3s;
+}
+
+.center .chanpin .imgs:hover{	
+		
+    box-shadow: 0 0 0 3px rgba(196,196,196,0.5);      
+}
+
+
+.center .chanpin .imgs h3{
+	font-size: 14px;
+	
+	margin-bottom: 15px;
+}
+.center .chanpin .imgs p{
+	font-size: 12px;
+	color: #666666;
+}
+.center .chanpin .imgs h2{
+	font-size: 14px;
+	margin-top: 25px;
+	color:#f23236 ;
+}
+
+/*************************/
+
+
+
+/************第二部分  end***********/
+/************第三部分 ***********/
+.center .chanpin .three{
+	
+	width: 100%;
+	height: 694px;
+}
+.center .chanpin .three .theretwo div,.center .chanpin .fore .foreb div ,.center .chanpin .fore .forec div,.center .chanpin .five .fiveb div{
+	margin-top: 4px;
+}
+/************第三部分 end***********/
+
+
+/************第四部分 ***********/
+.center .chanpin .fore{
+	
+	width: 100%;
+	height: 1043px;
+}
+.center .chanpin .fore .forea div,.center .chanpin .fore .foreb div ,.center .chanpin .fore .forec div,.center .chanpin .five .fivea div ,.center .chanpin .five .fiveb div{
+	
+	background: white;
+	float: left;
+	margin-right: 4px;
+	height: 345px;
+	width: 244px;
+}
+/************第四部分 end***********/
+.center .chanpin .five{
+ 
+ 
+	width: 100%;
+	height: 739px;
+}

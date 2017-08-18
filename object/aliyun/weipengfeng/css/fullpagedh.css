@@ -1,0 +1,392 @@
+/*section1*/
+/*.section1 a{
+	animation: myfirst9;
+	animation-delay:3s;  
+	-webkit-animation-delay:1s;
+	animation-duration:5s;
+	animation-fill-mode: forwards;
+	z-index: 999;
+	
+}
+@keyframes myfirst9{
+	from{left: 200px; top: 0;
+		opacity: 0;
+	}
+	to{ left: 0px; top: 0;
+		opacity: 1;
+	}
+}*/
+
+/*section2*/
+.section2_2 img{
+	animation: myfirst;
+	-moz-animation: myfirst ;	
+	-webkit-animation: myfirst ;	
+	animation-fill-mode: forwards;
+	animation-duration:2s;
+	animation-iteration-count:1;
+	opacity: 0;
+	animation-delay:1s;  
+	-webkit-animation-delay:1s;
+}
+@keyframes myfirst{
+	from{left: 735px; top: 620px;
+		opacity: 0;
+	}
+	to{ left: 735px; top: 0;
+		opacity: 1;
+	}
+}
+.slide1_1{
+	animation: myfirsta ;
+	-moz-animation: myfirsta ;	/* Firefox */
+	-webkit-animation: myfirsta ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	left: 0px;
+	top:100px;
+	opacity: 0;
+	animation-delay:100;  
+	
+}
+@keyframes myfirsta{
+	from{left:0; top: 200px;
+	     opacity: 0;
+	}
+	to{left: 0; top: 0;
+		opacity: 1;
+	}
+}
+.slide1_2{
+	animation: myfirstb 2s;
+	-moz-animation: myfirstb 2s;	/* Firefox */
+	-webkit-animation: myfirstb 2s;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	left: 0px;
+	top:100px;
+	transition: transform 1s;
+	animation-delay:100;  
+}
+@keyframes myfirstb{
+	from{left:0; top: 200px;
+	     opacity: 0;
+	     transform: scale(0.2,0.2);
+	}
+	to{left: 0; top: 0;
+		opacity: 1;
+		 transform: scale(1,1);
+	}
+}
+.slide1_3 ,.slide1_4{
+	animation: myfirstc 2s;
+	-moz-animation: myfirstc 2s;	/* Firefox */
+	-webkit-animation: myfirstc 2s;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	left: 0px;
+	top:100px;
+	opacity: 0;
+	transition: transform 2s;
+	animation-delay:100;  
+}
+
+@keyframes myfirstc{
+	from{left:0; top: 200px;
+	     opacity: 0;
+	}
+	to{left: 0; top: 0;
+		opacity: 1;
+	}
+}
+/*slide2*/
+.slide2 img{
+	animation: myfirstd;
+	-moz-animation: myfirstd;	/* Firefox */
+	-webkit-animation: myfirstd ;	/* Safari 和 Chrome */
+	-o-animation: myfirstd ;	/* Opera */
+	
+	animation-duration:2s;
+	/*animation-delay: 2s;    /* 动画延迟时间*/*/
+	left: 0px;
+	top:-100px;
+	animation-fill-mode: forwards;
+}
+@keyframes myfirstd{
+	from{left:0; top: -300px;
+	     opacity: 0;
+	}
+	to{left: 0; top: 0;
+		opacity: 1;
+	}
+}
+/*section31*/
+.section31 h1{
+	animation: myfirstf;
+	-moz-animation: myfirstf;	/* Firefox */
+	-webkit-animation: myfirstf ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	/*animation-delay: 2s;    /* 动画延迟时间*/
+}
+@keyframes myfirstf{
+	from{top: 100px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section31 p{
+	animation: myfirsf;
+	-moz-animation: myfirsf;	/* Firefox */
+	-webkit-animation: myfirsf ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1s;    /*动画延迟时间*/
+}
+@keyframes myfirsf{
+	from{top: 100px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section32 li{
+	animation: myfirs;
+	-moz-animation: myfirs;	/* Firefox */
+	-webkit-animation: myfirs ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1.5s;    /*动画延迟时间*/
+}
+@keyframes myfirs{
+	from{top: 100px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+
+/*section4*/
+.section41{
+	animation: myfirstg;
+	-moz-animation: myfirstg;	/* Firefox */
+	-webkit-animation: myfirstg ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+}
+@keyframes myfirstg{
+	from{top: 80px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section42 , .section43{
+	animation: myfirsth;
+	-moz-animation: myfirsth;	/* Firefox */
+	-webkit-animation: myfirsth ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1s;  
+}
+@keyframes myfirsth{
+	from{top: 80px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section44{
+	animation: myfirsth;
+	-moz-animation: myfirsth;	/* Firefox */
+	-webkit-animation: myfirsth ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1.5s;  
+}
+@keyframes myfirsth{
+	from{top: 80px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+
+/*section5*/
+.section53_1{
+	animation: myfirsti;
+	-moz-animation: myfirsti;	/* Firefox */
+	-webkit-animation: myfirsti ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+}
+@keyframes myfirsti{
+	from{top: 50px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section53_2 , .section53_3{
+	animation: myfirsti;
+	-moz-animation: myfirsti;	/* Firefox */
+	-webkit-animation: myfirsti ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1s;  
+}
+@keyframes myfirsti{
+	from{top: 50px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section53_4{
+	animation: myfirstj2;
+	-moz-animation: myfirstj2;	
+	-webkit-animation: myfirstj2 ;
+	opacity: 0;
+	animation-duration: 3s; 
+	animation-delay: 1.5s; 
+	animation-fill-mode: forwards;
+	
+}
+@keyframes myfirstj2{
+	from{transform: translate(20px,0);
+	     opacity: 0;
+	}
+	to{transform: translate(0,0);
+		opacity: 1;
+	}
+}
+.section53_5{
+	animation: myfirstj1;
+	-moz-animation: myfirstj1;	
+	-webkit-animation: myfirstj1 ;
+	opacity: 0;	
+	animation-fill-mode: forwards;
+	animation-duration:3s;
+	animation-delay: 1.5s;  
+	
+}
+@keyframes myfirstj1{
+	from{transform: translate(-20px,0);
+	     opacity: 0;
+	}
+	to{transform: translate(0,0);
+		opacity: 1;
+	}
+}
+
+.section55{
+	animation: myfirstj3;
+	-moz-animation: myfirstj3;	
+	-webkit-animation: myfirstj3 ;
+	opacity: 0;	
+	animation-fill-mode: forwards;
+	animation-duration:3s;
+	animation-delay: 2.5s; 
+}
+@keyframes myfirstj3{
+	from{transform: translate(0,0);
+	     opacity: 0;
+	}
+	to{transform: translate(0,0);
+		opacity: 1;
+	}
+}
+
+/*section61*/
+.section61 h1{
+	animation: myfirsti8;
+	-moz-animation: myfirsti8;	/* Firefox */
+	-webkit-animation: myfirsti8 ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+}
+@keyframes myfirsti8{
+	from{top: 50px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+.section61 p{
+    animation: myfirsti4;
+	-moz-animation: myfirsti4;	/* Firefox */
+	-webkit-animation: myfirsti4 ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1s;  
+}
+@keyframes myfirsti4{
+	from{top: 50px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+/*section8*/
+.section7 h1{
+	animation: myfirstv;
+	-moz-animation: myfirstv;	/* Firefox */
+	-webkit-animation: myfirstv ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+}
+@keyframes myfirstv{
+	from{top: 50px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+
+.section71 li{
+    animation: myfirstiv4;
+	-moz-animation: myfirstiv4;	/* Firefox */
+	-webkit-animation: myfirstiv4 ;	/* Safari 和 Chrome */
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-duration:1s;
+	animation-delay: 1s;  
+}
+@keyframes myfirstiv4{
+	from{top: 50px;
+	     opacity: 0;
+	}
+	to{top: 0px;
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Incake 后台管理</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/amazeui.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/amazeui.js"></script>
+		<!--<script type="text/javascript" src="js/bootstrap.js" ></script>-->
+		<script type="text/javascript" src="js/background.js" ></script>
+		<script type="text/javascript" src="js/echarts.js" ></script>
+		<script type="text/javascript" src="js/houtaiDL.js" ></script>
+	</head>
+
+	<body>
+		<div class="background-top">
+			<div class="top-num">
+				<div class="top-num-inner">
+					<span>欢迎您登陆系统:</span>	<span id="user">user</span> <span id="tuichu"><i class="am-icon-power-off"></i> 退出</span>
+				</div>
+			</div>
+			<div class="background-logo">
+				<div class="logo-img">
+					<img src="img/logo.png"/>
+				</div>
+				<div class="back-text">
+					印克时光后台管理系统
+				</div>
+				<div class="back-time">
+					<span>今天是:</span><span>2016年11月25日</span><span>星期五</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="lk-centers ">
+			<!--内容begin-->
+
+			<div class="am-g myincake">
+				<div class="am-u-md-2 mylk-left">
+						<div class="mylk-title">INCAKE后台管理</div>
+					<!--导航-->
+					<div class="jk-guanli">
+						<ul>
+							<li   class="li-one">站点信息管理</li>
+							<div class="li-two" style="display: block;">
+								<li class="my-lk-nav my-message message-clickcss">网站浏览量<i class="am-icon-angle-right"></i> </li>
+								<li class="my-lk-nav my-message ">客户满意度<i class="am-icon-angle-right"></i> </li>
+								<li class="my-lk-nav my-message ">导航管理<i class="am-icon-angle-right"></i> </li>
+								<li class="my-lk-nav my-message ">banner图管理<i class="am-icon-angle-right"></i> </li>
+							</div>
+						</ul>
+					</div>
+					<div class="jk-guanli" >
+						<ul>
+							<li   class="li-one">商品管理</li>
+							<div class="li-two">
+								<li class="my-lk-nav my-message ">商品维护<i class="am-icon-angle-right"></i> </li>
+								<!--<li class="my-lk-nav my-message ">采购管理<i class="am-icon-angle-right"></i> </li>-->
+							</div>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li   class="li-one">订单管理</li>
+							<div class="li-two">
+								<li class="my-lk-nav my-message ">订单信息<i class="am-icon-angle-right"></i> </li>
+							</div>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li   class="li-one">物流管理</li>
+							<div class="li-two">
+							<!--<li class="my-lk-nav my-message ">物流人员<i class="am-icon-angle-right"></i> </li>-->
+							<li class="my-lk-nav my-message ">发货信息<i class="am-icon-angle-right"></i> </li>
+							</div>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li   class="li-one">会员管理</li>
+							<div class="li-two">
+								<li class="my-lk-nav my-message">会员信息管理<i class="am-icon-angle-right"></i> </li>
+							</div>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li  class="li-one">统计报表</li>
+							<div class="li-two">
+								<li class="my-lk-nav my-message">销售统计<i class="am-icon-angle-right"></i> </li>
+								<li class="my-lk-nav my-message">收支分析<i class="am-icon-angle-right"></i> </li>
+							</div>
+						</ul>
+					</div>
+					<div class="jk-guanli">
+						<ul>
+							<li class="li-one">管理员信息</li>
+							<div class="li-two">
+								<li class="my-lk-nav my-message">个人信息<i class="am-icon-angle-right"></i> </li>
+								<li class="my-lk-nav my-message">修改密码<i class="am-icon-angle-right"></i> </li>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<div class="am-u-md-10 mylk-right">
+
+					<div class="lk-biao lk-biaos"><!--001 站点信息-->
+						<!--<p>网站浏览量统计</p>-->
+						<div class="liuliang">
+						<div id="tu1" style="width: 100%;height:400px;"></div>
+						<div class="tubiao1 lk-tab">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<tbody>
+									<thead>
+										<tr>
+											<td>14.10</td>
+											<td>14.11</td>
+											<td>14.12</td>
+											<td>14.13</td>
+											<td>14.14</td>
+											<td>14.15</td>
+											<td>14.16</td>
+											<td>14.17</td>
+											<td>14.18</td>
+											<td>14.19</td>
+											<td>14.20</td>
+											<td>14.21</td>
+											<td>14.22</td>
+											<td>14.23</td>
+											<td>14.24</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>467万</td>
+											<td>153万</td>
+											<td>167万</td>
+											<td>350万</td>
+											<td>216万</td>
+											<td>265万</td>
+											<td>430万</td>
+											<td>467万</td>
+											<td>153万</td>
+											<td>167万</td>
+											<td>350万</td>
+											<td>216万</td>
+											<td>265万</td>
+											<td>430万</td>
+											<td>467万</td>
+										</tr>
+									</tbody>
+							</table>
+						</div>
+						</div>
+							<script>
+								var myChart = echarts.init(document.getElementById('tu1'));
+								var dataAxis = ['14.10','11.11','11.12','11.13', '11.14','14.15','11.16','11.17','11.18', '11.19', '11.20', '11.21', '11.22', '11.23', '11.24'];
+								var data = [410, 350, 298, 467, 153, 167, 350, 216, 265, 430 , 320 , 358 , 360 , 265 , 198];
+								var yMax = 500;
+								var dataShadow = [];
+								
+								for (var i = 0; i < data.length; i++) {
+								    dataShadow.push(yMax);
+								}
+								
+								option = {
+								    title: {
+								        text: '网站浏览量柱状图单位(万)',
+								        subtext: ''
+								    },
+								    xAxis: {
+								        data: dataAxis,
+								        axisLabel: {
+								            inside: true,
+								            textStyle: {
+								                color: '#fff'
+								            }
+								        },
+								        axisTick: {
+								            show: false
+								        },
+								        axisLine: {
+								            show: false
+								        },
+								        z: 10
+								    },
+								    yAxis: {
+								        axisLine: {
+								            show: false
+								        },
+								        axisTick: {
+								            show: false
+								        },
+								        axisLabel: {
+								            textStyle: {
+								                color: '#999'
+								            }
+								        }
+								    },
+								    dataZoom: [
+								        {
+								            type: 'inside'
+								        }
+								    ],
+								    series: [
+								        { // For shadow
+								            type: 'bar',
+								            itemStyle: {
+								                normal: {color: 'rgba(0,0,0,0.05)'}
+								            },
+								            barGap:'-100%',
+								            barCategoryGap:'40%',
+								            data: dataShadow
+								        },
+								        {
+								            type: 'bar',
+								            itemStyle: {
+								                normal: {
+								                    color: new echarts.graphic.LinearGradient(
+								                        0, 0, 0, 1,
+								                        [
+								                            {offset: 0, color: '#83bff6'},
+								                            {offset: 0.5, color: '#188df0'},
+								                            {offset: 1, color: '#188df0'}
+								                        ]
+								                    )
+								                },
+								                emphasis: {
+								                    color: new echarts.graphic.LinearGradient(
+								                        0, 0, 0, 1,
+								                        [
+								                            {offset: 0, color: '#2378f7'},
+								                            {offset: 0.7, color: '#2378f7'},
+								                            {offset: 1, color: '#83bff6'}
+								                        ]
+								                    )
+								                }
+								            },
+								            data: data
+								        }
+								    ]
+								};
+								
+								// Enable data zoom when user click bar.
+								var zoomSize = 6;
+								myChart.on('click', function (params) {
+								    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+								    myChart.dispatchAction({
+								        type: 'dataZoom',
+								        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+								        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+								    });
+								});
+								myChart.setOption(option);
+							</script>
+							
+					</div>
+					<!--001 end-->
+
+					<div class="lk-biao lk-biaos">
+						<div class="tu2">
+						<div id="tu2" style="width: 930px;height:400px;"></div>
+						<div class="tubiao1 lk-tab">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<tbody>
+									<thead>
+										<tr>
+											<td>非常满意</td>
+											<td>满意</td>
+											<td>一般</td>
+											<td>差</td>
+											<td>很差</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>62%</td>
+											<td>20%</td>
+											<td>9%</td>
+											<td>6%</td>
+											<td>3%</td>
+										</tr>
+									</tbody>
+							</table>
+						</div>
+						<script type="text/javascript">
+						var myChart2 = echarts.init(document.getElementById('tu2'));
+							option = {
+						    title : {
+						        text: '客户满意度分析图',
+						        subtext: '',
+						        x:'center'
+						    },
+						    tooltip : {
+						        trigger: 'item',
+						        formatter: "{a} <br/>{b} : {c} ({d}%)"
+						    },
+						    legend: {
+						        orient: 'vertical',
+						        left: 'left',
+						        data: ['非常满意','满意','一般','差','很差']
+						    },
+						    series : [
+						        {
+						            name: '满意度',
+						            type: 'pie',
+						            radius : '55%',
+						            center: ['50%', '60%'],
+						            data:[
+						                {value:1548, name:'非常满意'},
+						                {value:500, name:'满意'},
+						                {value:234, name:'一般'},
+						                {value:135, name:'差'},
+						                {value:80, name:'很差'}
+						            ],
+						            itemStyle: {
+						                emphasis: {
+						                    shadowBlur: 10,
+						                    shadowOffsetX: 0,
+						                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+						                }
+						            }
+						        }
+						    ]
+						};
+						myChart2.setOption(option);
+						</script>
+						</div>
+					</div>
+					<!--002 end-->
+					<div class="lk-biao lk-biaos"><!--导航管理-->
+						<div class="lk-xinxi">
+							<div class="xinxi-nav">
+								<div class="top-but" style="margin: 10px 0;">
+									<button type="button" class="am-btn am-btn-primary nav_change">修改</button>
+									<button type="button" class="am-btn am-btn-secondary nav_baocun">保存</button>
+									<button type="button" class="am-btn am-btn-warning navchange_tijiao">提交</button>
+									<button type="button" class="am-btn am-btn-danger nav_tingyong">停用</button>
+									<button type="button" class="am-btn am-btn-success nav_qiyong">启用</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="lk-tab am-u-lg-12"><!--banner图管理-->
+							<table class="am-table am-table-bordered am-table-radius nav_tab">
+								<thead>
+									<tr>
+										<td><b>---</b></td>
+										<td><b>导航一</b></td>
+										<td><b>导航二</b></td>
+										<td><b>导航三</b></td>
+										<td><b>导航四</b></td>
+										<td><b>导航五</b></td>
+										<td><b>导航六</b></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>一级导航</td>
+										<td class="nav_td" contenteditable='false'>Cake List-蛋糕馆</td>
+										<td class="nav_td" contenteditable='false'>Genius at work-GAW蛋糕</td>
+										<td class="nav_td" contenteditable='false'>Insweet-思蜜</td>
+										<td class="nav_td" contenteditable='false'>Activities-活动专享</td>
+										<td class="nav_td" contenteditable='false'>My Incake-我的INCAKE</td>
+										<td class="nav_td" contenteditable='false'>Enterprises-企业专区</td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--201-->
+										<td class="nav_td" contenteditable='false'>Cheese-芝士系列</td>
+										<td class="nav_td" contenteditable='false'>GawDiy-GAW翻糖定制</td>
+										<td ></td>
+										<td class="nav_td" contenteditable='false'>New Activity-最新活动</td>
+										<td class="nav_td" contenteditable='false'>My Orders-我的订单</td>
+										<td class="nav_td" contenteditable='false'>Apply For Foretaste-试吃申请</td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--202-->
+										<td class="nav_td" contenteditable='false'>Chocolate-巧克力系列</td>
+										<td class="nav_td" contenteditable='false'>GawClassic-GAW经典</td>
+										<td></td>
+										<td class="nav_td" contenteditable='false'>Activities-积分商城</td>
+										<td class="nav_td" contenteditable='false'>My Points-我的积分</td>
+										<td class="nav_td" contenteditable='false'>VIP Login-企业VIP登录</td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--203-->
+										<td class="nav_td" contenteditable='false'>Napoleon-拿破仑系列</td>
+										<td class="nav_td" contenteditable='false'>GawStar-GAW星座</td>
+										<td></td>
+										<td></td>
+										<td class="nav_td" contenteditable='false'>Coupons-我的优惠券</td>
+										<td class="nav_td" contenteditable='false'>Enterprises-企业专区</td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--204-->
+										<td class="nav_td" contenteditable='false'>Mousse-慕斯系列</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--205-->
+										<td class="nav_td" contenteditable='false'>Cream-乳脂系列</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--206-->
+										<td class="nav_td" contenteditable='false'>DIY-选拼系列</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--207-->
+										<td class="nav_td" contenteditable='false'>Star-星座系列</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>二级导航</td><!--208-->
+										<td class="nav_td" contenteditable='false'>DIY Cak-定制蛋糕</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>	
+					<div class="lk-biao lk-biaos"><!--banner图-->
+						<div class="lk-xinxi">
+							<div class="xinxi-nav">
+								<div class="top-but" style="margin: 10px 0;">
+									<!--<button type="button" class="am-btn am-btn-primary ">增加图片</button>-->
+									<button type="button" class="am-btn am-btn-success change_banner">修改</button>
+									<button type="button" class="am-btn am-btn-secondary baocun_banner">保存</button>
+									<button type="button" class="am-btn am-btn-warning tijao_banner">提交</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="lk-tab am-u-lg-12">
+							
+							<table class="am-table am-table-bordered am-table-radius banner_guanli">
+								<thead>
+									<tr>
+										<td><b>图片预览</b></td>
+										<td><b>图片名称</b> </td>
+										<td><b>图片路径</b> </td>
+										<td><b>图片描述</b></td>
+										<td><b>轮播顺序</b></td>
+										<td><b>操作</b></td>
+									</tr>
+								</thead>
+								<tbody class="banner_tbody">
+									<tr class='banner'>
+										<td class="banner_img"><img class='banner_image' src='img/banner1.jpg' /></td>
+										<td>
+											<p class='banner_name' contenteditable='false'>奶香巧克力 chocolate cake</p>
+										</td>
+										<td>
+											<p class='banner_src' contenteditable='false'>img/banner1.jpg</p>
+										</td>
+										<td>
+											<p class='banner_miaoshu' contenteditable='false'>巧克力蛋糕今日7折</p>
+										</td>
+										<td>
+											<p class='banner_shunxu' contenteditable='false'>1</p>
+										</td>
+										<td>
+											<button type='file' class='am-btn am-btn-success am-btn-block am-disabled change_bannerimg'>修改图片</button>
+											<!--<button type='button' class='am-btn am-btn-danger am-btn-block am-disabled del_banner'>删除图片</button>-->
+										</td>
+									</tr>
+									<tr class='banner'>
+										<td class="banner_img"><img class='banner_image' src='img/banner2.jpg' /></td>
+										<td>
+											<p class='banner_name' contenteditable='false'>奶香巧克力 chocolate cake</p>
+										</td>
+										<td>
+											<p class='banner_src' contenteditable='false'>img/banner2.jpg</p>
+										</td>
+										<td>
+											<p class='banner_miaoshu' contenteditable='false'>巧克力蛋糕今日7折</p>
+										</td>
+										<td>
+											<p class='banner_shunxu' contenteditable='false'>2</p>
+										</td>
+										<td>
+											<button type='file' class='am-btn am-btn-success am-btn-block am-disabled change_bannerimg'>修改图片</button>
+											<!--<button type='button' class='am-btn am-btn-danger am-btn-block am-disabled del_banner'>删除图片</button>-->
+										</td>
+									</tr>
+									<tr class='banner'>
+										<td class="banner_img"><img class='banner_image' src='img/banner3.jpg' /></td>
+										<td>
+											<p class='banner_name' contenteditable='false'>奶香巧克力 chocolate cake</p>
+										</td>
+										<td>
+											<p class='banner_src' contenteditable='false'>img/banner3.jpg</p>
+										</td>
+										<td>
+											<p class='banner_miaoshu' contenteditable='false'>巧克力蛋糕今日7折</p>
+										</td>
+										<td>
+											<p class='banner_shunxu' contenteditable='false'>3</p>
+										</td>
+										<td>
+											<button type='file' class='am-btn am-btn-success am-btn-block am-disabled change_bannerimg'>修改图片</button>
+											<!--<button type='button' class='am-btn am-btn-danger am-btn-block am-disabled del_banner'>删除图片</button>-->
+										</td>
+									</tr>
+									<tr class='banner'>
+										<td class="banner_img"><img class='banner_image' src='img/banner4.jpg' /></td>
+										<td>
+											<p class='banner_name' contenteditable='false'>奶香巧克力 chocolate cake</p>
+										</td>
+										<td>
+											<p class='banner_src' contenteditable='false'>img/banner4.jpg</p>
+										</td>
+										<td>
+											<p class='banner_miaoshu' contenteditable='false'>巧克力蛋糕今日7折</p>
+										</td>
+										<td>
+											<p class='banner_shunxu' contenteditable='false'>4</p>
+										</td>
+										<td>
+											<button type='file' class='am-btn am-btn-success am-btn-block am-disabled change_bannerimg'>修改图片</button>
+											<!--<button type='button' class='am-btn am-btn-danger am-btn-block am-disabled del_banner'>删除图片</button>-->
+										</td>
+									</tr>
+									<tr class='banner'>
+										<td class="banner_img"><img class='banner_image' src='img/banner5.jpg' /></td>
+										<td>
+											<p class='banner_name' contenteditable='false'>奶香巧克力 chocolate cake</p>
+										</td>
+										<td>
+											<p class='banner_src' contenteditable='false'>img/banner5.jpg</p>
+										</td>
+										<td>
+											<p class='banner_miaoshu' contenteditable='false'>巧克力蛋糕今日7折</p>
+										</td>
+										<td>
+											<p class='banner_shunxu' contenteditable='false'>5</p>
+										</td>
+										<td>
+											<button type='file' class='am-btn am-btn-success am-btn-block am-disabled change_bannerimg'>修改图片</button>
+											<!--<button type='button' class='am-btn am-btn-danger am-btn-block am-disabled del_banner'>删除图片</button>-->
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>	
+					<div class="lk-biao lk-biaos"><!--商品维护-->
+						<div class="lk-xinxi">
+							<p>网站共有<span>0</span>个商品</p>
+						</div>
+						<div class="am-u-lg-12" style="margin-bottom: 5px;padding-left: 0px;">
+							<div class="am-u-lg-5 am-u-md-6 am-u-sm-6 lk-shuru" style="margin-top: -15px;">
+								<div class="am-input-group" style="margin-top: -15px;">
+									<input id="sahngpin" type="text" class="am-form-field" value="" placeholder="请输入商品名称/编号进行查询" >
+									<span class="am-input-group-btn">
+							        	<button id="sahngpin_sousuo" class="am-btn am-btn-default" type="button">搜索商品</button>
+							      	</span>
+								</div>
+							</div>
+						</div>
+						<div class="top-but">
+							<button type="button" class="am-btn am-btn-primary add_sahngpin">增加商品</button>
+							<!--<button type="button" class="am-btn am-btn-danger piliang_del">批量删除</button>-->
+						</div>
+						<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius sahngpin_guanli">
+								<thead>
+									<tr>
+										<!--<td>
+											<button type="button" class="am-btn am-btn-success quanxuan">全选</button>
+											<button type="button" class="am-btn am-btn-secondary fanxuan">反选</button>
+										</td>-->
+										<td><b>产品编号</b></td>
+										<td><b>产品图片</b></td>
+										<td><b>产品名称</b> </td>
+										<td><b>产品系列</b> </td>
+										<td><b>产品描述</b> </td>
+										<td><b>产品价格(元)</b></td>
+										<td><b>操作</b></td>
+									</tr>
+								</thead>
+								<tbody class="sahngpin_tbody">
+									<tr class='chanpin_guanli'>
+										<!--<td><input class='checks' type='checkbox'></td>-->
+										<td><p class='chanpin_bianhao'>1</p></td>
+										<td><img class='chanpin_img' src='img/one_01.jpg' /></td>
+										<td>
+											<p class='chanpin_ming' contenteditable='true'>奶香巧克力 chocolate cake</p>
+										</td>
+										<td>
+											<p class='chanpin_xilie' contenteditable='true'>巧克力系列</p>
+										</td>
+										<td>
+											<p class='chanpin_miaos' contenteditable='true'> 从第一口‘侵略’到最后一口</p>
+										</td>
+										<td>
+											<p class='chanpin_jiage' contenteditable='true'>360</p>
+										</td>
+										<td>
+											<button type='button' class='am-btn am-btn-primary am-btn-block chanpin_sahngshi'>商品上市</button>
+											<button type='button' class='am-btn am-btn-warning am-btn-block chanpin_changes'>信息修改</button>
+											<button type='button' class='am-btn am-btn-danger am-btn-block del_chanpin'>删除商品</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+								</div>
+					</div>
+					<!--003 end-->
+
+					<div class="lk-biao lk-biaos"><!--004订单管理-->
+						<!--001 订单-->
+						<div class="lk-xinxi">
+							<p>您共有<span id="dingdan_num">0</span>个订单其中<span id="weichili_dd">0</span>个订单未处理</p>
+							<div class="xinxi-nav">
+								<ul>
+									<li class="all_dingdan">全部订单</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li class="all_zhifu">已支付</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li class="dafahuo">待发货</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li class="dingdan_chuli">正在处理中</li>
+								</ul>
+							</div>
+						</div>
+						<div class="am-u-lg-5 am-u-md-7 am-u-sm-7 lk-shuru">
+							<div class="am-input-group">
+								<input id="dingdannumber" type="number" class="am-form-field" value="" placeholder="请输入订单编号进行查询">
+								<span class="am-input-group-btn">
+						        	<button id="dingdanbtn" class="am-btn am-btn-default" type="button">订单搜索</button>
+						      	</span>
+							</div>
+						</div>
+
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td><b>订单日期</b></td>
+										<td><b>订单号码</b></td>
+										<td><b>商品名称</b></td>
+										<td><b>单价(元)</b></td>
+										<td><b>数量</b></td>
+										<td><b>总金额(元)</b></td>
+										<td><b>支付状态</b></td>
+										<td><b>物流状态</b></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016001</td>
+										<td>芝士蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">已发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016001</td>
+										<td>芝士蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">已发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016001</td>
+										<td>拿破仑系列</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">待支付</td>
+										<td class="wuliu_td">正在处理中</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016001</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">正在处理中</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016001</td>
+										<td>拿破仑系列</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">待发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016002</td>
+										<td>乳脂系列</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">已发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016002</td>
+										<td>芝士蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">待发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016003</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">待支付</td>
+										<td class="wuliu_td">正在处理中</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016003</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">正在处理中</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016003</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">待发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016003</td>
+										<td>拿破仑系列</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">待发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016003</td>
+										<td>乳脂系列</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">已发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016004</td>
+										<td>芝士蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">待发货</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016005</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">待支付</td>
+										<td class="wuliu_td">正在处理中</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016005</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">正在处理中</td>
+									</tr>
+									<tr class="dingdan_tr">
+										<td>2016-11-24</td>
+										<td class="dingdan_number">2016006</td>
+										<td>巧克力蛋糕</td>
+										<td>160</td>
+										<td>10</td>
+										<td>1600</td>
+										<td class="zhifu_td">已支付</td>
+										<td class="wuliu_td">待发货</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--004 end-->
+
+					<div class="lk-biao lk-biaos"><!--005发货信息-->
+						<!--002积分-->
+						<div class="lk-xinxi">
+							<p>共有<span>5</span>个物流人员</p>
+							<div class="xinxi-nav">
+								<ul>
+									<li>尚未配送</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>配送中</li>
+									<li>
+										<a>|</a>
+									</li>
+									<li>已签收</li>
+								</ul>
+							</div>
+						</div>
+								<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-12">
+							<table class="am-table am-table-bordered am-table-radius ">
+								<thead>
+									<tr>
+										<td><b>日期</b></td>
+										<td><b>订单号码</b></td>
+										<td><b>配送人员</b></td>
+										<td><b>配送地址</b></td>
+										<td><b>配送状态</b></td>
+										<td><b>配送人员联系方式</b></td>
+										<td><b>顾客联系方式</b></td>
+										<td><b>备注</b></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2016-11-24</td>
+										<td>2016001</td>
+										<td>大毛</td>
+										<td>上海市东辰区广宣街文华小区3栋601室</td>
+										<td>尚未配送</td>
+										<td>111111111</td>
+										<td>110110110</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2016-11-24</td>
+										<td>2016002</td>
+										<td>二毛</td>
+										<td>上海市东辰区广宣街文华小区3栋601室</td>
+										<td>配送中</td>
+										<td>111111111</td>
+										<td>110110110</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2016-11-24</td>
+										<td>2016003</td>
+										<td>三毛</td>
+										<td>上海市东辰区广宣街文华小区3栋601室</td>
+										<td>已签收</td>
+										<td>111111111</td>
+										<td>110110110</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2016-11-24</td>
+										<td>2016003</td>
+										<td>四毛</td>
+										<td>上海市东辰区广宣街文华小区3栋601室</td>
+										<td>已签收</td>
+										<td>111111111</td>
+										<td>110110110</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2016-11-24</td>
+										<td>2016003</td>
+										<td>五毛</td>
+										<td>上海市东辰区广宣街文华小区3栋601室</td>
+										<td>已签收</td>
+										<td>111111111</td>
+										<td>110110110</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+								</div>
+						<div class="point-rule" id="point-rule">
+							<dl>
+								<dd>配送员守则</dd>
+								<dd>一  、尊重客户文明礼貌</dd>
+								<dd>1、配送人员在与客户和同事工作之间都必须使用文明礼貌用语：“您好， 我们是盒马外卖„，请！谢谢！再见！”等语言，声音温和，微笑服务。 </dd>
+								<dd>2、与客户讲普通话（客户讲同一种方言除外）。</dd>
+								<dd>二、任何时间和地点，无论客户有无任何过激行为都不能跟客户吵架，不 能讲脏话，不能打架斗殴，有任何委屈情况向配送负责人解释，不能与客户纠缠。</dd>
+								<dd>三、任何情况下不得擅自动用、索取、收受客户的物品及小费。</dd>
+								<dd>四、严禁传播影响顾客声誉的讯息，严禁传播顾客个人隐私和公司的商业 秘密。</dd>
+								<dd>五、不得向客户泄露其他客户的送货信息和公司门店的销售量等商业信息， 保守商业机密。</dd>
+								<dd>六、配送调度和配送客服人员在接客户电话时必须语言亲切诚恳，不能欺骗客户，不能在与客户通电话而中途挂断电话和摔电话等不礼貌行为。</dd>
+								<dd>七、配送人员在工作时间内不能做与工作无关的事，如玩手机,送货途中逛 街、打牌、接人,途中办理私事等。</dd>
+								<dd>八、除正常上下班交通使用外，不得在非工作时间使用公司车辆进行任何 兼职工作</dd>
+							</dl>
+						</div>
+					</div>
+					<!--005 end-->
+					<!--006 end-->
+					<div class="lk-biao lk-biaos"><!--007  会员管理-->
+						<!--001 订单-->
+						<div class="lk-xinxi">
+							<p>您共有<span>10</span>个会员</p>
+						</div>
+						<div class="am-u-lg-5 am-u-md-7 am-u-sm-7 lk-shuru" >
+							<div class="am-input-group" style="margin-top: -20px;">
+								<input id="" type="number" class="am-form-field" value="" placeholder="请输入会员账号/名称进行查询">
+								<span class="am-input-group-btn">
+						        	<button id="huiyuanbtn" class="am-btn am-btn-default" type="button">搜索会员</button>
+						      	</span>
+							</div>
+						</div>
+
+						<div class="lk-tab am-u-lg-12" style="margin-top: 0px !important;">
+							<table class="am-table am-table-bordered am-table-radius  vip_message">
+								<thead>
+									<tr>
+										<td><b>会员名称</b></td>
+										<td><b>会员类别</b></td>
+										<td><b>会员账号</b></td>
+										<td><b>注册时间</b></td>
+										<td><b>会员状态</b></td>
+										<td><b>操作</b></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="vip_name">Firefly</td>
+										<td class="vip_leibie">vip会员</td>
+										<td class="vip_number">18234175095</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">forever</td>
+										<td class="vip_leibie">vip会员</td>
+										<td class="vip_number">13994778662</td>
+										<td class="vip_time">2016-11-23</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">aaaaaa</td>
+										<td class="vip_leibie">vip会员</td>
+										<td class="vip_number">123456789</td>
+										<td class="vip_time">2016-11-22</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">ssssssss</td>
+										<td class="vip_leibie">普通会员</td>
+										<td class="vip_number">4444444444</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">dddddd</td>
+										<td class="vip_leibie">普通会员</td>
+										<td class="vip_number">55555555555</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">fffffff</td>
+										<td class="vip_leibie">普通会员</td>
+										<td class="vip_number">6666666666</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">zzzzzz</td>
+										<td class="vip_leibie">vip会员</td>
+										<td class="vip_number">7777777777</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">cccccccc</td>
+										<td class="vip_leibie">普通会员</td>
+										<td class="vip_number">8888888888</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">eeeeeee</td>
+										<td class="vip_leibie">vip会员</td>
+										<td class="vip_number">9999999999</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									<tr>
+										<td class="vip_name">desfs</td>
+										<td class="vip_leibie">vip会员</td>
+										<td class="vip_number">201615202</td>
+										<td class="vip_time">2016-11-24</td>
+										<td class="vip_zhuangtai">正常</td>
+										<td	class="vip_aa"><a data-am-modal="{target: '#huiyuan_mesage'}">查看会员详细信息</a></td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--007 end-->
+					<div class="lk-biao lk-biaos" style="position: relative;"><!--008 销售统计-->
+						<p style="font-size: 12px;padding:0;margin: 0;position: absolute;top: 25px;left: 23px;">单位(个)</p>
+						<div id="tu4" style="width: 850%;height:480px;margin-top: 20px;"></div>
+						<script>
+							var myChart3 = echarts.init(document.getElementById('tu4'));
+							option = {
+							    tooltip : {
+							        trigger: 'axis',
+							        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+							            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+							        }
+							    },
+							    legend: {
+							        data:['芝士系列','巧克力系列','拿破仑系列','慕斯系列','乳脂系列','选拼系列','星座系列','GAW系列','定制蛋糕']
+							    },
+							    grid: {
+							        left: '3%',
+							        right: '4%',
+							        bottom: '3%',
+							        containLabel: true
+							    },
+							    xAxis : [
+							        {
+							            type : 'category',
+							            data : ['周一','周二','周三','周四','周五','周六','周日']
+							        }
+							    ],
+							    yAxis : [
+							        {
+							            type : 'value'
+							        }
+							    ],
+							    series : [
+							        {
+							            name:'芝士系列',
+							            type:'bar',
+							            data:[320, 332, 301, 334, 390, 330, 320]
+							        },
+							        {
+							            name:'巧克力系列',
+							            type:'bar',
+							            stack: '广告',
+							            data:[120, 132, 101, 134, 90, 230, 210]
+							        },
+							        {
+							            name:'拿破仑系列',
+							            type:'bar',
+							            stack: '广告',
+							            data:[220, 182, 191, 234, 290, 330, 310]
+							        },
+							        {
+							            name:'慕斯系列',
+							            type:'bar',
+							            stack: '广告',
+							            data:[150, 232, 201, 154, 190, 330, 410]
+							        },
+							        {
+							            name:'乳脂系列',
+							            type:'bar',
+							            data:[862, 1018, 964, 1026, 1679, 1600, 1570],
+							            markLine : {
+							                lineStyle: {
+							                    normal: {
+							                        type: 'dashed'
+							                    }
+							                },
+							                data : [
+							                    [{type : 'min'}, {type : 'max'}]
+							                ]
+							            }
+							        },
+							        {
+							            name:'选拼系列',
+							            type:'bar',
+							            barWidth : 5,
+							            stack: '选拼系列',
+							            data:[620, 732, 701, 734, 1090, 1130, 1120]
+							        },
+							        {
+							            name:'星座系列',
+							            type:'bar',
+							            stack: '星座系列',
+							            data:[120, 132, 101, 134, 290, 230, 220]
+							        },
+							        {
+							            name:'GAW系列',
+							            type:'bar',
+							            stack: 'GAW系列',
+							            data:[60, 72, 71, 74, 190, 130, 110]
+							        },
+							        {
+							            name:'定制蛋糕',
+							            type:'bar',
+							            stack: '定制蛋糕',
+							            data:[62, 82, 91, 84, 109, 110, 120]
+							        }
+							    ]
+							};
+
+							myChart3.setOption(option);
+						</script>
+					</div>
+					<!--008 end-->
+					<div class="lk-biao lk-biaos"><!--009收支分析-->
+						<div id="tu6" style="width: 800px;height:500px;"></div>
+						<script>
+							var myChart5 = echarts.init(document.getElementById('tu6'));
+							
+							option = {
+							    tooltip : {
+							        trigger: 'axis',
+							        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+							            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+							        }
+							    },
+							    legend: {
+							        data:['利润(万)', '支出(万)', '收入(万)']
+							    },
+							    grid: {
+							        left: '3%',
+							        right: '4%',
+							        bottom: '3%',
+							        containLabel: true
+							    },
+							    xAxis : [
+							        {
+							            type : 'value'
+							        }
+							    ],
+							    yAxis : [
+							        {
+							            type : 'category',
+							            axisTick : {show: false},
+							            data : ['周一','周二','周三','周四','周五','周六','周日']
+							        }
+							    ],
+							    series : [
+							        {
+							            name:'利润(万)',
+							            type:'bar',
+							            label: {
+							                normal: {
+							                    show: true,
+							                    position: 'inside'
+							                }
+							            },
+							            data:[200, 170, 240, 244, 200, 220, 210]
+							        },
+							        {
+							            name:'收入(万)',
+							            type:'bar',
+							            stack: '总量',
+							            label: {
+							                normal: {
+							                    show: true
+							                }
+							            },
+							            data:[320, 302, 341, 374, 390, 450, 420]
+							        },
+							        {
+							            name:'支出(万)',
+							            type:'bar',
+							            stack: '总量',
+							            label: {
+							                normal: {
+							                    show: true,
+							                    position: 'left'
+							                }
+							            },
+							            data:[-120, -132, -101, -134, -190, -230, -210]
+							        }
+							    ]
+							};
+
+							myChart5.setOption(option);
+						</script>
+					</div>
+					<!--009 end-->
+					<div class="lk-biao lk-biaos"><!--010 发票管理-->
+							<div class="lk-xinxi">
+							<p>请尽量完善您的个人信息，方便我们同您取得联系。</p>
+						</div>
+							<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-7 am-u-md-11 am-u-sm-12 am-u-xs-12">
+							<!--<form>-->
+							
+							<table class="am-table am-table-bordered am-table-radius shopper">
+								<tbody>
+									<tr>
+										<td>用户名：</td>
+										<td colspan="2" class="inputs"><input type="text" name="shoppername" id="shoppername" value="" /></td>
+										<td class="inputs">
+											<select id="doc-select-1">
+										        <option value="option1">男</option>
+										        <option value="option2">女</option>
+										    </select>
+										</td>
+									</tr>
+									<tr>
+										<td>出生日期：</td>
+										<td colspan="3">
+											<input type="text" class="riqi" id="birthday" placeholder="出生日期" data-am-datepicker readonly required />
+										</td>
+									</tr>
+									<tr>
+										<td>手机号码：</td>
+										<td colspan="3">
+											<input type="tel" name="" id="phonenumber" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>邮箱：</td>
+										<td colspan="3">
+											<input type="email" name="" id="email" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4"> </td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td colspan="3" class="am-text-center">
+											<input type="button" name="tijiao" id="tijiao" value="确认提交" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!--</form>-->
+						</div>
+								</div>
+					</div>
+					<!--010 end-->
+					<div class="lk-biao lk-biaos"><!--011 密码管理-->
+						<div class="lk-xinxi">
+							<p>请尽量使用高强度密码。</p>
+						</div>
+							<div class="lk-ov-tab">
+						<div class="lk-tab am-u-lg-7 am-u-md-11 am-u-sm-12 am-u-xs-12">
+							<form>
+							
+							<table class="am-table am-table-bordered am-table-radius shopper">
+								<tbody>
+									<tr>
+										<td>旧密码：</td>
+										<td colspan="3" class="dizhi">
+											<input type="password" name="" id="jiu_pass" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>新密码：</td>
+										<td colspan="3" class="dizhi">
+											<input type="password" name="" id="new_pass" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>确认密码：</td>
+										<td colspan="3" class="dizhi">
+											<input type="password" name="" id="new_passs" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4"> </td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td colspan="3" class="am-text-center">
+											<input type="button"  id="change-mima" value="确认提交" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</form>
+						</div>
+								</div>
+					</div>
+					<!--011 end-->
+				</div>
+
+			</div>
+
+		</div>
+		<!--内容end-->
+<div class="back-bottom">
+	<p>上海印克电子商务股份有限公司 Copyright©2012-2016 版权所有</p>
+	<p>Rangtime:0.0928</p>
+</div>
+		
+<!--alert模态框-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog" style="width: 380px;">
+    <div class="am-modal-hd alert-title">提示信息</div>
+    <div class="am-modal-bd" id="alert-text">
+    	不能为空！
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
+    </div>
+  </div>
+</div>
+<!--alerts模态框 end-->
+
+<!--messages 模态框-->
+<div class="am-modal am-modal-prompt" closeViaDimmer="flase" tabindex="-1" id="message-motai">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">请选择图片</div>
+    <div class="am-modal-bd">
+    	<table class="am-table am-table-bordered am-table-radius motai_img">
+			<tbody>
+				<tr>
+					<td><img src="img/banner1.jpg"/></td>
+					<td><img src="img/banner2.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img src="img/banner3.jpg"/></td>
+					<td><img src="img/banner4.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img src="img/banner5.jpg"/></td>
+					<td><img src="img/banner6.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img src="img/banner7.jpg"/></td>
+					<td><img src="img/banner8.jpg"/></td>
+				</tr>
+			</tbody>
+		</table>
+	
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+<!--messages 模态框 end-->
+
+<!--messages 模态框     222 22 2 2 2 2 2 2 2 2 2 -->
+<div class="am-modal am-modal-prompt" closeViaDimmer="flase" tabindex="-1" id="message-motai2">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">请选择图片</div>
+    <div class="am-modal-bd" style="padding-bottom: 0;">
+    	<table class="am-table am-table-bordered am-table-radius motai_chanpinimg" style="margin-bottom: 0;">
+			<tbody>
+				<tr>
+					<td><img src="img/one_01.jpg"/></td>
+					<td><img src="img/one_02.jpg"/></td>
+					<td><img src="img/one_03.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img src="img/one_04.jpg"/></td>
+					<td><img src="img/one_05.jpg"/></td>
+					<td><img src="img/one_06.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img src="img/one_07.jpg"/></td>
+					<td><img src="img/one_08.jpg"/></td>
+					<td><img src="img/one_09.jpg"/></td>
+				</tr>
+			</tbody>
+		</table>
+	
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+<!--messages 模态框 end-->
+<!--会员信息-->
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="huiyuan_mesage">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">会员信息
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+      <table class="am-table am-table-bordered am-table-radius" style="font-size: 12px;margin-top: 30px;">
+		<tr>
+			<td style="background: #F5F5F5;"><b>会员名称</b></td>
+			<td id="vip_name">fireflr</td>
+			<td style="background: #F5F5F5;"><b>会员账号</b></td>
+			<td id="vip_number">18234175095</td>
+		</tr>
+		<tr>
+			<td style="background: #F5F5F5;"><b>会员类别</b></td>
+			<td id="vip_leixing">vip</td>
+			<td style="background: #F5F5F5;"><b>注册时间</b></td>
+			<td id="vip_time">2016-11-25</td>
+		</tr>
+		<tr>
+			<td style="background: #F5F5F5;"><b>会员状态</b></td>
+			<td id="vip_zhuangtai">正常</td>
+			<td style="background: #F5F5F5;"><b>绑定邮箱</b></td>
+			<td id="youxiang">2359481688@qq.com</td>
+		</tr>
+		<tr>
+			<td style="background: #F5F5F5;"><b>默认地址</b></td>
+			<td colspan="3">上海市东辰区景阳街广宣小区3栋502室</td>
+		</tr>
+			
+      </table>
+    </div>
+  </div>
+</div>
+<!--会员信息 end-->
+
+	</body>
+
+</html>

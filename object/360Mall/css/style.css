@@ -1,0 +1,372 @@
+/*
+ * 全局样式
+*/
+*{
+margin:0; 
+padding:0;	
+}
+.containter{
+	width: 1345px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	font: "微软雅黑","楷体";
+	/*height: 5000px;*/
+	position: relative;
+	/*background: #fcfcfc;*/
+}
+a{
+	text-decoration: none;
+}
+input,textarea:focus {outline: none;}
+
+ul li{
+	float: left;
+}
+/*div{
+	border: 1px solid deepskyblue; 
+}*/
+/***********main***********/
+.logo{
+	width: 100%;
+	height: 30px;
+	background: #373d41;
+	color: white;
+	font-size: 12px;
+}
+.logo .left{
+	float: left;
+	margin-left: 45px;
+	line-height: 30px;
+}
+.logo img{
+	height: 13px;
+}
+.logo .right{
+	float: right;
+	margin-right: 74px;
+}
+.logo .right ul li{
+	height: 30px;
+	line-height: 30px;
+	margin-right: 27px;
+}
+
+
+
+.top-minus{
+	width: 100%;
+	height: 80px;
+	font-size: 12px;
+	border-bottom: 1px solid #eeeeee;
+}
+.top-minus div{
+	float: left;
+}
+.top-minus .one{
+	margin-left: 45px;
+}
+.top-minus .one img{
+	height: 80px;
+}
+.top-minus .two{
+	margin-left: 60px;
+	height: 80px;
+	line-height: 80px;
+}
+.top-minus .two ul li{
+	margin-right: 30px;
+	font-size: 12px;
+	color: #333333;
+}
+.top-minus .three{
+	float: right;
+	margin-right: 75px;
+	height: 80px;
+	line-height: 80px;
+}
+
+
+
+
+.shequ_logo div{
+	float: left;
+}
+.shequ_logo{
+	padding-left: 55px;
+	height: 84px;
+	width: 100%;
+	background: white;
+}
+.shequ_logo #logo{
+	margin-top: 15px;
+}
+.shequ_logo #minu{
+	margin-left: 100px;
+	height: 84px;
+	line-height: 84px;
+}
+.shequ_logo #minu ul li , .shequ_logo #denglu ul li{
+	float: left;
+	margin-right: 15px;
+}
+.shequ_logo #minu ul li a,.shequ_logo #denglu ul li a{
+	text-decoration: none;
+	color: #5c5c5c;
+}
+.shequ_logo #minu ul li a:hover{
+	color: #2ec7bb;
+}
+.shequ_logo #denglu ul li a:hover{
+	color: #2ec7bb;
+}
+.shequ_logo #sousuo{
+	margin-top: 24px;
+	width: 250px;
+	height: 32px;
+	margin-left: 25px;
+	
+}
+.shequ_logo #sousuo input{
+	width: 240px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #cccccc;
+	padding-left: 5px;
+	
+}
+.shequ_logo #sousuoimg{
+	margin-top: 24px;
+}
+.shequ_logo #sousuoimg img{
+	height: 30px;
+	*margin-left: 25px;
+}
+.shequ_logo #denglu{
+	height: 84px;
+	line-height: 84px;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+
+
+
+.center{
+	margin-top: 40px;
+	width: 100%;
+	/*margin-left: 45px;*/
+}
+.center .center-left{
+	width: 908px;
+	/*float: left;*/
+	height: 2000px;
+}
+.center .center-left .banner{
+	height: 411px;
+	width: 100%;
+	overflow: hidden;
+} 
+.center .center-left .banner .left{
+	float: left;
+	width: 600px;
+	height: 300px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.center .center-left .banner .right{
+	float: right;
+	width: 298px;
+	height: 300px;
+	overflow: hidden;
+}
+.center .center-left .banner .right div{
+	height: 137px;
+	overflow: hidden;
+}
+.center .center-left .banner .right p{
+	text-align: center;
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+	background: #00c1de;
+	color: white;
+}
+.center .center-left .banner .down img{
+	height: 100px;
+}
+.center .center-left .banner .down{
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+}
+
+
+
+.center .center-left .toutiao{
+	height: 195px;
+	width: 100%;
+	overflow: hidden;
+}
+.center .center-left .toutiao .toutiao-left{
+	float: left;
+	margin-top: 45px;
+}
+.center .center-left .toutiao .toutiao-right{
+	margin-top: 45px;
+	float: right;
+	width: 855px;
+	height: 115px;
+}
+.center .center-left .toutiao .toutiao-right h1{
+	height: 20px;
+	font-size: 20px;
+	color: black;
+	font-weight: 550;
+	margin-bottom: 10px;
+}
+
+.center .center-left .toutiao .toutiao-right .toutiao-right-user{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 3px;
+}
+.center .center-left .toutiao .toutiao-right .toutiao-right-user span{
+	display: block;
+	font-size: 12px;
+	float: left;
+	color: #999999;
+	margin-right: 10px;
+}
+.center .center-left .toutiao .toutiao-right .toutiao-right-user img{
+	height: 30px;
+}
+.center .center-left .toutiao .toutiao-right p{
+	font-size: 14px;
+	line-height: 23px;
+	color: #666666;
+}
+.center .center-left .toutiao .toutiao-right a{
+	color: #00c1de;
+}
+
+
+.tuijian{
+	height: 295px;
+	width: 100%;
+	/*overflow: hidden;*/
+	background: #e2ecf6;
+	margin-bottom: 5px;
+}
+.tuijian .tuijian-left{
+	float: left;
+	height: 100%;
+	width: 30px;
+	border: 1px solid white;
+}
+.tuijian .tuijian-left img{
+	width: 26px;
+	margin-top: 100px;
+}
+.tuijian .tuijian-right{
+	float: left;
+	width: 865px;
+	height: 100%;
+	margin-left: 7px;
+}
+.tuijian .tuijian-right .left{
+	float: left;
+	width: 428px;
+	height: 265px;
+	border: 1px solid white;
+}
+.tuijian .tuijian-right .left img{
+	height: 265px;
+}
+.tuijian .tuijian-right .down{
+	/*float: right;*/
+	width: 858px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 265px;
+	text-align: center;
+	font-size: 12px;
+	border: 1px solid white;
+}
+.tuijian .tuijian-right .down a{
+	color: #00c1e0;
+}
+
+
+.boke{
+	width: 100%;
+	/*height: 269px;*/
+	border-bottom: 1px solid #e9e9e9;
+}
+.boke .title{
+	margin-top: 37px;
+	width: 100%;
+	height: 40px;
+}
+.boke .title .img{
+	float: left;
+}
+.boke .title h1{
+	float: left;
+	font-size: 20px;
+	color: black;
+	font-weight: 550;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 2px;
+}
+.boke-user{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.boke-user span{
+	display: block;
+	font-size: 12px;
+	float: left;
+	color: #999999;
+	margin-right: 10px;
+}
+.boke-user img{
+	height: 30px;
+}
+.boke p{
+	font-size: 14px;
+	color: #666666;
+	line-height: 25px;
+	text-indent: 2em;
+}
+.boke .biaoqian{
+	height: 60px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.boke .biaoqian ul li{
+	line-height: 60px;
+	border: 1px solid #cccccc;
+	height: 21px;
+	line-height: 21px;
+	margin-right: 10px;
+	padding: 0 10px;
+	margin-top: 20px;
+	font-size: 12px;
+	color: #999999;
+	border-radius: 20px;
+	cursor: pointer;
+	
+}
+
+
+
+.center .center-right{
+	float: right;
+	width: 283px;
+	margin-right: 75px;
+}

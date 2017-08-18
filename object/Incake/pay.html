@@ -1,0 +1,785 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>结算页面</title>
+
+		<link href="css/amazeui.css" rel="stylesheet" type="text/css" />
+
+		<link href="css/demo.css" rel="stylesheet" type="text/css" />
+		<link href="css/cartstyle.css" rel="stylesheet" type="text/css" />
+
+		<link href="css/jsstyle.css" rel="stylesheet" type="text/css" />
+		
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/bottom.css"/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/address.js"></script>
+		<script type="text/javascript" src="js/amazeui.js" ></script>
+		<script type="text/javascript" src="js/nav.js" ></script>
+	</head>
+<style type="text/css">
+	.pay{
+		width: 160px !important;
+		padding: 0px 30px;
+	}
+	.OP_LOG_BTN  {
+		width: 130px !important;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 10px;
+		/*text-align: center;*/
+	}
+</style>
+	<body>
+
+<div class="am-g bor"><!--nav begin-->
+			<div class="am-g-fixed">
+				<div class="lk-top am-cf">
+					<div class="lk-navtop am-fl">
+						<span>欢迎来到印克时光！</span>
+						<span>周一至周日8:30~21:00</span>
+						<span>客服热线：400-921-5757</span>
+						<span>股票代码：837489</span>
+					</div>
+					<div class="lk-navtopright am-fr">
+						
+						<div class="am-fl gouwuc">
+							<a href="#" style="color: #333333;">
+								<i class="am-icon-shopping-basket am-icon-xs" aria-hidden="true"></i>
+								<span id="gouwu_che">0件</span>
+							</a>
+						</div>
+						<div class="am-fl lk-dlzc">
+							<span><a href="#" id="denglu">登录</a>|<a href="#" id="tuichu">注册</a></span>
+						</div>
+						
+						<div class="lk-dz am-fl">
+							<div class="lk-dzclick" style="width: 100%;">
+								<i class="am-icon-map-marker am-icon-sx" aria-hidden="true" style="margin-right: 5px;font-size: 14px;"></i>
+								<span id="lk-didian">上海</span>
+								<i class="am-icon-sort-desc am-icon-sx am-fr" aria-hidden="true" style="margin-right: 10px;font-size: 16px;display: block;margin-top: -3px;"></i>
+							</div>
+							
+							<div class="lk-dzinner">
+								请选择您要配送的城市：
+								<table border="0" cellspacing="0" cellpadding="0" id="dizs">
+									<tr>
+										<td style="background: #D4D4D4;">上海</td>
+										<td>福州</td>
+										<td>苏州</td>
+										<td>昆山</td>
+									</tr>
+									<tr>
+										<td>厦门</td>
+										<td>无锡</td>
+										<td>北京</td>
+										<td>南京</td>
+									</tr>
+									<tr>
+										<td>杭州</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lk-navbottom am-cf">
+					<div class="lk-logo am-fl">
+						<a href="home.html"><img src="img/logo.png"/></a>
+					</div>
+						
+					<div class="am-fr manues">
+						<ul>
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Cake List</span>
+								<span class="lk-lispan">蛋糕馆</span>
+							</a>
+								 <ul class="lk-ul" style="left: -22px;">
+			                        <li><a href="#"><span>Cheese</span>
+			                            <span>芝士系列</span> </a></li>
+			                        <li><a href="#"><span>Chocolate</span>
+			                            <span>巧克力系列</span> </a></li>
+			                        <li><a href="#"><span>Napoleon</span>
+			                            <span>拿破仑系列</span> </a></li>
+			                        <li><a href="#"><span>Mousse</span>
+			                            <span>慕斯系列</span> </a></li>
+			                        <li><a href="#"><span>Cream</span>
+			                            <span>乳脂系列</span> </a></li>
+			                        <li><a href="#"><span>DIY</span>
+			                            <span>选拼系列</span> </a></li>
+			                        <li><a href="#"><span>Star</span> <span
+			                           >星座系列</span> </a></li>
+			                        <li><a href="#"><span>DIY Cake</span>
+			                            <span>定制蛋糕</span> </a></li>
+	                    		</ul>
+	
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Genius at work</span>
+								<span class="lk-lispan">GAW蛋糕</span>
+							</a>
+								<ul class="lk-ul">
+			                        <li><a href='#'><span>GawDiy</span>
+			                            <span>GAW翻糖定制</span> </a></li>
+			                        <li><a href='#'><span>GawClassic</span>
+			                            <span>GAW经典</span> </a></li>
+			                        <li><a href='#'><span>GawStar</span>
+			                            <span>GAW星座</span> </a></li>
+			                    </ul>
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Insweet</span>
+								<span class="lk-lispan">思蜜</span>
+							</a>
+								<ul class="lk-ul">
+								</ul>
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Activities</span>
+								<span class="lk-lispan">活动专享</span>
+							</a>
+								<ul class="lk-ul">
+			                        <li><a href='#'><span>New Activity</span>
+			                            <span>最新活动</span> </a></li>
+			                        
+			                        <li><a href="#"><span>Points Mall</span>
+			                            <span>积分商城</span> </a></li>
+			                    </ul>
+	
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">My Incake</span>
+								<span class="lk-lispan">我的INCAKE</span>
+							</a>
+								<ul class="lk-ul" style="left: -6px;">
+			                        <li><a href="#"><span>My Orders</span>
+			                            <span>我的订单</span> </a></li>
+			                        <li><a href="#"><span>My Points</span>
+			                            <span>我的积分</span> </a></li>
+			                        <li><a href="#"><span>Coupons</span> <span
+			                           >我的优惠券</span> </a></li>
+			                    </ul>
+	
+							</li>
+							
+							<li class="lk-fen">\</li>
+							
+							<li class="lk-li"><a href="#">
+								<span class="lk-lispan">Enterprises</span>
+								<span class="lk-lispan">企业专区</span>
+							</a>
+								 <ul class="lk-ul" style="left: -20px;">
+			                        <li><a href="#"><span>Apply For Foretaste</span>
+			                            <span>试吃申请</span> </a></li>
+			                        <li><a href="#"><span>VIP Login</span> 
+			                        	<span>企业VIP登录</span> </a>
+			                        </li>
+			                    </ul>
+	
+							</li>
+						</ul>
+					</div>
+					
+					<div class="lk-caidan am-fr am-text-center">
+						<span class="am-icon-bars am-icon-sm"></span>
+					</div>
+					<div class="lk-xiala">
+						<ol>
+							<li><a href="#">蛋糕馆</a></li>
+							<li><a href="#">GAW蛋糕</a></li>
+							<li><a href="#">思密</a></li>
+							<li><a href="#">活动专享</a></li>
+							<li><a href="#">我的INCAKE</a></li>
+							<li><a href="#">企业专区</a></li>
+						</ol>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--nav end-->
+			<div class="clear"></div>
+			<div class="concent" style="padding: 20px 0px !important; margin: 0 110px !important;">
+				<!--地址 -->
+				<div class="paycont">
+					<div class="address">
+						<h3>确认收货地址 </h3>
+						<div class="control">
+							<div class="tc-btn createAddr theme-login am-btn am-btn-danger" style="background: #005EA7;border: 0;">使用新地址</div>
+						</div>
+						<div class="clear"></div>
+						<ul>
+							<div class="per-border"></div>
+							<li class="user-addresslist defaultAddr" style="border: 1px solid orangered;">
+
+								<div class="address-left">
+									<div class="user DefaultAddr">
+
+										<span class="buy-address-detail">   
+                   <span class="buy-user">大毛 </span>
+										<span class="buy-phone">888888888</span>
+										</span>
+									</div>
+									<div class="default-address DefaultAddr">
+										<span class="buy-line-title buy-line-title-type">收货地址：</span>
+										<span class="buy--address-detail">
+								   <span class="province">山西</span>省
+										<span class="city">太原</span>市
+										<span class="dist">迎泽</span>区
+										<span class="street">迎泽区理工大学</span>
+										</span>
+
+									</div>
+									<ins class="deftip">默认地址</ins>
+								</div>
+								<div class="address-right">
+									<a href="#">
+										<span class="am-icon-angle-right am-icon-lg"></span></a>
+								</div>
+								<div class="clear"></div>
+
+								<div class="new-addr-btn">
+									<a href="#" class="hidden">设为默认</a>
+									<span class="new-addr-bar hidden">|</span>
+									<a href="#">编辑</a>
+									<span class="new-addr-bar">|</span>
+									<a href="javascript:void(0);" onclick="delClick(this);">删除</a>
+								</div>
+
+							</li>
+							<div class="per-border"></div>
+							<li class="user-addresslist"  style="border: 1px solid #005EA7;">
+								<div class="address-left">
+									<div class="user DefaultAddr">
+
+										<span class="buy-address-detail">   
+                   <span class="buy-user">二毛 </span>
+										<span class="buy-phone">66666666</span>
+										</span>
+									</div>
+									<div class="default-address DefaultAddr">
+										<span class="buy-line-title buy-line-title-type">收货地址：</span>
+										<span class="buy--address-detail">
+								   <span class="province">山西</span>省
+										<span class="city">太原</span>市
+										<span class="dist">小店</span>区
+										<span class="street">坞城路山西大学</span>
+										</span>
+
+									</div>
+									<ins class="deftip hidden">默认地址</ins>
+								</div>
+								<div class="address-right">
+									<span class="am-icon-angle-right am-icon-lg"></span>
+								</div>
+								<div class="clear"></div>
+
+								<div class="new-addr-btn">
+									<a href="#">设为默认</a>
+									<span class="new-addr-bar">|</span>
+									<a href="#">编辑</a>
+									<span class="new-addr-bar">|</span>
+									<a href="javascript:void(0);"  onclick="delClick(this);">删除</a>
+								</div>
+
+							</li>
+
+						</ul>
+
+						<div class="clear"></div>
+					</div>
+					<!--物流 -->
+					<div class="logistics">
+						<h3>选择配送方式</h3>
+						<ul class="op_express_delivery_hot">
+							<li  class="OP_LOG_BTN  ">专人配送</li>
+							<li  class="OP_LOG_BTN  ">到店自取</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+
+					<!--支付方式-->
+					<div class="logistics">
+						<h3>选择支付方式</h3>
+						<ul class="pay-list">
+							<li class="pay card"><img src="img/wangyin.jpg" />银联<span></span></li>
+							<li class="pay qq"><img src="img/weizhifu.jpg" />微信<span></span></li>
+							<li class="pay taobao"><img src="img/zhifubao.jpg" />支付宝<span></span></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+
+					<!--订单 -->
+					<div class="concent">
+						<div id="payTable">
+							<h3>确认订单信息</h3>
+							<div class="cart-table-th">
+								<div class="wp">
+
+									<div class="th th-item">
+										<div class="td-inner">商品信息</div>
+									</div>
+									<div class="th th-price">
+										<div class="td-inner">单价</div>
+									</div>
+									<div class="th th-amount">
+										<div class="td-inner">数量</div>
+									</div>
+									<div class="th th-sum">
+										<div class="td-inner">金额</div>
+									</div>
+									<div class="th th-oplist">
+										<div class="td-inner">配送方式</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="clear"></div>
+
+
+							<tr id="J_BundleList_s_1911116345_1" class="item-list">
+									<div class="bundle-main">
+										<ul class="item-content clearfix">
+											<div class="pay-phone">
+												<li class="td td-item">
+													<div class="item-pic">
+														<a href="#" class="J_MakePoint">
+															<img width="100px" src="img/z-img/p2c105039541151557458.jpg" class="itempic J_ItemImg"></a>
+													</div>
+													<div class="item-info">
+														<div class="item-basic-info">
+															<a href="#" target="_blank" title="超级蜂巢 Super hive cake" class="item-title J_MakePoint" data-point="tbcart.8.11">超级蜂巢 Super hive cake</a>
+														</div>
+													</div>
+												</li>
+												<li class="td td-info">
+													<div class="item-props">
+														<span class="sku-line">备注：无</span>
+														<span class="sku-line">包装：盒装</span>
+													</div>
+												</li>
+												<li class="td td-price">
+													<div class="item-price price-promo-promo">
+														<div class="price-content">
+															<em class="J_Price price-now">244.00</em>
+														</div>
+													</div>
+												</li>
+											</div>
+
+											<li class="td td-amount">
+												<div class="amount-wrapper ">
+													<div class="item-amount ">
+														<span class="phone-title">购买数量</span>
+														<div class="sl">
+															<!--<input class="min am-btn" name="" type="button" value="-" />-->
+															<input class="text_box" name="" type="text" value="1" style="width:30px;padding-left: 8px;margin-top: 5px;" />
+															<!--<input class="add am-btn" name="" type="button" value="+" />-->
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="td td-sum">
+												<div class="td-inner">
+													<em tabindex="0" class="J_ItemSum number">244.00</em>
+												</div>
+											</li>
+											<li class="td td-oplist">
+												<div class="td-inner">
+													<span class="phone-title">配送方式</span>
+													<div class="pay-logis">
+														包邮
+													</div>
+												</div>
+											</li>
+
+										</ul>
+										<div class="clear"></div>
+
+									</div>
+							</tr>
+							</div>
+							<div class="clear"></div>
+							<div class="pay-total">
+						<!--留言-->
+							<div class="order-extra">
+								<div class="order-user-info">
+									<div id="holyshit257" class="memo">
+										<label>买家留言：</label>
+										<input type="text" title="选填,对本次交易的说明（建议填写已经和卖家达成一致的说明）" placeholder="选填,建议填写和卖家达成一致的说明" class="memo-input J_MakePoint c2c-text-default memo-close">
+										<div class="msg hidden J-msg">
+											<p class="error">最多输入500个字符</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--优惠券 -->
+							<div class="buy-agio" style="margin-bottom: 60px;">
+								<li class="td td-coupon">
+
+									<span class="coupon-title">优惠券</span>
+									<select data-am-selected>
+										<option value="a">
+											<div class="c-price">
+												<strong>￥8</strong>
+											</div>
+											<div class="c-limit">
+												【消费满95元可用】
+											</div>
+										</option>
+										<option value="b" selected>
+											<div class="c-price">
+												<strong>￥3</strong>
+											</div>
+											<div class="c-limit">
+												【无使用门槛】
+											</div>
+										</option>
+									</select>
+								</li>
+
+								<li class="td td-bonus">
+
+									<span class="bonus-title">红包</span>
+									<select data-am-selected>
+										<option value="a">
+											<div class="item-info">
+												¥50.00<span>元</span>
+											</div>
+											<div class="item-remainderprice">
+												<span>还剩</span>10.40<span>元</span>
+											</div>
+										</option>
+										<option value="b" selected>
+											<div class="item-info">
+												¥50.00<span>元</span>
+											</div>
+											<div class="item-remainderprice">
+												<span>还剩</span>50.00<span>元</span>
+											</div>
+										</option>
+									</select>
+
+								</li>
+
+							</div>
+							<div class="clear"></div>
+							</div>
+							<!--含运费小计 -->
+							<div class="buy-point-discharge ">
+								<p class="price g_price ">
+									合计（含运费） <span>¥</span><em class="pay-sum">244.00</em>
+								</p>
+							</div>
+
+							<!--信息 -->
+							<div class="order-go clearfix">
+								<div class="pay-confirm clearfix">
+									<div class="box">
+										<div tabindex="0" id="holyshit267" class="realPay"><em class="t">实付款：</em>
+											<span class="price g_price ">
+                                    <span>¥</span> <em class="style-large-bold-red " id="J_ActualFee">244.00</em>
+											</span>
+										</div>
+
+										<div id="holyshit268" class="pay-address">
+
+											<p class="buy-footer-address">
+												<span class="buy-line-title buy-line-title-type">寄送至：</span>
+												<span class="buy--address-detail">
+								   <span class="province">山西</span>省
+												<span class="city">太原</span>市
+												<span class="dist">迎泽</span>区
+												<span class="street">迎泽街理工大学</span>
+												</span>
+											</p>
+											<p class="buy-footer-address">
+												<span class="buy-line-title">收货人：</span>
+												<span class="buy-address-detail">   
+                                         <span class="buy-user">大毛 </span>
+												<span class="buy-phone">8888888888</span>
+												</span>
+											</p>
+										</div>
+									</div>
+
+									<div id="holyshit269" class="submitOrder">
+										<div class="go-btn-wrap">
+											<a id="J_Go"  class="btn-go" tabindex="0" title="点击此按钮，提交订单">提交订单</a>
+										
+										<script type="text/javascript">
+											$(".btn-go").click(function(){
+												alert("支付成功！");
+												window.location.href="pay_ok.html"; 
+											})
+										</script>
+										
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!--<div class="footer">
+					<div class="footer-hd">
+						<p>
+							<a href="#">微信商城</a>
+							<b>|</b>
+							<a href="#">商城首页</a>
+							<b>|</b>
+							<a href="#">支付宝</a>
+							<b>|</b>
+							<a href="#">物流</a>
+						</p>
+					</div>
+					<div class="footer-bd">
+						<p>
+							<a href="# ">商城首页</a>
+							<b>|</b>
+							<a href="# ">新手上路</a>
+							<b>|</b>
+							<a href="# ">INCAKE产品</a>
+							<b>|</b>
+							<a href="# ">关于INCAKE</a>
+							<b>|</b>
+							<a href="# ">加入INCAKE</a>
+							<em>© 2015-2025 Incake.com 版权所有</em>
+						</p>
+					</div>
+				</div>-->
+			<div class="theme-popover-mask"></div>
+			<div class="theme-popover">
+
+				<!--标题 -->
+				<div class="am-cf am-padding">
+					<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg" style="color: #005EA7;">新增地址</strong> / <small>Add address</small></div>
+				</div>
+				<hr/>
+
+				<div class="am-u-md-12">
+					<form class="am-form am-form-horizontal">
+
+						<div class="am-form-group">
+							<label for="user-name" class="am-form-label">收货人</label>
+							<div class="am-form-content">
+								<input type="text" id="user-name" placeholder="收货人">
+							</div>
+						</div>
+
+						<div class="am-form-group">
+							<label for="user-phone" class="am-form-label">手机号码</label>
+							<div class="am-form-content">
+								<input id="user-phone" placeholder="手机号必填" type="email">
+							</div>
+						</div>
+
+						<div class="am-form-group">
+							<label for="user-phone" class="am-form-label">所在地</label>
+							<div class="am-form-content address">
+								<select data-am-selected>
+									<option value="a">山西省</option>
+									<option value="b">陕西省</option>
+								</select>
+								<select data-am-selected>
+									<option value="a">太原市</option>
+									<option value="b">xxx市</option>
+								</select>
+								<select data-am-selected>
+									<option value="a">迎泽区</option>
+									<option value="b">xxx区</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="am-form-group">
+							<label for="user-intro" class="am-form-label">详细地址</label>
+							<div class="am-form-content">
+								<textarea class="" rows="3" id="user-intro" placeholder="输入详细地址"></textarea>
+								<small>100字以内写出你的详细地址...</small>
+							</div>
+						</div>
+
+						<div class="am-form-group theme-poptit">
+							<div class="am-u-sm-9 am-u-sm-push-3">
+								<style type="text/css">
+									.close{
+										border: 0 !important;
+									}
+									.close:hover{
+										color: whitesmoke !important;
+									}
+								</style>
+								<div class="am-btn am-btn-danger close" style="background: #005EA7;">保存</div>
+								<div class="am-btn am-btn-danger close" style="background: #005EA7;">取消</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="clear"></div>
+			
+			
+			
+			<div class="am-g am-g-fixed am-cf"  style="border-top: 1px solid #0A2F8F;margin-top: 30px;">
+			<div class="am-g lk-phone">
+				<div class="lk-phontop">
+					<p>(周一至周日)8：30-21：00</p>
+					<p>客服热线：400-921-5757</p>
+				</div>
+				<div class="lk-phincenter">
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>配送服务</span>
+					</div>
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>关于我们</span>
+					</div>
+					<div class="am-u-md-4 am-u-sm-4 am-text-center">
+						<span>帮助中心</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="lk-center am-cf">
+				<div class="am-u-md-6 am-u-sm-12 weixin">
+					<div class="am-fl lk-erweima">
+						<img class="img-responsive" src="img/bottom/wechat_qrcode.jpg"/>
+					</div>
+					<div class="am-fl lk-two">
+						<p>微信订购流程：</p>
+						<p>关注微信公众号 → 点击［微信订购］→［蛋糕预定］→ 选择蛋糕磅数［立即购买］→ 点击［去结算］→ 确认订单信息 → 选择［支付方式］→ 输入优惠券密码 → 提交订单</p>
+					
+						<div class="am-vertical-align-middle lk-kefu">
+							<div class="am-fl">
+								微信公众号：
+							</div>
+							<div class="am-fl">
+								Incake
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="am-u-md-6 lk-lc">
+					<div class="am-u-md-3">
+						 <dl>
+	                        <dd>新手上路</dd>
+	                        <dd><a href="#">购买流程</a></dd>
+	                        <dd><a href="#">支付方式</a></dd>
+	                        <dd><a href="#">配送范围</a></dd>
+	                        <dd><a href="#">退货服务</a></dd>
+	                        <dd><a href="#">帮助中心</a></dd>
+	                    </dl>
+
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+	                        <dd>INCAKE产品</dd>
+	                        <dd><a href="#">精品蛋糕</a></dd>
+	                        <dd><a href="#">定制蛋糕</a></dd>
+	                        <dd><a href="#">思蜜</a></dd>
+	                        <dd><a href="#">GAW蛋糕</a></dd>
+	                    </dl>
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+	                        <dd>关于INCAKE</dd>
+	                        <dd><a href="#">品牌故事</a></dd>
+	                        <dd><a href="#">产品理念</a></dd>
+	                        <dd><a href="#">优质体验</a></dd>
+	                        <dd><a href="#">合作单位</a></dd>
+	                    </dl>
+
+					</div>
+					<div class="am-u-md-3">
+						<dl>
+	                        <dd>加入INCAKE</dd>
+	                        <dd><a href="#">关于我们</a></dd>
+	                        <dd><a href="#">联系我们</a></dd>
+	                        <dd><a href="#">英才招聘</a></dd>
+	                    </dl>
+					</div>
+				</div>
+			</div>
+			<div class="lk-down am-cf">
+				<div class="am-u-md-6">
+					<div class="am-u-md-4 lk-btimg am-u-sm-0">
+						<img class="img-responsive" src="img/bottom/footer_logo.png"/>
+					</div>
+					<div class="am-u-md-8 text-center am-vertical-align lk-rx">
+						<div class="am-vertical-align-middle lk-time">
+							<span>周一至周日</span><br />
+							<span>8:30~21:00</span>
+						</div>
+					<!--</div>
+					<div class="am-u-md-5 am-vertical-align">-->
+						<div class="am-vertical-align-middle">
+							<div class="am-fl">
+								客服热线
+							</div>
+							<div class="am-fl">
+								400-921-5757
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<div class="am-u-md-6 am-u-sm-12 lk-dzz">
+						
+					
+						<div class="am-vertical-align lk-gszc am-fr">
+							<div class="am-vertical-align-middle">
+								<p>股票代码：837489 印克电商</p>
+		
+								<p class="pnon-don">
+			                        <span>沪ICP备12045835号</span>
+			                        <span>
+			                            <a href="#" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; margin-left: 10px;">
+			                                <img src="img/bottom/footer_gongan.png" />
+			                              	  沪公网安备 31010802001150号
+			                            </a>
+			                        </span>
+			                    </p>
+		
+								<p> 版权所有：上海印克电子商务股份有限公司 Copyright&copy;2012-2016</p>
+							</div>
+						</div>	
+						
+						<div class="am-vertical-align lg-jx am-fr">
+							<div class="am-vertical-align-middle">
+								<img src="img/bottom/footer_shgs.jpg"/>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+
+</html>

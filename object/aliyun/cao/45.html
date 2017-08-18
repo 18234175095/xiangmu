@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js" ></script>
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#header{
+			width: 100%;
+			height: 100px;
+			background: khaki;
+			overflow: hidden;
+		}
+		#head{
+			width: 90%;
+			height: 100px;
+			float: left;
+		}
+		#head{
+			text-align: center;
+		}
+		#head span{
+			height: 50px;
+			line-height: 50px;
+		}
+		#head1{
+			float: right;
+			margin-top: 50PX;
+			margin-right: 10px;
+		}
+		#dh{
+			width: 100%;
+			height: 50px;
+			background: #000000;
+		}
+		#dh span{
+			color: #FFFFFF;
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			margin-left: 190px;
+		}
+		#cata{
+			text-align: center;
+		}
+		#lb img{
+			width: 100%;
+			height: 400px;
+			display: none;
+		}
+		#lb1{
+			position: absolute;
+			margin-top: -10px;
+			margin-left: 650px;
+		}
+		#lb1 span{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			border: 1px solid #999999;
+			/*background: bisque;*/
+		}
+		#back{
+			background-image: url(img/46.png);
+		}
+	</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="section">
+				<div id="header">
+					<div id="head"><span style="font-size: 40px;"><b>·M——A——R——K——I——N·</b></span><br>
+					<span style="font-size: 20px;">F - I - N - E &nbsp;J - E - W - E - L - L - E - R - Y</span>
+					</div>
+					<div id="head1">
+						<span style="font-size: 20px;">OUR SHOPS</span><br>
+						<span style="font-size: 20px;">RUSSIAN</span>
+					</div>
+				</div>
+				<div id="dh">
+					<span>COLLECTIONS</span> <span>OUR STORY</span> <span>NEWS</span> <span>CONTACTS</span>
+				</div>
+				<div id="cata">
+					<span style="font-size: 80px;">CATALOGUE</span><br>
+				</div>
+				<div id="lb">
+					<img src="img/lb1.png" style="display: block;"><img src="img/lb2.png"><img src="img/lb3.png">
+					<div id="lb1"><span id="back"></span><span></span><span></span></div>
+				</div>
+			</div>
+			<div class="section">
+				<h1>46546</h1>
+			</div>
+		</div>
+		
+		<script>
+			$("#container").fullpage({
+				navigation:true,
+	 			navigationPosition:'left',
+	 			verticalCentered:false,
+			})
+			var cc = document.getElementById("lb");
+	 	   	var img = cc.getElementsByTagName("img");
+	 	   	var cv = document.getElementById("lb1");
+	 	   	var span = cv.getElementsByTagName("span");
+	 	   	for(var i=0;i<span.length;i++){
+	 	   		span[i].index=i;
+	 	   		span[i].onmouseover=function(){
+	 	   			for(var j=0;j<span.length;j++){
+	 	   				span[j].id="";
+	 	   				img[j].style.display="none";
+	 	   			}
+	 	   			this.id="back";
+	 	   			img[this.index].style.display="block";
+	 	   		}
+	 	   	}
+		</script>
+	</body>
+</html>
