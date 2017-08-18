@@ -119,8 +119,6 @@ input,textarea:focus {outline: none;}
 .user .left{
 	float: left;
 	margin-left: 10px;
-	/*height: 100%;
-	width: 60px;*/
 }
 .user .left img{
 	height: 61px;
