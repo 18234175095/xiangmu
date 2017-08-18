@@ -31,7 +31,7 @@ ul li{
 .header .navbar-brand {
 	display: block;
 	height: 80px !important;
-	padding: 0px !important;
+	padding: 0 !important;
 	margin-top: -15px !important;
 	max-width: 110px;
 	overflow: hidden;
@@ -839,7 +839,7 @@ overflow: hidden;
 	float: left;
 }
 .course-top ul li a{
-	display: inline-block
+	display: inline-block;
 	height: 64px;
 	line-height: 64px;
 	width: 117px;
@@ -863,8 +863,8 @@ overflow: hidden;
 .course-top ul li a:first-child{
 	border-left:0px !important;
 }
-.course-top ul li a:last-childt-child{
-	border-right:0px !important;
+.course-top ul li a:last-child{
+	border-right:0 !important;
 }
 
 .course-inner{
@@ -896,7 +896,7 @@ overflow: hidden;
 	float: left;
 }
 .minnav ul li a{
-	display: inline-block
+	display: inline-block;
 	height: 36px;
 	line-height: 36px;
 	width: 108px;
@@ -918,10 +918,10 @@ overflow: hidden;
 	border-right: 1px solid #f0f0f0;
 }
 .minnav ul li a:first-child{
-	border-left:0px !important;
+	border-left:0 !important;
 }
-.minnav ul li a:last-childt-child{
-	border-right:0px !important;
+.minnav ul li a:last-child{
+	border-right:0 !important;
 }
 
 .minnav ul li a i{
@@ -934,8 +934,8 @@ overflow: hidden;
 }
 .course-s .images img{
 	width: 100%;
-	margin-top: 0px;
-	margin-left: 0px;
+	margin-top: 0;
+	margin-left: 0;
 	transition-duration:0.5s;
 	cursor: pointer;
 }
@@ -959,7 +959,7 @@ overflow: hidden;
 	padding:0 3px;
 }
 .course-s .metas span:first-child{
-	padding-left:0px !important;
+	padding-left:0 !important;
 }
 .course-s .avatar-ss{
 	height: 20px;
@@ -1077,8 +1077,11 @@ overflow: hidden;
 .grad{
 	overflow: hidden;
 }
+.grad img{
+	width: 100%;
+}
+
 .grad-img{
-	margin-left: -290px;
 }
 /*班级*/
 
@@ -1297,13 +1300,12 @@ input,textarea:focus {outline: none;}
 	font-size: 20px;
 	margin-top: 49px;
 	margin-bottom: 30px;
-	font-weight: 550;
+	font-weight: 600;
 }
 #tishi{
 	font-size: 12px;
 	color: red;
 	margin-bottom: 15px;
-	height: 14px;
 	height: 20px;
 	padding-left: 10px;
 }
