@@ -350,12 +350,11 @@ input,textarea:focus {outline: none;}
 	position: absolute;
 	top: -40px;
 	right: -7px;
-	z-index: 2000px;
 	color: #333333;
 	z-index: 9999;
 	display: none;
 	border-radius: 3px;
-	border: 0 0 0 1px rgba(25,25,25,0.2);	
+	border: 1px rgba(25,25,25,0.2);
 }
 .dui ul{
 	height: 325px;
